@@ -187,7 +187,7 @@ def T12():
         print("{},{},{}".format(item[0], item[1], item[2]))
     print("\n\n\n")
 
-    f = open("/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator14/calculator/allAttributeCombinations.txt", "r")
+    f = open("/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator16/calculator/allAttributeCombinations.txt", "r")
     lines = f.readlines()
     for line in lines:
         print(line.replace("\n", ""))
@@ -241,7 +241,7 @@ def T17():
     print(type(myVariable))
 
 def T18():
-    p = r"/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator14/Jsons/"
+    p = r"/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator16/Jsons/"
     p = r"c:\Windows\System32"
     s = 'dd'
     if "\\" in s:
@@ -268,7 +268,7 @@ def T19():
     print(Z)
 
 def T20():
-    createdCsv = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\created.csv"
+    createdCsv = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\created.csv"
     with open(createdCsv) as file:
         reader = csv.reader(file)
         createdCsvData = []
@@ -283,5 +283,23 @@ def T21():
     trans_mat = tuple(zip(*mat))
     print(trans_mat)
 
-T20()
+def T22():
+    import json
+    file = r'C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\output.json'
+    with open(file, "r") as myJson:
+        json_data = myJson.read()
+
+    data = json.loads(json_data)
+    print(data)
+    values = list(data.values())
+    print(values)
+
+    x = float(0)
+    for i in values:
+        x += float(i)
+        print(x)
+
+
+
+T22()
 #print(name)

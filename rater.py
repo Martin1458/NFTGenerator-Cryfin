@@ -4,12 +4,12 @@ from collections import Counter
 from partsManager import *
 
 # Input
-NFTsJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\NFTs.json"
-attributeRatingJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\output.json"
-createdCsv = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\created.csv"
+createdCsv = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\created.csv"
 # Output
-csvRating = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\rating.csv"
-sortedCreatedCsv = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\sortedCreated.csv"
+attributeRatingJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\output.json"
+NFTsJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\NFTs.json"
+csvRating = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\rating.csv"
+sortedCreatedCsv = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\sortedCreated.csv"
 
 def createOneImage(xx):
     newImage = []

@@ -1,122 +1,122 @@
 #Pojmenovani pro kazdou moznost pro jednodussi manipulovani
-backgroundNames = ["Dark Night Sky", "Slate Grey Night Sky", "Ochre Night Sky"]
+backgroundNames = ["DarkBG", "MidBG", "LightBG"]
 #Prekladac z pojmenovani do jmena souboru
 backgroundFiles = {
-    "Dark Night Sky": "background1.png",
-    "Slate Grey Night Sky": "background2.png",
-    "Ochre Night Sky": "background3.png"
+    "DarkBG": "background1.png", 
+    "MidBG": "background2.png", 
+    "LightBG": "background3.png"
     }
 
 #Pojmenovani pro kazdou moznost pro jednodussi manipulovani
-bodyNames = ["Bordeaux", "Violet", "Slate Grey", "Ochre", "Pink", "Rainbow"]
+bodyNames = ["PinkB", "BlueB", "LightBlueB", "GreenB", "RainbowB", "WhiteB"]
 #Prekladac z pojmenovani do jmena souboru
 bodyFiles = {
-    "Bordeaux": "body1.png",
-    "Violet": "body2.png",
-    "Slate Grey": "body3.png",
-    "Ochre": "body4.png",
-    "Pink": "body5.png",
-    "Rainbow": "body6.png"
+    "PinkB": "body1.png",
+    "BlueB": "body2.png",
+    "LightBlueB": "body3.png",
+    "GreenB": "body4.png",
+    "RainbowB": "body5.png",
+    "WhiteB": "body6.png"
     }
 
 #Pojmenovani pro kazdou moznost pro jednodussi manipulovani
-highlightNames = ["Pink", "Slate Grey", "Ochre", "Violet", "Rainbow"]
+highlightNames = ["WhiteHL", "PinkHL", "YellowHL", "RainbowHL", "PurpleHL"]
 #Prekladac z pojmenovani do jmena souboru
 highlightFiles = {
-    "Pink": "highlight1.png",
-    "Slate Grey": "highlight2.png",
-    "Ochre": "highlight3.png",
-    "Violet": "highlight4.png",
-    "Rainbow": "highlight5.png"
+    "WhiteHL": "highlight1.png",
+    "PinkHL": "highlight2.png",
+    "YellowHL": "highlight3.png",
+    "RainbowHL": "highlight4.png",
+    "PurpleHL": "highlight5.png"
     }
 
 #Pojmenovani pro kazdou moznost pro jednodussi manipulovani
-outlineNames = ["Dark Bordeaux", "Dark Violet", "Saturated Colors", "Slate Grey"]
+outlineNames = ["RedOL", "GrayOL", "BlueOL", "WhiteOL"]
 #Prekladac z pojmenovani do jmena souboru
 outlineFiles = {
-    "Dark Bordeaux": "outline1.png",
-    "Dark Violet": "outline2.png",
-    "Saturated Colors": "outline3.png",
-    "Slate Grey": "outline4.png"
+    "RedOL": "outline1.png",
+    "GrayOL": "outline2.png",
+    "BlueOL": "outline3.png",
+    "WhiteOL": "outline4.png"
     }
 
 #Pojmenovani pro kazdou moznost pro jednodussi manipulovani
-lightNames = ["White", "Yellow", "Radioactive Green"]
+lightNames = ["WhiteL", "YellowL", "GreenL"]
 #Prekladac z pojmenovani do jmena souboru
 lightFiles = {
-    "White": "light1.png",
-    "Yellow": "light2.png",
-    "Radioactive Green": "light3.png"
+    "WhiteL": "light1.png", 
+    "YellowL": "light2.png",
+    "GreenL": "light3.png"
     }
 
 maxParts = {
-    "Dark Night Sky": 0,
-    "Slate Grey Night Sky": 0,
-    "Ochre Night Sky": 0,
-    "Bordeaux": 0,
-    "Violet": 0,
-    "Slate Grey": 0,
-    "Ochre": 0,
-    "Pink": 2,
-    "Rainbow": 0,
-    "Pink": 0,
-    "Slate Grey": 0,
-    "Ochre": 0,
-    "Violet": 0,
-    "Rainbow": 0,
-    "Dark Bordeaux": 0,
-    "Dark Violet": 0,
-    "Saturated Colors": 0,
-    "Slate Grey": 0,
-    "White": 0,
-    "Yellow": 0,
-    "Radioactive Green": 0
+    "DarkBG": 0, 
+    "MidBG": 0, 
+    "LightBG": 0,
+    "PinkB": 0,
+    "BlueB": 0,
+    "LightBlueB": 0,
+    "GreenB": 0,
+    "RainbowB": 2,
+    "WhiteB": 0,
+    "WhiteHL": 0,
+    "PinkHL": 0,
+    "YellowHL": 0,
+    "RainbowHL": 0,
+    "PurpleHL": 0,
+    "RedOL": 0,
+    "GrayOL": 0,
+    "BlueOL": 0,
+    "WhiteOL": 0,
+    "WhiteL": 0, 
+    "YellowL": 0,
+    "GreenL": 0
 }
 
 nullParts = {
-    "Dark Night Sky": 0,
-    "Slate Grey Night Sky": 0,
-    "Ochre Night Sky": 0,
-    "Bordeaux": 0,
-    "Violet": 0,
-    "Slate Grey": 0,
-    "Ochre": 0,
-    "Pink": 0,
-    "Rainbow": 0,
-    "Pink": 0,
-    "Slate Grey": 0,
-    "Ochre": 0,
-    "Violet": 0,
-    "Rainbow": 0,
-    "Dark Bordeaux": 0,
-    "Dark Violet": 0,
-    "Saturated Colors": 0,
-    "Slate Grey": 0,
-    "White": 0,
-    "Yellow": 0,
-    "Radioactive Green": 0
+    "DarkBG": 0, 
+    "MidBG": 0, 
+    "LightBG": 0,
+    "PinkB": 0,
+    "BlueB": 0,
+    "LightBlueB": 0,
+    "GreenB": 0,
+    "RainbowB": 0,
+    "WhiteB": 0,
+    "WhiteHL": 0,
+    "PinkHL": 0,
+    "YellowHL": 0,
+    "RainbowHL": 0,
+    "PurpleHL": 0,
+    "RedOL": 0,
+    "GrayOL": 0,
+    "BlueOL": 0,
+    "WhiteOL": 0,
+    "WhiteL": 0, 
+    "YellowL": 0,
+    "GreenL": 0
 }
 
 allFiles = {
-    "Dark Night Sky": "background1.png",
-    "Slate Grey Night Sky": "background2.png",
-    "Ochre Night Sky": "background3.png",
-    "Bordeaux": "body1.png",
-    "Violet": "body2.png",
-    "Slate Grey": "body3.png",
-    "Ochre": "body4.png",
-    "Pink": "body5.png",
-    "Rainbow": "body6.png",
-    "Pink": "highlight1.png",
-    "Slate Grey": "highlight2.png",
-    "Ochre": "highlight3.png",
-    "Violet": "highlight4.png",
-    "Rainbow": "highlight5.png",
-    "Dark Bordeaux": "outline1.png",
-    "Dark Violet": "outline2.png",
-    "Saturated Colors": "outline3.png",
-    "Slate Grey": "outline4.png",
-    "White": "light1.png",
-    "Yellow": "light2.png",
-    "Radioactive Green": "light3.png"
+    "DarkBG": "background1.png", 
+    "MidBG": "background2.png", 
+    "LightBG": "background3.png",
+    "PinkB": "body1.png",
+    "BlueB": "body2.png",
+    "LightBlueB": "body3.png",
+    "GreenB": "body4.png",
+    "RainbowB": "body5.png",
+    "WhiteB": "body6.png",
+    "WhiteHL": "highlight1.png",
+    "PinkHL": "highlight2.png",
+    "YellowHL": "highlight3.png",
+    "RainbowHL": "highlight4.png",
+    "PurpleHL": "highlight5.png",
+    "RedOL": "outline1.png",
+    "GrayOL": "outline2.png",
+    "BlueOL": "outline3.png",
+    "WhiteOL": "outline4.png",
+    "WhiteL": "light1.png", 
+    "YellowL": "light2.png",
+    "GreenL": "light3.png"
 }

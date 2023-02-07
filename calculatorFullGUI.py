@@ -369,7 +369,7 @@ def calculateLayer(combinationsLength):
         writer.writerow(item)
 
     f.close()
-    f = open("/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator14/allImages.csv", "w")
+    f = open("/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator16/allImages.csv", "w")
     writer = csv.writer(f)
     for item in allImages:
         writer.writerow(item.values())
