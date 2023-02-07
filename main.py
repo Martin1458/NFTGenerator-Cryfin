@@ -5,63 +5,228 @@ import json
 import os
 import shutil
 from partsManager import *
-from jsonToCsv import *
-#Path k castem
-pathToParts = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator2\Parts"
+from itertools import combinations
+import collections
 
-outputFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator2\Output"
 
-totalImages = 1000
+# Path k castem
+pathToParts = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator3\Parts"
+
+# Path do slozky kam se vyrenderuji obrazky
+outputFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator3\Output"
+
+# Pocet obrazku k vytvoreni
+totalImages = int(input("How many images should I create? "))
+# List vsech obrazku (jejich attributu)
 allImages = []
+# List vsech kombinaci (viz: cobinationsLength)
+allAttributeCombinations = []
+# List vsech casti ve vsech obrazcich
+# Pro max
+allParts = []
+# Pocet vsech jednotlivych casti
+allPartsCount = {}
+# List vsech casti ve vsech obrazcich
+tempAllParts = []
+# 'this' = pred kazdym obrazkem se vynuluje
+# Attributy aktualniho obrazku
+thisAttributes = []
+# Vsechny aktualni kombinace attributu (viz: cobinationsLength)
+thisAttributeCombinations = []
+# allAttributeCombinations + thisAttributeCombinations 
+# pouziva se na zkontrolovani duplikatu predtim nez se kombinace zapisou do allAttributeCombinations
+tempAllAttributeCombinations = []
+# Pocet aktualnich pokusu
+numOfAttempts = 0
+# Maximalni pocet pokusu o novy obrazek bez duplikatu (Python Failsafe to zastavi u 1000)
+maxAttempts = 3000
+# Pocet attributu co se nesmi opakovat
+cobinationsLength = 3
+numOfSameElement = 3
 
+# Tato funkce najde duplikaty v dannem listu
+# Vraci bool (True = tento list obsahuje duplikaty) a list (kombinace ktera se duplikuje)
+def findDuplicates(listOfElems):
+    newElements = list()
+    for elem in listOfElems:
+        if elem in newElements:
+            return True, elem
+        else:
+            newElements.append(elem)  
+
+    return False, None
+
+def findElementXTimes(myList):
+    # Kolik duplikatu se muze vyskytovat (numBer = 2, max 3 stejne elementy)
+    #numBer = 1
+    duplicatesList = []
+    for item in myList:
+        duplicatesList.append(item)
+    
+    newListD = []
+
+    for item in duplicatesList:
+        if item not in newListD:
+            newListD.append(item)
+    
+    tempAllDuplicates = {}
+
+    for item in newListD:
+        tempAllDuplicates[item]=myList.count(item)
+        print('{} is {} times in all images'.format(item, myList.count(item)))
+    
+    fullList = nullParts
+
+    for item in tempAllDuplicates:
+        fullList[item] = tempAllDuplicates[item]
+
+
+    print(tempAllDuplicates)
+    return fullList
+
+
+# Test findDuplicates (pokud funguje napise "john")  
+#myList = ["john", "marry", "john", "james"]
+#myBool, myDuplicate = findDuplicates(myList)
+#print(myDuplicate)
+
+# Tato funkce vygeneruje originalni obrazek
 def createNewImage():
-    
-    newImage = {}
-    row = []
+    # global = promenne ktere ma tato funkce pravo menit
+    global allImages, allAttributeCombinations, newAttributes, numOfAttempts, newAttributesCollection, tempAllAttributeCombinations, allParts, tempAllParts
 
-    backgroundChoice = random.choices(backgroundNames, backgroundWeights)[0]
-    newImage ["Background"] = backgroundChoice
-    bodyChoice = random.choices(bodyNames, bodyWeights)[0]
-    newImage ["Body"] = bodyChoice
-    highlightChoice = random.choices(highlightNames, highlightWeights)[0]
-    newImage ["Highlight"] = highlightChoice
-    outlineChoice = random.choices(outlineNames, outlineWeights)[0]
-    newImage ["Outline"] = outlineChoice
-    lightChoice = random.choices(lightNames, lightWeights)[0]
-    newImage ["Light"] = lightChoice
+    print("Attempt num: "+str(numOfAttempts))
+    print("Img num:     "+str(len(allImages)))
+    # vytvor/vynuluj list pro vytvoreni noveho ojbrazku
+    newImage = {}
+
+    # vyber "Background", "Body", "Highlight", "Outline" a "Light" podle tabulek z partsManager.py
+    newImage ["Background"] = random.choices(backgroundNames, backgroundWeights)[0]
+    newImage ["Body"] = random.choices(bodyNames, bodyWeights)[0]
+    newImage ["Highlight"] = random.choices(highlightNames, highlightWeights)[0]
+    newImage ["Outline"] = random.choices(outlineNames, outlineWeights)[0]
+    newImage ["Light"] = random.choices(lightNames, lightWeights)[0]
+
+    #print(type(newImage))
+
+    # nastavi thisAttributes na konkretni nazvy casti tohoto obrazku
+    thisAttributes = list(newImage.values())
+    #print(thisAttributes)
+    #print(type(thisAttributes))
+
+    # vynuluje thisAttributeCombinations a tempAllAttributeCombinations pro hledani duplikatu
+    thisAttributeCombinations = []
+    tempAllAttributeCombinations = []
+    tempAllParts = []
+
+    # prida vsechny predchozi (pokud nejake) kombinace do tempAllAttributeCombinations
+    for item in allAttributeCombinations:
+        tempAllAttributeCombinations.append(item)
+
+    # 'combinations(x, y)' vytvori list vsech moznych kombinaci 'y' itemu z listu 'x'
+    # priklad: [1, 2, 3, 4, 5] ==> [(1, 2, 3), (1, 2, 4), (1, 2, 5), (1, 3, 4), (1, 3, 5), (1, 4, 5), (2, 3, 4), (2, 3, 5), (2, 4, 5), (3, 4, 5)]
+    # prida kombinace do thisAttributeCombinations a tempAllAttributeCombinations
+    for item in combinations(thisAttributes, cobinationsLength):
+        thisAttributeCombinations.append(item)
+        tempAllAttributeCombinations.append(item)
     
+
+    for item in newImage:
+        tempAllParts.append(newImage[item])
+
+    # s pouzitim funkce findDuplicates najdeme (pokud existuje) duplikat.
+    # po tom co funkce findDuplicates najde prvni duplikat tak se vypne.
+    # thisDuplicate se nastavi na True pokud tempAllAttributeCombinations obsahuje duplikat
+    # thisDuplicateItem se nastavi na ten konkretni duplikat (pouzito hlavne pro testy)
+    thisDuplicate, thisDuplicateItem = findDuplicates(tempAllAttributeCombinations)
+
+    allPartsCount = findElementXTimes(allParts)
+
+    for item in maxParts:
+        if maxParts[item] != 0:
+            if allPartsCount[item] > maxParts[item]-1:
+                thisDuplicate = True
+
+    # ukaze duplikat pokud existuje, jinak napise None
+    print(thisDuplicateItem)
+
+    # Zkontroluje pokud se neprekrocil maximalni pocet pokusu pro vytvoreni noveho obrazku bez duplikatu
+    # (Nahrazeni defaultinho failsafu)
+    if numOfAttempts > maxAttempts:
+        print("Num of attemps exceeded")
+        return "error"
+
+    # pokud se jiz duplikat nasel, funkce createNewImage se restartuje
+    if thisDuplicate:
+        # prida 1 k poctu pokusu k vytvoreni tohoto obrazku
+        numOfAttempts += 1
+        return createNewImage()
+    
+    # Ted kdyz uz  jsme se zbavili duplikatu, zapiseme aktualni kombinace do allAttributeCombinations
+    # (Aby jsme mohli zkontrolovat dalsi obrazky)
+    for item in combinations(thisAttributes, cobinationsLength):
+        allAttributeCombinations.append(item)
+
+    for item in newImage:
+        allParts.append(newImage[item])
+    
+    # Zkontroluje zda obrazek jiz neexistuje
     if newImage in allImages:
+        print(newImage)
+        print("A whole image is repeating. How? IDK")
+        numOfAttempts += 1
         return createNewImage()
     else:
+        numOfAttempts = 0
+        # Ted uz by nemeli existovat zadne duplikaty, vratime tedy vybrane attributy
         return newImage
-    
-    
-for i in range(totalImages): 
-    
-    newTraitImage = createNewImage()
-    
-    allImages.append(newTraitImage)
 
-#True pokud nejsou duplikaty
-def allImagesUnique(allImages):
-    seen = list()
-    return not any(i in seen or seen.append(i) for i in allImages)
+# Tato funkce pomoci createNewImage vytvori danny pocet obrzku a projistotu je znovu zkontroluje pro duplikaty
+def createAllImages():
+    global allImages, allAttributeCombinations, newAttributes, numOfAttempts, newAttributesCollection
 
 
-print("Are all images unique?", allImagesUnique(allImages))
+    for i in range(totalImages): 
 
+        newTraitImage = createNewImage()
+        # pokud createNewImage nevrati error, zapise obrazek do allImages, jinak ukonci script.
+        if newTraitImage != 'error':
+            allImages.append(newTraitImage)
+        else:
+            print("An error has occured")
+            exit()
 
+    # Tato funkce zkontroluje allImages pro duplikaty
+    def allImagesUnique(listToCheck):
+        # 'mezivypocetny' list seen
+        seen = list()
+        return not any(i in seen or seen.append(i) for i in listToCheck)
 
-#Prida ID ke kazdemu obrazku
+    # True pokud nejsou duplikaty
+    print("Are all images unique?", allImagesUnique(allImages))
+
+# Volani hlavni funkce pro vytvoreni obrazku
+createAllImages()
+
+print(allImages)
+
+# convert to 2d array pro checking
+# allAttributes = []
+# for nft in allImages:
+#     allAttributes.append([])
+#     for attribute in nft:
+#         allAttributes[allImages.index(nft)].append(nft[attribute])
+# print(allAttributes)
+
+# Prida ID ke kazdemu obrazku
 i = 0
 for item in allImages:
     item["tokenId"] = i
     i = i + 1
 
-#Zapsat vygenerovane nft do database
-NFTNewDatabase(allImages, r'C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator2\NFTData.csv')
-
-#print(allImages)
+print("\n\n\n\n\n\n\n")
+print(allImages)
+print("\n\n\n\n\n\n\n")
 
 #Kolik je jakych casti
 backgroundCount = {}
@@ -90,55 +255,71 @@ for image in allImages:
     highlightCount[image["Highlight"]] += 1
     outlineCount[image["Outline"]] += 1
     lightCount[image["Light"]] += 1
-    
+
+# Napise pocet vyskytu kazde casti
 print("Background count:"+str(backgroundCount))
 print("Body count:"+str(bodyCount))
 print("Highlight count:"+str(highlightCount))
 print("Outline count:"+str(outlineCount))
 print("Light count:"+str(lightCount))
 
+print(allParts)
+print(len(allParts))
 
-if not os.path.isdir(outputFolder):
-    os.mkdir(outputFolder)
+# Script se zepta pokud ma vypocitane obrazky vyrenderovat 
+renderEmTxt = input("Should I render those Images? [Y/N]: ")
+renderEm = [False, True][renderEmTxt == 'y' or renderEmTxt == 'Y']
 
-outDirFiles = os.listdir(outputFolder)
-decisionOutFolder = False
-while(not decisionOutFolder):
-    if len(outDirFiles) != 0:
-        notEmptyDir = input("Warning! Output directory is not empty. Delete contents of output folder? [Y/N]")
-        if notEmptyDir == "Y" or notEmptyDir == "y":
-            decisionOutFolder = True
-            shutil.rmtree(outputFolder)
-            print("Output folder was deleted")
-        elif notEmptyDir == "N" or notEmptyDir == "n":
-            decisionOutFolder = True
-            print("Output folder was not deleted")
+# Pokud ma script obrazky vyrendrovat, ucini tak
+if renderEm:
+
+    # Vytvori outputFolder na jeho lokaci pokud jiz neexistuje
+    if not os.path.isdir(outputFolder):
+        os.mkdir(outputFolder)
+
+    outDirFiles = os.listdir(outputFolder)
+    decisionOutFolder = False
+    while(not decisionOutFolder):
+        if len(outDirFiles) != 0:
+            notEmptyDir = input("Warning! Output directory is not empty. Delete contents of output folder? [Y/N]: ")
+            if notEmptyDir == "Y" or notEmptyDir == "y":
+                decisionOutFolder = True
+                shutil.rmtree(outputFolder)
+                print("Output folder was deleted")
+            elif notEmptyDir == "N" or notEmptyDir == "n":
+                decisionOutFolder = True
+                print("Output folder was not deleted")
+            else:
+                print("Invalid option")
         else:
-            print("Invalid option")
-    else:
-        decisionOutFolder = True
+            decisionOutFolder = True
 
-if not os.path.isdir(outputFolder):
-    os.mkdir(outputFolder)
+    # Script vytvori outputFolder pokud jste se rozhodli ho v prdchozimkroku vymazat
+    if not os.path.isdir(outputFolder):
+        os.mkdir(outputFolder)
 
-for item in allImages:
+    # vyrenderuje vsechny obrazky
+    for item in allImages:
 
-    im1 = Image.open(os.path.join(pathToParts, backgroundFiles[item["Background"]])).convert('RGBA')
-    im2 = Image.open(os.path.join(pathToParts, bodyFiles[item["Body"]])).convert('RGBA')
-    im3 = Image.open(os.path.join(pathToParts, highlightFiles[item["Highlight"]])).convert('RGBA')
-    im4 = Image.open(os.path.join(pathToParts, outlineFiles[item["Outline"]])).convert('RGBA')
-    im5 = Image.open(os.path.join(pathToParts, lightFiles[item["Light"]])).convert('RGBA')
+        # vygeneruje kazdou vrstvu oddelene
+        im1 = Image.open(os.path.join(pathToParts, backgroundFiles[item["Background"]])).convert('RGBA')
+        im2 = Image.open(os.path.join(pathToParts, bodyFiles[item["Body"]])).convert('RGBA')
+        im3 = Image.open(os.path.join(pathToParts, highlightFiles[item["Highlight"]])).convert('RGBA')
+        im4 = Image.open(os.path.join(pathToParts, outlineFiles[item["Outline"]])).convert('RGBA')
+        im5 = Image.open(os.path.join(pathToParts, lightFiles[item["Light"]])).convert('RGBA')
 
-    #Create each composite
-    com1 = Image.alpha_composite(im1, im2)
-    com2 = Image.alpha_composite(com1, im3)
-    com3 = Image.alpha_composite(com2, im4)
-    com4 = Image.alpha_composite(com3, im5)
+        # Spoji vsechny vygenerovane vrstvy
+        com1 = Image.alpha_composite(im1, im2)
+        com2 = Image.alpha_composite(com1, im3)
+        com3 = Image.alpha_composite(com2, im4)
+        com4 = Image.alpha_composite(com3, im5)
 
-                     
+        # Premeni RGBA vrstvy do RGB
+        rgbIm = com4.convert('RGB')
 
-    #Convert to RGB
-    rgbIm = com4.convert('RGB')
-    fileName = str(item["tokenId"]) + ".png"
-    rgbIm.save(os.path.join(outputFolder, fileName))
-    print("Image {} created with parameters: {}".format(fileName, item))
+        # Pojmenuje obrazek tokenID.png
+        fileName = str(item["tokenId"]) + ".png"
+
+        # Ulozi obrazek do outputFolder
+        rgbIm.save(os.path.join(outputFolder, fileName))
+        print("Image {} created with parameters: {}".format(fileName, item))

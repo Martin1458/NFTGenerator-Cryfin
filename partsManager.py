@@ -8,6 +8,8 @@ backgroundFiles = {
     }
 #Procentualni sance pro kazdou moznost
 backgroundWeights = [70, 20, 10]
+#Maximalni pocet jednotlive casti ve vsech obrazcich
+backgroundMaxCount = [0, 0, 0]
 
 #Pojmenovani pro kazdou moznost pro jednodussi manipulovani
 bodyNames = ["PinkB", "BlueB", "LightBlueB", "GreenB", "RainbowB", "WhiteB"]
@@ -22,6 +24,8 @@ bodyFiles = {
     }
 #Procentualni sance pro kazdou moznost
 bodyWeights = [50, 10, 10, 20, 5, 5]
+#Maximalni pocet jednotlive casti ve vsech obrazcich
+bodyMaxCount = [0, 0, 0, 0, 0, 0]
 
 #Pojmenovani pro kazdou moznost pro jednodussi manipulovani
 highlightNames = ["WhiteHL", "PinkHL", "YellowHL", "RainbowHL", "PurpleHL"]
@@ -35,6 +39,8 @@ highlightFiles = {
     }
 #Procentualni sance pro kazdou moznost
 highlightWeights = [40, 10, 20, 10, 20]
+#Maximalni pocet jednotlive casti ve vsech obrazcich
+highlightMaxCount = [0, 0, 0, 0, 0]
 
 #Pojmenovani pro kazdou moznost pro jednodussi manipulovani
 outlineNames = ["RedOL", "GrayOL", "BlueOL", "WhiteOL"]
@@ -47,6 +53,8 @@ outlineFiles = {
     }
 #Procentualni sance pro kazdou moznost
 outlineWeights = [40, 40, 10, 10]
+#Maximalni pocet jednotlive casti ve vsech obrazcich
+outlineMaxCount = [0, 0, 0, 0]
 
 #Pojmenovani pro kazdou moznost pro jednodussi manipulovani
 lightNames = ["WhiteL", "YellowL", "GreenL"]
@@ -58,3 +66,53 @@ lightFiles = {
     }
 #Procentualni sance pro kazdou moznost
 lightWeights = [40, 40, 20]
+#Maximalni pocet jednotlive casti ve vsech obrazcich
+lightMaxCount = [0, 0, 0]
+
+maxParts = {
+    "DarkBG": 0, 
+    "MidBG": 0, 
+    "LightBG": 0,
+    "PinkB": 0,
+    "BlueB": 0,
+    "LightBlueB": 0,
+    "GreenB": 0,
+    "RainbowB": 0,
+    "WhiteB": 500,
+    "WhiteHL": 0,
+    "PinkHL": 0,
+    "YellowHL": 0,
+    "RainbowHL": 0,
+    "PurpleHL": 0,
+    "RedOL": 0,
+    "GrayOL": 0,
+    "BlueOL": 0,
+    "WhiteOL": 0,
+    "WhiteL": 0, 
+    "YellowL": 0,
+    "GreenL": 0
+}
+
+nullParts = {
+    "DarkBG": 0, 
+    "MidBG": 0, 
+    "LightBG": 0,
+    "PinkB": 0,
+    "BlueB": 0,
+    "LightBlueB": 0,
+    "GreenB": 0,
+    "RainbowB": 0,
+    "WhiteB": 0,
+    "WhiteHL": 0,
+    "PinkHL": 0,
+    "YellowHL": 0,
+    "RainbowHL": 0,
+    "PurpleHL": 0,
+    "RedOL": 0,
+    "GrayOL": 0,
+    "BlueOL": 0,
+    "WhiteOL": 0,
+    "WhiteL": 0, 
+    "YellowL": 0,
+    "GreenL": 0
+}
