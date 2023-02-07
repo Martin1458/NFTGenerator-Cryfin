@@ -10,15 +10,15 @@ import collections
 import itertools
 
 # Path k castem
-pathToParts = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator8\Parts"
+pathToParts = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator10\Parts"
 
 # Path do slozky kam se vyrenderuji obrazky
-outputFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator8\Output"
+outputFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator10\Output"
 
 # Path k json souboru
-outputJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator8\NFTs.json"
+outputJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator10\NFTs.json"
 
-outputJsonFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator8\Jsons"
+outputJsonFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator10\Jsons"
 
 # Pocet obrazku k vytvoreni
 #totalImages = int(input("How many images should I create? "))
@@ -279,21 +279,19 @@ for image in allImages:
     for item in image:
         if item != 'tokenId':
             attribute = {
-                "traitType": item,
-                "traitName": image[item]
+                "trait_type": item,
+                "value": image[item]
             }
             attributes.append(attribute)
 
     oneImage = {
         "name": "#{}".format(image['tokenId']),
-        "image": str(image['tokenId'])+".png",
+        "description": "This is Lo-Fish num: {}".format(image['tokenId']),
+        "image": "URL HERE/"+str(image['tokenId'])+".png",
+        "edition": image['tokenId']+1,
+        "index": image['tokenId'],
         "attributes": attributes,
-        "properties": {
-            "creators": [{"name": "Nase firma"}],
-            "file": [{"image": str(image['tokenId'])+".png", "type": "image/png"}]
-        },
-        "collection": {"name": "Lo-Fish Forms", "description": "The collection of {} unique Lophiiformes that live in the depth of the oceans where they live, love, laugh, lie, link and loathe.".format(str(len(allImages)))}
-    }
+        }
     #print(oneImage)
     allJsonImagesList.append(oneImage)
 
