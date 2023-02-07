@@ -42,8 +42,8 @@ thisAttributeCombinations = []
 # allAttributeCombinations + thisAttributeCombinations 
 # pouziva se na zkontrolovani duplikatu predtim nez se kombinace zapisou do allAttributeCombinations
 tempAllAttributeCombinations = []
-# Pocet attributu co se nesmi opakovat
-cobinationsLength = 4
+# Pocet attributu co se smi opakovat
+cobinationsLength = 3
 
 
 # Tato funkce najde duplikaty v dannem listu
@@ -58,6 +58,7 @@ def findDuplicates(listOfElems):
 
     return False, None
 
+cobinationsLength += 1
 # Tato funkce vrati pocet kazdeho elementu, kolikrat se opakuje v myList
 def findElementXTimes(myList):
 
