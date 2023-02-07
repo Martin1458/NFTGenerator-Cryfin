@@ -2,6 +2,7 @@ import collections
 from itertools import combinations
 from partsManager import *
 import random
+import itertools
 
 def T1():
     myList = {"joehn", "marry", "john", "james"}
@@ -106,4 +107,49 @@ def T7():
         print(i)
         numberOfSomething+=1
 
-T7()
+def T8():
+    myList = [0, 0, 0, 0, 0]
+    myMaxList = [3, 6, 5, 4, 3]
+
+    def addOneToList():
+        global myList
+
+        if myList[0] < len(myMaxList[0]):
+                myList[0] += 1
+        else:
+            myList[0] = 0
+            if myList[1] < len(myMaxList[1]):
+                myList[1] += 1
+            else:
+                myList[1] = 0
+                if myList[2] < len(myMaxList[2]):
+                    myList[2] += 1
+                else:
+                    # ...
+                    pass
+
+    for r in range(20):
+        print(myList) 
+        addOneToList()
+
+    #[0, 0, 0, 0, 0]
+    #[1, 0, 0, 0, 0]
+    #[2, 0, 0, 0, 0]
+    #[0, 1, 0, 0, 0]
+    #[1, 1, 0, 0, 0]
+    #[2, 1, 0, 0, 0]
+    #[0, 2, 0, 0, 0]
+    #...
+    pass
+
+def T9():
+    allLayersMax = [3, 6, 5, 4, 3]
+    ranges = [range(n+1) for n in allLayersMax[::-1]]
+
+    someList = []
+    for v in itertools.product(*ranges):
+        someList.append(v[::-1])
+
+    print(someList)
+
+T9()

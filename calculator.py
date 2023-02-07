@@ -1,3 +1,4 @@
+from turtle import end_fill
 from PIL import Image 
 from IPython.display import display 
 import random
@@ -10,6 +11,9 @@ import collections
 import csv
 import copy
 import time
+from calculatorManager import *
+import itertools
+
 
 # List vsech obrazku (jejich attributu)
 allImages = []
@@ -110,12 +114,17 @@ def createNewImage(chosenTraits):
     newImage = {}
 
     # vyber "Background", "Body", "Highlight", "Outline" a "Light" podle tabulek z partsManager.py
-    newImage ["Background"] = backgroundNames[chosenTraits[0]-1]
-    newImage ["Body"] = bodyNames[chosenTraits[1]-1]
-    newImage ["Highlight"] = highlightNames[chosenTraits[2]-1]
-    newImage ["Outline"] = outlineNames[chosenTraits[3]-1]
-    newImage ["Light"] = lightNames[chosenTraits[4]-1]
-
+    #newImage ["Background"] = backgroundNames[chosenTraits[0]-1]
+    #newImage ["Body"] = bodyNames[chosenTraits[1]-1]
+    #newImage ["Highlight"] = highlightNames[chosenTraits[2]-1]
+    #newImage ["Outline"] = outlineNames[chosenTraits[3]-1]
+    #newImage ["Light"] = lightNames[chosenTraits[4]-1]
+    chosenTraits = [2, 4, 5, 4, 3]
+    print(chosenTraits)
+    for i in range(numOfLayers):
+        newImage [allLayerNames[i]] = allLayers[1][chosenTraits[i]]
+        print(newImage)
+    exit()
     # for item in newImage:
     #     print("{} has choosen {} trait".format(item, newImage[item]))
     # exit()
@@ -159,19 +168,19 @@ def createNewImage(chosenTraits):
     allPartsCount = findElementXTimes(tempAllParts)
 
     # Zkontroluje pro kazdou trait zda se jiz nevyskytuje vicekrat nez by mela
-    for item in maxParts:
-        if maxParts[item] != 0:
-            if allPartsCount[item] > maxParts[item]:
-                thisDuplicate = True
+    #for item in maxParts:
+    #    if maxParts[item] != 0:
+    #        if allPartsCount[item] > maxParts[item]:
+    #            thisDuplicate = True
 
     # ukaze duplikat pokud existuje, jinak napise None
     #print(thisDuplicateItem)
 
     # Zkontroluje pokud se neprekrocil maximalni pocet pokusu pro vytvoreni noveho obrazku bez duplikatu
     # (Nahrazeni defaultinho failsafu)
-    if numOfAttempts > maxAttempts:
-        print("Num of attemps exceeded")
-        return "error"
+    #if numOfAttempts > maxAttempts:
+    #    print("Num of attemps exceeded")
+    #    return "error"
 
     # pokud se jiz duplikat nasel, funkce createNewImage se restartuje
     if thisDuplicate:
@@ -202,72 +211,53 @@ def createNewImage(chosenTraits):
 
 # Tato funkce pomoci createNewImage vytvori danny pocet obrzku a projistotu je znovu zkontroluje pro duplikaty
 def createAllImages():
-    global allImages, allAttributeCombinations, newAttributes, numOfAttempts, newAttributesCollection, numOfImages, combinationsLength, numOfDuplicates, allCombinations
+    global allImages, allAttributeCombinations, newAttributes, numOfAttempts, newAttributesCollection, numOfImages, combinationsLength, numOfDuplicates, allCombinations, listOfAllPossibilities, allRanges
 
-    chosenTraits = [0, 0, 0, 0, 0]
+    chosenTraits = []
+    for i in range(numOfLayers):
+        chosenTraits.append(0)
+
+    allRanges = [range(n+1) for n in allLayersMax[::-1]]
+
+    listOfAllPossibilities = []
+    for v in itertools.product(*allRanges):
+        listOfAllPossibilities.append(list(v[::-1]))
+        #print(type(v[::-1]))
+        
+
+    print(listOfAllPossibilities)
+    #exit()
+
     newTraitImage = None
+    possibility = 0
     while newTraitImage != 'errror': 
 
-        newTraitImage = createNewImage(chosenTraits)
+        newTraitImage = createNewImage(listOfAllPossibilities[possibility])
         #newTraitImage = 'duplicate'
         # pokud createNewImage nevrati error, zapise obrazek do allImages, jinak ukonci script.
         if newTraitImage != 'error' and newTraitImage != 'duplicate':
             allImages.append(newTraitImage)
             numOfImages += 1
-            allCombinations.append(chosenTraits.copy())
-            #print(chosenTraits)
+            allCombinations.append(listOfAllPossibilities[possibility].copy())
+            #print(listOfAllPossibilities[possibility])
             #print(allCombinations)
+            
 
-
-            if chosenTraits[0] < len(backgroundNames):
-                chosenTraits[0] += 1
-            else:
-                chosenTraits[0] = 0
-                if chosenTraits[1] < len(bodyNames):
-                    chosenTraits[1] += 1
-                else:
-                    chosenTraits[1] = 0
-                    if chosenTraits[2] < len(highlightNames):
-                        chosenTraits[2] += 1
-                    else:
-                        chosenTraits[2] = 0
-                        if chosenTraits[3] < len(outlineNames):
-                            chosenTraits[3] += 1
-                        else:
-                            chosenTraits[3] = 0
-                            if chosenTraits[4] < len(lightNames):
-                                chosenTraits[4] += 1
-                            else:
-                                chosenTraits[4] = 0
+            #Add one
 
         elif newTraitImage == 'duplicate':
             numOfDuplicates += 1
 
-            if chosenTraits[0] < len(backgroundNames):
-                chosenTraits[0] += 1
-            else:
-                chosenTraits[0] = 0
-                if chosenTraits[1] < len(bodyNames):
-                    chosenTraits[1] += 1
-                else:
-                    chosenTraits[1] = 0
-                    if chosenTraits[2] < len(highlightNames):
-                        chosenTraits[2] += 1
-                    else:
-                        chosenTraits[2] = 0
-                        if chosenTraits[3] < len(outlineNames):
-                            chosenTraits[3] += 1
-                        else:
-                            chosenTraits[3] = 0
-                            if chosenTraits[4] < len(lightNames):
-                                chosenTraits[4] += 1
-                            else:
-                                chosenTraits[4] = 0
+            #Add one
                         
-            #print(chosenTraits)
-            if chosenTraits == [len(backgroundNames), len(bodyNames), len(highlightNames), len(outlineNames), len(lightNames)]:
+            #print(listOfAllPossibilities[possibility])
+            if listOfAllPossibilities[possibility] == allLayersMax:
                 newTraitImage = 'errror'
                 print("All combinations tried")
+
+        if listOfAllPossibilities[possibility] == allLayersMax:
+            newTraitImage = 'errror'
+            print("All combinations tried")
 
         if newTraitImage == 'error':
             print("An error has occured")
@@ -275,6 +265,22 @@ def createAllImages():
     #print("\n")
     #print(allCombinations)
     #print("\n")
+
+def prepareLists():
+    global layerOne, layerTwo, layerThree, layerFour, layerFive, layerSix, layerSeven, layerEight, layerNine, layerTen
+
+    for i in range(numOfLayers):
+        for e in range(allLayersMax[i]):
+            allLayers[i].append("L"+str(i+1)+"T"+str(e+1))
+    
+
+prepareLists()
+
+print(allLayers)
+exit()
+
+for i in range(numOfLayers):
+    print("{} = {}".format(allLayerNames[i], allLayers[i]))
 
 
 for i in range(4):
