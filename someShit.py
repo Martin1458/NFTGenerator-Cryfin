@@ -3,6 +3,8 @@ from itertools import combinations
 from partsManager import *
 import random
 import itertools
+import threading
+import time 
 
 def T1():
     myList = {"joehn", "marry", "john", "james"}
@@ -143,14 +145,15 @@ def T8():
     pass
 
 def T9():
-    allLayersMax = [2, 2, 2, 2, 2, 2]
-    ranges = [range(2, n+1) for n in allLayersMax[::-1]]
+    allLayersMax = [3, 6, 5, 4, 3]
+    ranges = [range(1, n+1) for n in allLayersMax]
 
     someList = []
     for v in itertools.product(*ranges):
         someList.append(list(v))
+        print(str(list(v)))
 
-    print(someList)
+    #print(someList)
 
 def T10():
     def findDuplicates(listOfElems):
@@ -173,4 +176,64 @@ def T11():
     name = "john"
     print(name)
 
-T11()
+def T12():
+    myList = ["L1T2","L2T1","L3T1","L4T2","L5T2","L6T1"]
+    listComb = []
+    for item in combinations(myList, 3):
+        listComb.append(item)
+    
+    for item in listComb:
+        print("{},{},{}".format(item[0], item[1], item[2]))
+    print("\n\n\n")
+
+    f = open("/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator7/calculator/allAttributeCombinations.txt", "r")
+    lines = f.readlines()
+    for line in lines:
+        print(line.replace("\n", ""))
+
+    print("\n\n\n")
+
+    for line in lines:
+        for comb in listComb:
+            if line.replace("\n", "") == comb:
+                print(line)
+
+def T13():
+    numbr = 514.2842
+    print(round(numbr, 2))
+
+def T14():
+    for i in range(9):
+        someAllLayersMax = []
+        for numbr in range(i+2):
+            someAllLayersMax.append(5)
+        print(someAllLayersMax)
+        print(len(someAllLayersMax))
+
+number = 0
+def T15():
+    def countTo(xxx):
+        #global number
+        number = 0
+        for i in range(xxx):
+            time.sleep(0.5)
+            number += 1 
+        print(number)
+    countTo(2)
+    countTo(3)
+
+    t1 = threading.Thread(target=countTo, args=(5, ))
+    t2 = threading.Thread(target=countTo, args=(5, ))
+    t3 = threading.Thread(target=countTo, args=(5, ))
+    t4 = threading.Thread(target=countTo, args=(5, ))
+    t1.start()
+    t2.start()
+    t3.start()
+    t4.start()
+
+def T16():
+    for i in range(1):
+        print("ss")
+
+T9()
+#print(name)

@@ -369,6 +369,12 @@ def calculateLayer(combinationsLength):
         writer.writerow(item)
 
     f.close()
+    f = open("/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator7/allImages.csv", "w")
+    writer = csv.writer(f)
+    for item in allImages:
+        writer.writerow(item.values())
+    f.close()
+
     print("combinationsLength: {} numOfImages: {} numOfDuplicates: {} numOfImages+numOfDuplicates: {}".format(combinationsLength, numOfImages, numOfDuplicates, numOfImages+numOfDuplicates))
     resetVariables()
 
@@ -423,7 +429,7 @@ numOfLayersLbl = Label(window, text="Enter number of layers:")
 numOfLayersLbl.grid(column=0, row=1)
 
 numOfLayersNum = IntVar(window)
-numOfLayersNum.set(5)
+numOfLayersNum.set(6)
 
 numOfLayersOption = OptionMenu(window, numOfLayersNum, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 numOfLayersOption.grid(column=1, row=1)
@@ -455,14 +461,14 @@ allLayersMaxLbl = Label(window, text="Enter number of traits for each layer:")
 allLayersMaxLbl.grid(column=0, row=2)
 
 allLayersMaxTxt = Entry(window, width=40)
-allLayersMaxTxt.insert(0, "3 6 5 4 3")
+allLayersMaxTxt.insert(0, "2 2 2 2 2 2")
 allLayersMaxTxt.grid(column=1, row=2, columnspan=2)
 
 combinationsLengthLbl = Label(window, text="Enter number of traits that cannot repeat:")
 combinationsLengthLbl.grid(column=0, row=3)
 
 combinationsLengthTxt = Entry(window, width=40)
-combinationsLengthTxt.insert(0, "4")
+combinationsLengthTxt.insert(0, "3")
 combinationsLengthTxt.grid(column=1, row=3, columnspan=2)
 
 
