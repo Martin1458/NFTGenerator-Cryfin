@@ -13,14 +13,14 @@ import numpy as np
 from partsManager import *
 
 # Input
-pathToParts = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\Parts"
-outputFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\Output"
-outputJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\NFTs.json"
-outputJsonFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\Jsons\\"
-csvCreated = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\created.csv"
-outputResizeFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\OutputResize"
+pathToParts = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\Parts"
+outputJsonFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\Jsons\\"
+csvCreated = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\sortedCreated.csv"
 # Output
-countJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\count.json"
+countJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\count.json"
+outputJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\NFTs.json"
+outputResizeFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\OutputResize"
+outputFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\Output"
 
 allImages = []
 allParts = []
@@ -158,6 +158,7 @@ if jsonIt:
 
         outfile.write(allJsonImages)
 
+    """
     backgroundCount = {}
     for item in backgroundNames:
         backgroundCount[item] = 0
@@ -213,6 +214,7 @@ if jsonIt:
     with open(countJson, "w") as outfile:
 
         outfile.write(countDataJson)
+    """
 
 
 if skipDecisions == False:

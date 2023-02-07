@@ -15,7 +15,7 @@ tempAllAttributeCombinations = []
 cobinationsLength = 3
 allTraits = []
 
-csvPath = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\created.csv"
+csvPath = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\created.csv"
 
 def findDuplicates(listOfElems):
     newElements = list()

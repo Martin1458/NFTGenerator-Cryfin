@@ -5,6 +5,7 @@ import random
 import itertools
 import threading
 import time
+import csv
 
 def T1():
     myList = {"joehn", "marry", "john", "james"}
@@ -186,7 +187,7 @@ def T12():
         print("{},{},{}".format(item[0], item[1], item[2]))
     print("\n\n\n")
 
-    f = open("/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator7/calculator/allAttributeCombinations.txt", "r")
+    f = open("/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator14/calculator/allAttributeCombinations.txt", "r")
     lines = f.readlines()
     for line in lines:
         print(line.replace("\n", ""))
@@ -240,7 +241,7 @@ def T17():
     print(type(myVariable))
 
 def T18():
-    p = r"/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator13/Jsons/"
+    p = r"/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator14/Jsons/"
     p = r"c:\Windows\System32"
     s = 'dd'
     if "\\" in s:
@@ -259,5 +260,28 @@ def T18():
 
     print(last_word)
 
-T18()
+def T19():
+    myList = [["a"], ["b"], ["c"], ["d"], ["e"]]
+    myWeights = [1.49, 1.25, 2, 4, 2]
+
+    Z = [x for _, x in sorted(zip(myWeights, myList))]
+    print(Z)
+
+def T20():
+    createdCsv = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\created.csv"
+    with open(createdCsv) as file:
+        reader = csv.reader(file)
+        createdCsvData = []
+        for row in reader:
+            createdCsvData.append(row)
+    newCreatedCsvData = [list( map(int,i) ) for i in createdCsvData]
+    zipedCreatedCsvData = list(zip(*newCreatedCsvData))
+    print(zipedCreatedCsvData)
+
+def T21():
+    mat = [[1,2,3], [4,5,6]]
+    trans_mat = tuple(zip(*mat))
+    print(trans_mat)
+
+T20()
 #print(name)

@@ -2,8 +2,8 @@
 backgroundNames = ["DarkBG", "MidBG", "LightBG"]
 #Prekladac z pojmenovani do jmena souboru
 backgroundFiles = {
-    "DarkBG": "background1.png", 
-    "MidBG": "background2.png", 
+    "DarkBG": "background1.png",
+    "MidBG": "background2.png",
     "LightBG": "background3.png"
     }
 
@@ -44,14 +44,14 @@ outlineFiles = {
 lightNames = ["WhiteL", "YellowL", "GreenL"]
 #Prekladac z pojmenovani do jmena souboru
 lightFiles = {
-    "WhiteL": "light1.png", 
+    "WhiteL": "light1.png",
     "YellowL": "light2.png",
     "GreenL": "light3.png"
     }
 
 maxParts = {
-    "DarkBG": 0, 
-    "MidBG": 0, 
+    "DarkBG": 0,
+    "MidBG": 0,
     "LightBG": 0,
     "PinkB": 0,
     "BlueB": 0,
@@ -68,14 +68,14 @@ maxParts = {
     "GrayOL": 0,
     "BlueOL": 0,
     "WhiteOL": 0,
-    "WhiteL": 0, 
+    "WhiteL": 0,
     "YellowL": 0,
     "GreenL": 0
 }
 
 nullParts = {
-    "DarkBG": 0, 
-    "MidBG": 0, 
+    "DarkBG": 0,
+    "MidBG": 0,
     "LightBG": 0,
     "PinkB": 0,
     "BlueB": 0,
@@ -92,14 +92,14 @@ nullParts = {
     "GrayOL": 0,
     "BlueOL": 0,
     "WhiteOL": 0,
-    "WhiteL": 0, 
+    "WhiteL": 0,
     "YellowL": 0,
     "GreenL": 0
 }
 
 allFiles = {
-    "DarkBG": "background1.png", 
-    "MidBG": "background2.png", 
+    "DarkBG": "background1.png",
+    "MidBG": "background2.png",
     "LightBG": "background3.png",
     "PinkB": "body1.png",
     "BlueB": "body2.png",
@@ -116,8 +116,7 @@ allFiles = {
     "GrayOL": "outline2.png",
     "BlueOL": "outline3.png",
     "WhiteOL": "outline4.png",
-    "WhiteL": "light1.png", 
+    "WhiteL": "light1.png",
     "YellowL": "light2.png",
     "GreenL": "light3.png"
-
 }

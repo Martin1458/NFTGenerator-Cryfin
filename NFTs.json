@@ -8,23 +8,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "White"
             }
         ]
     },
@@ -37,23 +37,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Yellow"
             }
         ]
     },
@@ -66,23 +66,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -95,23 +95,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Yellow"
             }
         ]
     },
@@ -124,23 +124,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "White"
             }
         ]
     },
@@ -153,23 +153,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -182,23 +182,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "White"
             }
         ]
     },
@@ -211,23 +211,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Violet"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -240,23 +240,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Violet"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Yellow"
             }
         ]
     },
@@ -269,23 +269,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -298,23 +298,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Yellow"
             }
         ]
     },
@@ -327,23 +327,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "White"
             }
         ]
     },
@@ -356,23 +356,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -385,23 +385,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "White"
             }
         ]
     },
@@ -414,23 +414,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Yellow"
             }
         ]
     },
@@ -443,23 +443,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -472,23 +472,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -501,23 +501,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "White"
             }
         ]
     },
@@ -530,23 +530,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -559,23 +559,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "White"
             }
         ]
     },
@@ -588,23 +588,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Yellow"
             }
         ]
     },
@@ -617,23 +617,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -646,23 +646,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Yellow"
             }
         ]
     },
@@ -675,23 +675,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "White"
             }
         ]
     },
@@ -704,23 +704,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -733,23 +733,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "White"
             }
         ]
     },
@@ -762,23 +762,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Yellow"
             }
         ]
     },
@@ -791,23 +791,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Pink"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -820,23 +820,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Pink"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Yellow"
             }
         ]
     },
@@ -849,23 +849,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Pink"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "White"
             }
         ]
     },
@@ -878,23 +878,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Yellow"
             }
         ]
     },
@@ -907,23 +907,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Dark Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "White"
             }
         ]
     },
@@ -936,23 +936,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Yellow"
             }
         ]
     },
@@ -965,23 +965,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "White"
             }
         ]
     },
@@ -994,23 +994,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -1023,23 +1023,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "White"
             }
         ]
     },
@@ -1052,23 +1052,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Yellow"
             }
         ]
     },
@@ -1081,23 +1081,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -1110,23 +1110,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Yellow"
             }
         ]
     },
@@ -1139,23 +1139,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Violet"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -1168,23 +1168,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Violet"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "White"
             }
         ]
     },
@@ -1197,23 +1197,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -1226,23 +1226,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "White"
             }
         ]
     },
@@ -1255,23 +1255,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Yellow"
             }
         ]
     },
@@ -1284,23 +1284,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -1313,23 +1313,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Yellow"
             }
         ]
     },
@@ -1342,23 +1342,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "White"
             }
         ]
     },
@@ -1371,23 +1371,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -1400,23 +1400,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "RainbowB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PurpleHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -1429,23 +1429,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "RainbowB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PurpleHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Yellow"
             }
         ]
     },
@@ -1458,23 +1458,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "WhiteB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PurpleHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -1487,23 +1487,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "WhiteB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PurpleHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Yellow"
             }
         ]
     },
@@ -1516,23 +1516,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "DarkBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "WhiteB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PurpleHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "White"
             }
         ]
     },
@@ -1545,23 +1545,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -1574,23 +1574,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "White"
             }
         ]
     },
@@ -1603,23 +1603,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Yellow"
             }
         ]
     },
@@ -1632,23 +1632,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -1661,23 +1661,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Yellow"
             }
         ]
     },
@@ -1690,23 +1690,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "White"
             }
         ]
     },
@@ -1719,23 +1719,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Pink"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -1748,23 +1748,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Pink"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "White"
             }
         ]
     },
@@ -1777,23 +1777,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Pink"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Yellow"
             }
         ]
     },
@@ -1806,23 +1806,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "White"
             }
         ]
     },
@@ -1835,23 +1835,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Slate Grey Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Yellow"
             }
         ]
     },
@@ -1864,23 +1864,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "PinkB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -1893,23 +1893,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "White"
             }
         ]
     },
@@ -1922,23 +1922,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Yellow"
             }
         ]
     },
@@ -1951,23 +1951,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -1980,23 +1980,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "White"
             }
         ]
     },
@@ -2009,23 +2009,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Yellow"
             }
         ]
     },
@@ -2038,23 +2038,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -2067,23 +2067,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Violet"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Yellow"
             }
         ]
     },
@@ -2096,23 +2096,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Violet"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "White"
             }
         ]
     },
@@ -2125,23 +2125,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Yellow"
             }
         ]
     },
@@ -2154,23 +2154,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Bordeaux"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "White"
             }
         ]
     },
@@ -2183,23 +2183,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -2212,23 +2212,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Yellow"
             }
         ]
     },
@@ -2241,23 +2241,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "White"
             }
         ]
     },
@@ -2270,23 +2270,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -2299,23 +2299,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "White"
             }
         ]
     },
@@ -2328,23 +2328,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Yellow"
             }
         ]
     },
@@ -2357,23 +2357,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "White"
             }
         ]
     },
@@ -2386,23 +2386,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Yellow"
             }
         ]
     },
@@ -2415,23 +2415,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Violet"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -2444,23 +2444,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "White"
             }
         ]
     },
@@ -2473,23 +2473,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Yellow"
             }
         ]
     },
@@ -2502,23 +2502,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Pink"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -2531,23 +2531,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Yellow"
             }
         ]
     },
@@ -2560,23 +2560,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "White"
             }
         ]
     },
@@ -2589,23 +2589,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -2618,23 +2618,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Saturated Colors"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "White"
             }
         ]
     },
@@ -2647,23 +2647,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Yellow"
             }
         ]
     },
@@ -2676,23 +2676,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -2705,23 +2705,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Pink"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "Dark Bordeaux"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Yellow"
             }
         ]
     },
@@ -2734,23 +2734,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Pink"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "White"
             }
         ]
     },
@@ -2763,23 +2763,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Pink"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "Slate Grey"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "Radioactive Green"
             }
         ]
     },
@@ -2792,1705 +2792,23 @@
         "attributes": [
             {
                 "trait_type": "Background",
-                "value": "MidBG"
+                "value": "Ochre Night Sky"
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "Rainbow"
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "Ochre"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "Dark Violet"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#97",
-        "description": "This is Lo-Fish num: 97",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/97.png",
-        "edition": 98,
-        "index": 97,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "MidBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "YellowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "BlueOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#98",
-        "description": "This is Lo-Fish num: 98",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/98.png",
-        "edition": 99,
-        "index": 98,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "MidBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "RainbowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#99",
-        "description": "This is Lo-Fish num: 99",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/99.png",
-        "edition": 100,
-        "index": 99,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "MidBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "RainbowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "GrayOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#100",
-        "description": "This is Lo-Fish num: 100",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/100.png",
-        "edition": 101,
-        "index": 100,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "MidBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "RainbowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "WhiteOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#101",
-        "description": "This is Lo-Fish num: 101",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/101.png",
-        "edition": 102,
-        "index": 101,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "MidBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "WhiteB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PurpleHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#102",
-        "description": "This is Lo-Fish num: 102",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/102.png",
-        "edition": 103,
-        "index": 102,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "MidBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "WhiteB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PurpleHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "GrayOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#103",
-        "description": "This is Lo-Fish num: 103",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/103.png",
-        "edition": 104,
-        "index": 103,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "MidBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "WhiteB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PurpleHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "WhiteOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#104",
-        "description": "This is Lo-Fish num: 104",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/104.png",
-        "edition": 105,
-        "index": 104,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "PinkB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#105",
-        "description": "This is Lo-Fish num: 105",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/105.png",
-        "edition": 106,
-        "index": 105,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "PinkB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "BlueOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#106",
-        "description": "This is Lo-Fish num: 106",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/106.png",
-        "edition": 107,
-        "index": 106,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "PinkB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "WhiteOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#107",
-        "description": "This is Lo-Fish num: 107",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/107.png",
-        "edition": 108,
-        "index": 107,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "PinkB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PinkHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "GrayOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#108",
-        "description": "This is Lo-Fish num: 108",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/108.png",
-        "edition": 109,
-        "index": 108,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "PinkB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PinkHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "BlueOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#109",
-        "description": "This is Lo-Fish num: 109",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/109.png",
-        "edition": 110,
-        "index": 109,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "PinkB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PinkHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "WhiteOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#110",
-        "description": "This is Lo-Fish num: 110",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/110.png",
-        "edition": 111,
-        "index": 110,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "PinkB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "YellowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#111",
-        "description": "This is Lo-Fish num: 111",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/111.png",
-        "edition": 112,
-        "index": 111,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "PinkB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "YellowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "GrayOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#112",
-        "description": "This is Lo-Fish num: 112",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/112.png",
-        "edition": 113,
-        "index": 112,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "PinkB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "YellowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "BlueOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#113",
-        "description": "This is Lo-Fish num: 113",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/113.png",
-        "edition": 114,
-        "index": 113,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "PinkB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "RainbowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#114",
-        "description": "This is Lo-Fish num: 114",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/114.png",
-        "edition": 115,
-        "index": 114,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "PinkB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "RainbowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "GrayOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#115",
-        "description": "This is Lo-Fish num: 115",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/115.png",
-        "edition": 116,
-        "index": 115,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "PinkB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "RainbowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "WhiteOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#116",
-        "description": "This is Lo-Fish num: 116",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/116.png",
-        "edition": 117,
-        "index": 116,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "BlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "GrayOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#117",
-        "description": "This is Lo-Fish num: 117",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/117.png",
-        "edition": 118,
-        "index": 117,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "BlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "BlueOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#118",
-        "description": "This is Lo-Fish num: 118",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/118.png",
-        "edition": 119,
-        "index": 118,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "BlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "WhiteOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#119",
-        "description": "This is Lo-Fish num: 119",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/119.png",
-        "edition": 120,
-        "index": 119,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "BlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PinkHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#120",
-        "description": "This is Lo-Fish num: 120",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/120.png",
-        "edition": 121,
-        "index": 120,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "BlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PinkHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "BlueOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#121",
-        "description": "This is Lo-Fish num: 121",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/121.png",
-        "edition": 122,
-        "index": 121,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "BlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PinkHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "WhiteOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#122",
-        "description": "This is Lo-Fish num: 122",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/122.png",
-        "edition": 123,
-        "index": 122,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "BlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "YellowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#123",
-        "description": "This is Lo-Fish num: 123",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/123.png",
-        "edition": 124,
-        "index": 123,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "BlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "YellowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "GrayOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#124",
-        "description": "This is Lo-Fish num: 124",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/124.png",
-        "edition": 125,
-        "index": 124,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "BlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "YellowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "WhiteOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#125",
-        "description": "This is Lo-Fish num: 125",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/125.png",
-        "edition": 126,
-        "index": 125,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "BlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "RainbowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#126",
-        "description": "This is Lo-Fish num: 126",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/126.png",
-        "edition": 127,
-        "index": 126,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "BlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "RainbowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "GrayOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#127",
-        "description": "This is Lo-Fish num: 127",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/127.png",
-        "edition": 128,
-        "index": 127,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "BlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "RainbowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "BlueOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#128",
-        "description": "This is Lo-Fish num: 128",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/128.png",
-        "edition": 129,
-        "index": 128,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "LightBlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#129",
-        "description": "This is Lo-Fish num: 129",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/129.png",
-        "edition": 130,
-        "index": 129,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "LightBlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "GrayOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#130",
-        "description": "This is Lo-Fish num: 130",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/130.png",
-        "edition": 131,
-        "index": 130,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "LightBlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "BlueOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#131",
-        "description": "This is Lo-Fish num: 131",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/131.png",
-        "edition": 132,
-        "index": 131,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "LightBlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PinkHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#132",
-        "description": "This is Lo-Fish num: 132",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/132.png",
-        "edition": 133,
-        "index": 132,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "LightBlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PinkHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "GrayOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#133",
-        "description": "This is Lo-Fish num: 133",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/133.png",
-        "edition": 134,
-        "index": 133,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "LightBlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PinkHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "WhiteOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#134",
-        "description": "This is Lo-Fish num: 134",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/134.png",
-        "edition": 135,
-        "index": 134,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "LightBlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "YellowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#135",
-        "description": "This is Lo-Fish num: 135",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/135.png",
-        "edition": 136,
-        "index": 135,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "LightBlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "YellowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "BlueOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#136",
-        "description": "This is Lo-Fish num: 136",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/136.png",
-        "edition": 137,
-        "index": 136,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "LightBlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "YellowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "WhiteOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#137",
-        "description": "This is Lo-Fish num: 137",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/137.png",
-        "edition": 138,
-        "index": 137,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "LightBlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "RainbowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "GrayOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#138",
-        "description": "This is Lo-Fish num: 138",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/138.png",
-        "edition": 139,
-        "index": 138,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "LightBlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "RainbowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "BlueOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#139",
-        "description": "This is Lo-Fish num: 139",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/139.png",
-        "edition": 140,
-        "index": 139,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "LightBlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "RainbowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "WhiteOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#140",
-        "description": "This is Lo-Fish num: 140",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/140.png",
-        "edition": 141,
-        "index": 140,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#141",
-        "description": "This is Lo-Fish num: 141",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/141.png",
-        "edition": 142,
-        "index": 141,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "GrayOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#142",
-        "description": "This is Lo-Fish num: 142",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/142.png",
-        "edition": 143,
-        "index": 142,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "WhiteOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#143",
-        "description": "This is Lo-Fish num: 143",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/143.png",
-        "edition": 144,
-        "index": 143,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PinkHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#144",
-        "description": "This is Lo-Fish num: 144",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/144.png",
-        "edition": 145,
-        "index": 144,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PinkHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "GrayOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#145",
-        "description": "This is Lo-Fish num: 145",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/145.png",
-        "edition": 146,
-        "index": 145,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PinkHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "BlueOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#146",
-        "description": "This is Lo-Fish num: 146",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/146.png",
-        "edition": 147,
-        "index": 146,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "YellowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "GrayOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#147",
-        "description": "This is Lo-Fish num: 147",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/147.png",
-        "edition": 148,
-        "index": 147,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "YellowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "BlueOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#148",
-        "description": "This is Lo-Fish num: 148",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/148.png",
-        "edition": 149,
-        "index": 148,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "YellowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "WhiteOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#149",
-        "description": "This is Lo-Fish num: 149",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/149.png",
-        "edition": 150,
-        "index": 149,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "RainbowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#150",
-        "description": "This is Lo-Fish num: 150",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/150.png",
-        "edition": 151,
-        "index": 150,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "RainbowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "BlueOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#151",
-        "description": "This is Lo-Fish num: 151",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/151.png",
-        "edition": 152,
-        "index": 151,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "RainbowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "WhiteOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ]
-    },
-    {
-        "name": "#152",
-        "description": "This is Lo-Fish num: 152",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/152.png",
-        "edition": 153,
-        "index": 152,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "WhiteB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PurpleHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ]
-    },
-    {
-        "name": "#153",
-        "description": "This is Lo-Fish num: 153",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/153.png",
-        "edition": 154,
-        "index": 153,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "WhiteB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PurpleHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "BlueOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ]
-    },
-    {
-        "name": "#154",
-        "description": "This is Lo-Fish num: 154",
-        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/154.png",
-        "edition": 155,
-        "index": 154,
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "WhiteB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PurpleHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "WhiteOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
+                "value": "Radioactive Green"
             }
         ]
     }

@@ -1,6 +1,6 @@
 from turtle import end_fill
-from PIL import Image 
-from IPython.display import display 
+from PIL import Image
+from IPython.display import display
 import random
 import json
 import os
@@ -56,7 +56,7 @@ def findDuplicates(listOfElems):
         if elem in newElements:
             return True
         else:
-            newElements.append(elem)  
+            newElements.append(elem)
     return False
 
 def percentage(part, whole):
@@ -66,7 +66,7 @@ def percentage(part, whole):
 def prepareLists(thisNumOfLayers, thisAllLayersMax):
     global layerOne, layerTwo, layerThree, layerFour, layerFive, layerSix, layerSeven, layerEight, layerNine, layerTen
 
-    for i in range(thisNumOfLayers):    
+    for i in range(thisNumOfLayers):
         allLayers[i] = []
 
     for i in range(thisNumOfLayers):
@@ -94,7 +94,7 @@ def createNewImage(thisChosenTraits, thisNumOfLayers, createNewCombinationsLengt
 
     for i in range(thisNumOfLayers):
         newImage [allLayerNames[i]] = allLayers[i][thisChosenTraits[i]-1]
-        
+
     #print(newImage)
 
     thisAttributes = list(newImage.values())
@@ -106,7 +106,7 @@ def createNewImage(thisChosenTraits, thisNumOfLayers, createNewCombinationsLengt
         tempAllAttributeCombinations.append(item)
         #print("item:"+str(item))
     #exit()
-    
+
     for item in allParts:
         tempAllParts.append(item)
 
@@ -117,13 +117,13 @@ def createNewImage(thisChosenTraits, thisNumOfLayers, createNewCombinationsLengt
 
     if thisDuplicate:
         return 'duplicate'
-    
+
     for item in combinations(thisAttributes, createNewCombinationsLength):
         allAttributeCombinations.append(item)
 
     for item in newImage:
         allParts.append(newImage[item])
-    
+
     if newImage in allImages:
         return 'duplicate'
     else:
@@ -146,7 +146,7 @@ def createAllImages(thisNumOfLayers, thisAllLayersMax, thisCombinationsLength):
     #exit()
     newTraitImage = None
     resetVariables()
-    for p in listOfAllPossibilities: 
+    for p in listOfAllPossibilities:
         #print(p)
         #exit()
         newTraitImage = createNewImage(p, len(thisAllLayersMax), thisCombinationsLength)
@@ -154,12 +154,12 @@ def createAllImages(thisNumOfLayers, thisAllLayersMax, thisCombinationsLength):
         if newTraitImage != 'duplicate':
             allImages.append(newTraitImage)
             numOfImages += 1
-            allCombinations.append(p.copy())  
+            allCombinations.append(p.copy())
         elif newTraitImage == 'duplicate':
             numOfDuplicates += 1
         else:
             print("error")
-    
+
     return numOfImages, numOfDuplicates
 
 animation = "|/-\\"
@@ -250,13 +250,13 @@ for i in range(1):
         #print(findDuplicates(allAttributeCombinations))
 
         if False:
-            f = open(r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator8\calculator\allImages.csv", "w", newline='')
+            f = open(r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\calculator\allImages.csv", "w", newline='')
             writer = csv.writer(f)
             for item in allImages:
                 writer.writerow(item.values())
             f.close()
 
-            f = open(r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator8\calculator\allAttributeCombinations.csv", "w", newline='')
+            f = open(r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\calculator\allAttributeCombinations.csv", "w", newline='')
             writer = csv.writer(f)
             for item in allAttributeCombinations:
                 writer.writerow(item)
@@ -268,7 +268,7 @@ for i in range(1):
     print("This operation took %s seconds" % (time.time() - start_time))
 
     nameOfFile = str(len(someAllLayersMax))+"AttributesSomething.csv"
-    with open(r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator8\calculator\\"+nameOfFile, "w", newline='') as f:
+    with open(r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\calculator\\"+nameOfFile, "w", newline='') as f:
         writer = csv.writer(f)
         writer.writerow(header)
         for item in allLines:
@@ -284,4 +284,3 @@ playAnim = False
 #numOfImagest1, numOfDuplicatest1 = t1.join()
 #print("numOfImages:"+str(numOfImagest1))
 #print("numOfDuplicates:"+str(numOfDuplicatest1))
-

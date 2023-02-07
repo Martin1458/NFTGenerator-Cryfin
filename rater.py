@@ -1,30 +1,63 @@
 import json
 import csv
+from collections import Counter
 from partsManager import *
 
 # Input
-countJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\count.json"
-NFTsJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\NFTs.json"
-attributeRatingJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\output.json"
+NFTsJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\NFTs.json"
+attributeRatingJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\output.json"
+createdCsv = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\created.csv"
 # Output
+csvRating = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\rating.csv"
+sortedCreatedCsv = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\sortedCreated.csv"
+
+def createOneImage(xx):
+    newImage = []
+
+    newImage.append(backgroundNames[int(xx[0])-1])
+    newImage.append(bodyNames[int(xx[1])-1])
+    newImage.append(highlightNames[int(xx[2])-1])
+    newImage.append(outlineNames[int(xx[3])-1])
+    newImage.append(lightNames[int(xx[4])-1])
+
+    return newImage
+
+with open(createdCsv) as file:
+    reader = csv.reader(file)
+    createdCsvData = []
+    for row in reader:
+        createdCsvData.append(row)
 
 
-f = open(countJson)
-attributeRatingJsonData = json.load(f)
-f.close()
+newCreatedCsvData = [list( map(int,i) ) for i in createdCsvData]
+zipedCreatedCsvData = list(zip(*newCreatedCsvData))
+#print(zipedCreatedCsvData)
+allLayerNames = [backgroundNames, bodyNames, highlightNames, outlineNames, lightNames]
 
-f = open(NFTsJson)
-NFTsJsonData = json.load(f)
-f.close()
+if len(zipedCreatedCsvData) == len(allLayerNames):
+    print("All good")
+else:
+    print("wrong layer count")
 
+attributeRatingJsonData = {}
+for i in range(len(allLayerNames)):
+    count = Counter(zipedCreatedCsvData[i])
+    #print(count)
+    for e in range(len(count)):
+        #print("i: "+str(i)+"; e: "+str(e))
+        #print(allLayerNames[i][e])
+        #print(list(count.items())[e][1])
+        attributeRatingJsonData[allLayerNames[i][e]] = list(count.items())[e][1]
+
+
+print("createdCsvData: "+str(createdCsvData))
 print("Verifying json file...")
-
 
 totalNumCount = 0
 for i in attributeRatingJsonData:
     totalNumCount += attributeRatingJsonData[i]
 
-if float(totalNumCount)/float(len(NFTsJsonData)) == len(NFTsJsonData[0]["attributes"]):
+if float(totalNumCount)/float(len(createdCsvData)) == len(createdCsvData[0]):
     print("All good")
 else:
     print("Some numbers dont add up.")
@@ -36,7 +69,7 @@ else:
 
 
 for i in attributeRatingJsonData:
-    attributeRatingJsonData[i] = attributeRatingJsonData[i]/len(NFTsJsonData)
+    attributeRatingJsonData[i] = attributeRatingJsonData[i]/len(createdCsvData)
 
 # Pocet kazde jednotlive attributy: DarkBG, MidBG...  / celkovy pocet obrazku.
 print("attributeRatingJsonData: "+str(attributeRatingJsonData))
@@ -49,14 +82,16 @@ with open(attributeRatingJson, "w") as outfile:
 
 
 allImages = []
-for image in NFTsJsonData:
-    oneImage = []
-    for attribute in image["attributes"]:
-        oneImage.append(attribute["value"])
-    allImages.append(oneImage)
+allTraits = []
+with open(createdCsv) as csvfile:
+    reader = csv.reader(csvfile)
+    for row in reader:
+        allTraits.append(row)
 
-# List vsech attibut pro kazdy obrazek: ['DarkBG', 'PinkB', 'WhiteHL', 'RedOL', 'WhiteL'], ['DarkBG',...
-print("allImages: "+str(allImages))
+for traits in allTraits:
+    allImages.append(createOneImage(traits))
+
+print("allImages"+str(allImages))
 
 allImagesRatingData = []
 for image in allImages:
@@ -92,3 +127,25 @@ for i in allImagesRatingData:
 
 # Procenta z allImagesRatingData, max z allImagesRatingData = 100%; min z allImagesRatingData = 0%
 print("allImagesRatingPercentageZeroToHundred: "+str(allImagesRatingPercentageZeroToHundred))
+
+csvHeader = ["id", "allImagesRatingData", "allImagesRatingPercentage", "allImagesRatingPercentageZeroToHundred"]
+
+open(csvRating, "w").close()
+with open(csvRating, "w", newline='') as outfile:
+    writer = csv.writer(outfile)
+    writer.writerow(csvHeader)
+    for w in range(len(allImagesRatingData)):
+        writer.writerow([w, allImagesRatingData[w], allImagesRatingPercentage[w], allImagesRatingPercentageZeroToHundred[w], createdCsvData[w], ])
+    #writer.writerows(allImagesRatingPercentage)
+    #writer.writerows(allImagesRatingPercentageZeroToHundred)
+
+sortedCreatedCsvDataAscending  = [x for _, x in sorted(zip(allImagesRatingData, createdCsvData))]
+sortedCreatedCsvDataDescending = sortedCreatedCsvDataAscending
+sortedCreatedCsvDataDescending.reverse()
+
+
+open(sortedCreatedCsv, "w").close()
+with open(sortedCreatedCsv, "w", newline='') as outfile:
+    writer = csv.writer(outfile)
+    for w in range(len(sortedCreatedCsvDataDescending)):
+        writer.writerow(sortedCreatedCsvDataDescending[w])
