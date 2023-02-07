@@ -385,7 +385,7 @@ def calculateIt(combinationsLengthX, numOfLayersX, allLayersMaxX):
     
     if numOfLayers != len(allLayersMax):
         print("U stupid?")
-        exit()
+        #exit()
 
     calculateLayer(combinationsLength)
 

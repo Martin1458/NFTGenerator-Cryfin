@@ -143,13 +143,34 @@ def T8():
     pass
 
 def T9():
-    allLayersMax = [3, 6, 5, 4, 3]
-    ranges = [range(n+1) for n in allLayersMax[::-1]]
+    allLayersMax = [2, 2, 2, 2, 2, 2]
+    ranges = [range(2, n+1) for n in allLayersMax[::-1]]
 
     someList = []
     for v in itertools.product(*ranges):
-        someList.append(v[::-1])
+        someList.append(list(v))
 
     print(someList)
 
-T9()
+def T10():
+    def findDuplicates(listOfElems):
+        newElements = list()
+        for elem in listOfElems:
+            if elem in newElements:
+                return True
+            else:
+                newElements.append(elem)  
+
+        return False
+
+    myList = ["2", "3", "5s", "5", "4"]
+    myBool = findDuplicates(myList)
+
+    print(myBool)
+
+name = ""
+def T11():
+    name = "john"
+    print(name)
+
+T11()

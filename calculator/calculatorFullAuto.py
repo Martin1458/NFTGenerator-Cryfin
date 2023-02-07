@@ -10,7 +10,6 @@ import collections
 import csv
 import copy
 import time
-from calculatorManager import *
 import itertools
 from tkinter import *
 
@@ -41,10 +40,25 @@ maxAttempts = 3000
 numOfImages = 0
 numOfDuplicates = 0
 allCombinations = []
+layerOne = []
+layerTwo = []
+layerThree = []
+layerFour = []
+layerFive = []
+layerSix = []
+layerSeven = []
+layerEight = []
+layerNine = []
+layerTen = []
+
+allLayers = [layerOne, layerTwo, layerThree, layerFour, layerFive, layerSix, layerSeven, layerEight, layerNine, layerTen]
+allLayerNames = ["layerOne", "layerTwo", "layerThree", "layerFour", "layerFive", "layerSix", "layerSeven", "layerEight", "layerNine", "layerTen"]
+
 
 def resetVariables():
     global allImages, allAttributeCombinations, allParts, allPartsCount, tempAllParts, thisAttributes, thisAttributeCombinations, tempAllAttributeCombinations, numOfAttempts, maxAttempts, numOfImages, numOfDuplicates, allCombinations
-
+    global layerOne, layerTwo, layerThree, layerFour, layerFive, layerSix, layerSeven, layerEight, layerNine, layerTen, allLayers, allLayerNames
+    
     allImages = []
     allAttributeCombinations = []
     allParts = []
@@ -58,6 +72,20 @@ def resetVariables():
     numOfImages = 0
     numOfDuplicates = 0
     allCombinations = []
+    layerOne = []
+    layerTwo = []
+    layerThree = []
+    layerFour = []
+    layerFive = []
+    layerSix = []
+    layerSeven = []
+    layerEight = []
+    layerNine = []
+    layerTen = []
+
+    allLayers = [layerOne, layerTwo, layerThree, layerFour, layerFive, layerSix, layerSeven, layerEight, layerNine, layerTen]
+    allLayerNames = ["layerOne", "layerTwo", "layerThree", "layerFour", "layerFive", "layerSix", "layerSeven", "layerEight", "layerNine", "layerTen"]
+
 
 # Tato funkce najde duplikaty v dannem listu
 # Vraci bool (True = tento list obsahuje duplikaty) a list (kombinace ktera se duplikuje)
@@ -72,33 +100,32 @@ def findDuplicates(listOfElems):
     return False, None
 
 # Tato funkce vrati pocet kazdeho elementu, kolikrat se opakuje v myList
-def findElementXTimes(myList):
-
-    duplicatesList = []
-    for item in myList:
-        duplicatesList.append(item)
-    
-    newListD = []
-
-    for item in duplicatesList:
-        if item not in newListD:
-            newListD.append(item)
-    
-    tempAllDuplicates = {}
-
-    for item in newListD:
-        tempAllDuplicates[item]=myList.count(item)
-        #print('{} is {} times in all images'.format(item, myList.count(item)))
-    
-    #fullList = nullParts
-    fullList = []
-
-    for item in tempAllDuplicates:
-        fullList[item] = tempAllDuplicates[item]
-
-
-    #print(tempAllDuplicates)
-    return fullList
+#def findElementXTimes(myList):
+#
+#    duplicatesList = []
+#    for item in myList:
+#        duplicatesList.append(item)
+#    
+#    newListD = []
+#
+#    for item in duplicatesList:
+#        if item not in newListD:
+#            newListD.append(item)
+#    
+#    tempAllDuplicates = {}
+#
+#    for item in newListD:
+#        tempAllDuplicates[item]=myList.count(item)
+#        #print('{} is {} times in all images'.format(item, myList.count(item)))
+#    
+#    fullList = nullParts
+#
+#    for item in tempAllDuplicates:
+#        fullList[item] = tempAllDuplicates[item]
+#
+#
+#    #print(tempAllDuplicates)
+#    return fullList
 
 
 # Test findDuplicates (pokud funguje napise "john")  
@@ -124,7 +151,8 @@ def createNewImage(chosenTraits):
     #print(chosenTraits)
     for i in range(numOfLayers):
         newImage [allLayerNames[i]] = allLayers[i][chosenTraits[i]-1]
-        #print(newImage)
+        
+    print(newImage)
 
     # for item in newImage:
     #     print("{} has choosen {} trait".format(item, newImage[item]))
@@ -166,7 +194,7 @@ def createNewImage(chosenTraits):
     thisDuplicate, thisDuplicateItem = findDuplicates(tempAllAttributeCombinations)
 
     # Pomoci funkce findElementXTimes vygeneruje allPartsCount, kam se ulozi pocty jednotlivych traits
-    allPartsCount = findElementXTimes(tempAllParts)
+    #allPartsCount = findElementXTimes(tempAllParts)
 
     # Zkontroluje pro kazdou trait zda se jiz nevyskytuje vicekrat nez by mela
     #for item in maxParts:
@@ -218,35 +246,36 @@ def createAllImages():
     for i in range(numOfLayers):
         chosenTraits.append(0)
 
-    allRanges = [range(n+1) for n in allLayersMax[::-1]]
+    allRanges = [range(1, n+1) for n in allLayersMax[::-1]]
 
     listOfAllPossibilities = []
     for v in itertools.product(*allRanges):
         listOfAllPossibilities.append(list(v[::-1]))
+
         #print(type(v[::-1]))
         
 
-    #print(listOfAllPossibilities)
-    #exit()
+    print("listOfAllPossibilities:"+str(listOfAllPossibilities))
+    print("len(listOfAllPossibilities):"+str(len(listOfAllPossibilities)))
 
     newTraitImage = None
     possibility = 0
-    while newTraitImage != 'errror': 
+    someNumber = 0
+    for p in listOfAllPossibilities: 
 
-        newTraitImage = createNewImage(listOfAllPossibilities[possibility])
+        newTraitImage = createNewImage(p)
         #newTraitImage = 'duplicate'
         # pokud createNewImage nevrati error, zapise obrazek do allImages, jinak ukonci script.
-        if newTraitImage != 'error' and newTraitImage != 'duplicate':
+        if newTraitImage != 'error' and newTraitImage != 'duplicate' and newTraitImage != 'errror':
             allImages.append(newTraitImage)
             numOfImages += 1
-            allCombinations.append(listOfAllPossibilities[possibility].copy())
+            allCombinations.append(p.copy())
             #print(listOfAllPossibilities[possibility])
             #print(allCombinations)
             
 
             #Add one
             possibility += 1
-
         elif newTraitImage == 'duplicate':
             numOfDuplicates += 1
 
@@ -256,13 +285,17 @@ def createAllImages():
             #print(listOfAllPossibilities[possibility])
 
 
-        if listOfAllPossibilities[possibility] == allLayersMax:
+        if p == allLayersMax:
             newTraitImage = 'errror'
             print("All combinations tried")
 
         if newTraitImage == 'error':
             print("An error has occured")
             exit()
+
+        someNumber += 1
+    
+    print("someNumber:"+str(someNumber))
     #print("\n")
     #print(allCombinations)
     #print("\n")
@@ -289,7 +322,7 @@ def prepareLists():
         print("{} = {}".format(allLayerNames[i], allLayers[i]))
 
 
-def calculateLayer(combinationsLength):
+def calculateLayer():
 
     prepareLists()
 
@@ -313,40 +346,45 @@ def calculateLayer(combinationsLength):
         newStrCombinations.append(newCombination)
 
     #print(newStrCombinations)
-    header = ["Var1", "Var2", "Var3", "Var4", "Var5"]
-
-    if combinationsLength == 2:
-        nameOfCsv = "twoComabinations.csv"
-    elif combinationsLength == 3:
-        nameOfCsv = "threeComabinations.csv"
-    elif combinationsLength == 4:
-        nameOfCsv = "fourComabinations.csv"
-    elif combinationsLength == 5:
-        nameOfCsv = "fiveComabinations.csv"
-    elif combinationsLength == 6:
-        nameOfCsv = "sixComabinations.csv"
-    elif combinationsLength == 7:
-        nameOfCsv = "sevenComabinations.csv"
-    elif combinationsLength == 8:
-        nameOfCsv = "eightComabinations.csv"
-    elif combinationsLength == 9:
-        nameOfCsv = "nineComabinations.csv"
-    elif combinationsLength == 10:
-        nameOfCsv = "tenComabinations.csv"
-
-    f = open(nameOfCsv, 'w')
-    writer = csv.writer(f)
-    writer.writerow(header)
-
-    for item in newStrCombinations:
-        writer.writerow(item)
-
-    f.close()
+    #header = ["Var1", "Var2", "Var3", "Var4", "Var5"]
+#
+    #if combinationsLength == 2:
+    #    nameOfCsv = "twoComabinations.csv"
+    #elif combinationsLength == 3:
+    #    nameOfCsv = "threeComabinations.csv"
+    #elif combinationsLength == 4:
+    #    nameOfCsv = "fourComabinations.csv"
+    #elif combinationsLength == 5:
+    #    nameOfCsv = "fiveComabinations.csv"
+    #elif combinationsLength == 6:
+    #    nameOfCsv = "sixComabinations.csv"
+    #elif combinationsLength == 7:
+    #    nameOfCsv = "sevenComabinations.csv"
+    #elif combinationsLength == 8:
+    #    nameOfCsv = "eightComabinations.csv"
+    #elif combinationsLength == 9:
+    #    nameOfCsv = "nineComabinations.csv"
+    #elif combinationsLength == 10:
+    #    nameOfCsv = "tenComabinations.csv"
+#
+    #f = open(nameOfCsv, 'w')
+    #writer = csv.writer(f)
+    #writer.writerow(header)
+#
+    #for item in newStrCombinations:
+    #    writer.writerow(item)
+#
+    #f.close()
     print("combinationsLength: {} numOfImages: {} numOfDuplicates: {} numOfImages+numOfDuplicates: {}".format(combinationsLength, numOfImages, numOfDuplicates, numOfImages+numOfDuplicates))
+    print("allImages:"+str(allImages))
+    print("len(allImages):"+str(len(allImages)))
     resetVariables()
+
+    return numOfDuplicates
 
 
 def calculateIt(combinationsLengthX, numOfLayersX, allLayersMaxX):
+    global combinationsLength, numOfLayers, allLayersMax
 
     start_time = time.time()
 
@@ -356,108 +394,31 @@ def calculateIt(combinationsLengthX, numOfLayersX, allLayersMaxX):
     numOfLayers = numOfLayersX
     allLayersMax = allLayersMaxX
     
+    print("allLayersMax:"+str(allLayersMax))
+
     if numOfLayers != len(allLayersMax):
         print("U stupid?")
-        exit()
+        #exit()
 
-    calculateLayer(combinationsLength)
+    numberOfRepeat = calculateLayer( )
 
     print("This operation took %s seconds" % (time.time() - start_time))
 
-#GUI
-window = Tk()
-window.title("myCalculator")
-window.geometry('800x500')
-
-window.columnconfigure(0, weight=2)
-window.rowconfigure(0, weight=2)
-window.columnconfigure(1, weight=1)
-window.rowconfigure(1, weight=1)
-window.columnconfigure(2, weight=1)
-window.rowconfigure(2, weight=1)
-window.rowconfigure(3, weight=1)
-window.rowconfigure(4, weight=1)
-window.rowconfigure(5, weight=1)
-window.rowconfigure(6, weight=1)
-window.rowconfigure(7, weight=1)
-window.rowconfigure(8, weight=1)
-window.rowconfigure(9, weight=1)
-window.rowconfigure(10, weight=1)
-window.rowconfigure(11, weight=1)
-window.rowconfigure(12, weight=1)
-window.rowconfigure(13, weight=1)
-window.rowconfigure(14, weight=1)
-window.rowconfigure(15, weight=1)
-
-title = Label(window, text="My NFT calculator", font='bold')
-title.grid(column=0, row=0, columnspan=3)
-
-numOfLayersLbl = Label(window, text="Enter number of layers:")
-numOfLayersLbl.grid(column=0, row=1)
-
-numOfLayersNum = IntVar(window)
-numOfLayersNum.set(5)
-
-numOfLayersOption = OptionMenu(window, numOfLayersNum, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-numOfLayersOption.grid(column=1, row=1)
-
-#numOfLayersLbl = Label(window, text="Enter number of layers:")
-#numOfLayersLbl.grid(column=0, row=1)
-#
-#numOfLayersTxt = Entry(window, width=40)
-#numOfLayersTxt.insert(0, "127.0.0.1")
-#numOfLayersTxt.grid(column=1, row=1, columnspan=2)
-def refreshLayers():
-    try:
-        for i in range(10):
-            name = str(i)+"label"
-            name.destroy()
-    except:
-        pass
-
-    for i in range(numOfLayersNum.get()):
-        name = str(i)+"label"
-        name = Label(window, text="Enter username:")
-        name.grid(column=0, row=i+2)
-
-#btn = Button(window, text="apply", command=refreshLayers)
-#btn.grid(column=2, row=1)
+    return numberOfRepeat
 
 
-allLayersMaxLbl = Label(window, text="Enter number of traits for each layer:")
-allLayersMaxLbl.grid(column=0, row=2)
+someAllLayersMax = [2, 2, 2, 2, 2, 2]
+someRanges = [range(2, n+1) for n in someAllLayersMax[::-1]]
 
-allLayersMaxTxt = Entry(window, width=40)
-allLayersMaxTxt.insert(0, "3 6 5 4 3")
-allLayersMaxTxt.grid(column=1, row=2, columnspan=2)
+someList = []
 
-combinationsLengthLbl = Label(window, text="Enter number of traits that cannot repeat:")
-combinationsLengthLbl.grid(column=0, row=3)
+for v in itertools.product(*someRanges):
+    someList.append(list(v))
 
-combinationsLengthTxt = Entry(window, width=40)
-combinationsLengthTxt.insert(0, "4")
-combinationsLengthTxt.grid(column=1, row=3, columnspan=2)
+numOfLayers = len(someAllLayersMax)
+print("someList:"+str(someList))
+for comb in someList:
+    #for 
+    numOfComb = calculateIt(3, len(comb), comb)
 
-
-
-def runCalculator():
-    global numOfLayers, allLayersMax, combinationsLength
-
-    numOfLayers = int(numOfLayersNum.get())
-
-    tempMyList  = allLayersMaxTxt.get().split()
-    allLayersMax = []
-    for num in tempMyList:
-        allLayersMax.append(int(num))
-    #allLayersMax = [2, 2, 2, 2]
-    #print(allLayersMax)
-    #exit()
-    # Pocet attributu co se nesmi opakovat
-    combinationsLength = int(combinationsLengthTxt.get())
-
-    calculateIt(combinationsLength, numOfLayers, allLayersMax)
-
-btn = Button(window, text="Run calculator!", command=runCalculator)
-btn.grid(column=1, row=4)
-
-window.mainloop()
+print("allImages:"+str(allImages))
