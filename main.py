@@ -11,7 +11,7 @@ from PIL import Image
 
 from partsManager import *
 # Path k rootu
-root_file = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator17\\"
+root_file = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator18\\"
 
 # Path k castem
 pathToParts = root_file + "Parts"
@@ -260,7 +260,7 @@ def createAllImages():
     print(str(len(someList)))
     # Randomize list
     random.shuffle(someList)
-
+    someList = [[1, 5, 3, 2, 3]]
 
     for chosenTraits in someList:
         # print("chosenTraits: "+str(chosenTraits))
@@ -425,7 +425,7 @@ for key, value in allPartsCount.items():
             print(f"{key} has exceeded the maximum count {maxPartsExceptions[key]} its current count is {allPartsCount[key]}")
             maxPatrsError = True
 
-if maxPatrsError:            
+if maxPatrsError:
     if input("Should I continue? [Y/N]: ").lower() == 'n':
         exit()
 else:

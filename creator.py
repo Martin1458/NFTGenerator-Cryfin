@@ -1,6 +1,7 @@
 import itertools
 from itertools import combinations
 import csv
+import random
 
 from partsManager import *
 
@@ -15,7 +16,7 @@ tempAllAttributeCombinations = []
 cobinationsLength = 3
 allTraits = []
 
-csvPath = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator17\created.csv"
+csvPath = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator18\created.csv"
 
 def findDuplicates(listOfElems):
     newElements = list()
@@ -119,6 +120,7 @@ def createNewImage(chosenTraits):
 
 
 allLayersMax = [len(backgroundNames), len(bodyNames), len(highlightNames), len(outlineNames), len(lightNames)]
+print(allLayersMax)
 ranges = [range(1, n+1) for n in allLayersMax]
 someList = []
 
@@ -126,6 +128,7 @@ for v in itertools.product(*ranges):
     someList.append(list(v))
 
 print(str(len(someList)))
+random.shuffle(someList)
 
 for chosenTraits in someList:
     newTraitImage = createNewImage(chosenTraits)
