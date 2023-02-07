@@ -1,34 +1,10 @@
 [
     {
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "DarkBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "PinkB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ],
+        "name": "#0",
         "description": "This is Lo-Fish num: 0",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/0.png",
         "edition": 1,
-        "image": "URL HERE/0.png",
         "index": 0,
-        "name": "#0"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -44,20 +20,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#1",
         "description": "This is Lo-Fish num: 1",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/1.png",
         "edition": 2,
-        "image": "URL HERE/1.png",
         "index": 1,
-        "name": "#1"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -73,20 +49,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#2",
         "description": "This is Lo-Fish num: 2",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/2.png",
         "edition": 3,
-        "image": "URL HERE/2.png",
         "index": 2,
-        "name": "#2"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -98,24 +74,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "WhiteHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#3",
         "description": "This is Lo-Fish num: 3",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/3.png",
         "edition": 4,
-        "image": "URL HERE/3.png",
         "index": 3,
-        "name": "#3"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -131,20 +107,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#4",
         "description": "This is Lo-Fish num: 4",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/4.png",
         "edition": 5,
-        "image": "URL HERE/4.png",
         "index": 4,
-        "name": "#4"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -160,20 +136,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#5",
         "description": "This is Lo-Fish num: 5",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/5.png",
         "edition": 6,
-        "image": "URL HERE/5.png",
         "index": 5,
-        "name": "#5"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -185,24 +161,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "PinkHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
                 "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#6",
         "description": "This is Lo-Fish num: 6",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/6.png",
         "edition": 7,
-        "image": "URL HERE/6.png",
         "index": 6,
-        "name": "#6"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -218,20 +194,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#7",
         "description": "This is Lo-Fish num: 7",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/7.png",
         "edition": 8,
-        "image": "URL HERE/7.png",
         "index": 7,
-        "name": "#7"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -247,20 +223,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#8",
         "description": "This is Lo-Fish num: 8",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/8.png",
         "edition": 9,
-        "image": "URL HERE/8.png",
         "index": 8,
-        "name": "#8"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -272,24 +248,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "YellowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#9",
         "description": "This is Lo-Fish num: 9",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/9.png",
         "edition": 10,
-        "image": "URL HERE/9.png",
         "index": 9,
-        "name": "#9"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -305,20 +281,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#10",
         "description": "This is Lo-Fish num: 10",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/10.png",
         "edition": 11,
-        "image": "URL HERE/10.png",
         "index": 10,
-        "name": "#10"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -334,20 +310,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#11",
         "description": "This is Lo-Fish num: 11",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/11.png",
         "edition": 12,
-        "image": "URL HERE/11.png",
         "index": 11,
-        "name": "#11"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -355,28 +331,28 @@
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "PinkB"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "RainbowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#12",
         "description": "This is Lo-Fish num: 12",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/12.png",
         "edition": 13,
-        "image": "URL HERE/12.png",
         "index": 12,
-        "name": "#12"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -392,20 +368,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#13",
         "description": "This is Lo-Fish num: 13",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/13.png",
         "edition": 14,
-        "image": "URL HERE/13.png",
         "index": 13,
-        "name": "#13"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -421,20 +397,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#14",
         "description": "This is Lo-Fish num: 14",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/14.png",
         "edition": 15,
-        "image": "URL HERE/14.png",
         "index": 14,
-        "name": "#14"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -446,24 +422,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "WhiteHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#15",
         "description": "This is Lo-Fish num: 15",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/15.png",
         "edition": 16,
-        "image": "URL HERE/15.png",
         "index": 15,
-        "name": "#15"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -479,20 +455,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#16",
         "description": "This is Lo-Fish num: 16",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/16.png",
         "edition": 17,
-        "image": "URL HERE/16.png",
         "index": 16,
-        "name": "#16"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -508,20 +484,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#17",
         "description": "This is Lo-Fish num: 17",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/17.png",
         "edition": 18,
-        "image": "URL HERE/17.png",
         "index": 17,
-        "name": "#17"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -533,24 +509,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "PinkHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
                 "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#18",
         "description": "This is Lo-Fish num: 18",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/18.png",
         "edition": 19,
-        "image": "URL HERE/18.png",
         "index": 18,
-        "name": "#18"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -566,20 +542,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#19",
         "description": "This is Lo-Fish num: 19",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/19.png",
         "edition": 20,
-        "image": "URL HERE/19.png",
         "index": 19,
-        "name": "#19"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -595,20 +571,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#20",
         "description": "This is Lo-Fish num: 20",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/20.png",
         "edition": 21,
-        "image": "URL HERE/20.png",
         "index": 20,
-        "name": "#20"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -620,24 +596,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "YellowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#21",
         "description": "This is Lo-Fish num: 21",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/21.png",
         "edition": 22,
-        "image": "URL HERE/21.png",
         "index": 21,
-        "name": "#21"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -653,20 +629,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#22",
         "description": "This is Lo-Fish num: 22",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/22.png",
         "edition": 23,
-        "image": "URL HERE/22.png",
         "index": 22,
-        "name": "#22"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -682,20 +658,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#23",
         "description": "This is Lo-Fish num: 23",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/23.png",
         "edition": 24,
-        "image": "URL HERE/23.png",
         "index": 23,
-        "name": "#23"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -703,28 +679,28 @@
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "BlueB"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "RainbowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#24",
         "description": "This is Lo-Fish num: 24",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/24.png",
         "edition": 25,
-        "image": "URL HERE/24.png",
         "index": 24,
-        "name": "#24"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -740,20 +716,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#25",
         "description": "This is Lo-Fish num: 25",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/25.png",
         "edition": 26,
-        "image": "URL HERE/25.png",
         "index": 25,
-        "name": "#25"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -769,20 +745,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#26",
         "description": "This is Lo-Fish num: 26",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/26.png",
         "edition": 27,
-        "image": "URL HERE/26.png",
         "index": 26,
-        "name": "#26"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -794,24 +770,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "WhiteHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#27",
         "description": "This is Lo-Fish num: 27",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/27.png",
         "edition": 28,
-        "image": "URL HERE/27.png",
         "index": 27,
-        "name": "#27"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -827,20 +803,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#28",
         "description": "This is Lo-Fish num: 28",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/28.png",
         "edition": 29,
-        "image": "URL HERE/28.png",
         "index": 28,
-        "name": "#28"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -856,20 +832,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#29",
         "description": "This is Lo-Fish num: 29",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/29.png",
         "edition": 30,
-        "image": "URL HERE/29.png",
         "index": 29,
-        "name": "#29"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -881,24 +857,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "PinkHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
                 "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#30",
         "description": "This is Lo-Fish num: 30",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/30.png",
         "edition": 31,
-        "image": "URL HERE/30.png",
         "index": 30,
-        "name": "#30"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -914,20 +890,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#31",
         "description": "This is Lo-Fish num: 31",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/31.png",
         "edition": 32,
-        "image": "URL HERE/31.png",
         "index": 31,
-        "name": "#31"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -943,20 +919,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#32",
         "description": "This is Lo-Fish num: 32",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/32.png",
         "edition": 33,
-        "image": "URL HERE/32.png",
         "index": 32,
-        "name": "#32"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -968,24 +944,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "YellowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#33",
         "description": "This is Lo-Fish num: 33",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/33.png",
         "edition": 34,
-        "image": "URL HERE/33.png",
         "index": 33,
-        "name": "#33"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1001,20 +977,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#34",
         "description": "This is Lo-Fish num: 34",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/34.png",
         "edition": 35,
-        "image": "URL HERE/34.png",
         "index": 34,
-        "name": "#34"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1030,20 +1006,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#35",
         "description": "This is Lo-Fish num: 35",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/35.png",
         "edition": 36,
-        "image": "URL HERE/35.png",
         "index": 35,
-        "name": "#35"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1051,28 +1027,28 @@
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "LightBlueB"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "RainbowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
                 "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#36",
         "description": "This is Lo-Fish num: 36",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/36.png",
         "edition": 37,
-        "image": "URL HERE/36.png",
         "index": 36,
-        "name": "#36"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1088,20 +1064,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#37",
         "description": "This is Lo-Fish num: 37",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/37.png",
         "edition": 38,
-        "image": "URL HERE/37.png",
         "index": 37,
-        "name": "#37"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1117,20 +1093,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#38",
         "description": "This is Lo-Fish num: 38",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/38.png",
         "edition": 39,
-        "image": "URL HERE/38.png",
         "index": 38,
-        "name": "#38"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1142,24 +1118,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "WhiteHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#39",
         "description": "This is Lo-Fish num: 39",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/39.png",
         "edition": 40,
-        "image": "URL HERE/39.png",
         "index": 39,
-        "name": "#39"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1175,20 +1151,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#40",
         "description": "This is Lo-Fish num: 40",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/40.png",
         "edition": 41,
-        "image": "URL HERE/40.png",
         "index": 40,
-        "name": "#40"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1204,20 +1180,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#41",
         "description": "This is Lo-Fish num: 41",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/41.png",
         "edition": 42,
-        "image": "URL HERE/41.png",
         "index": 41,
-        "name": "#41"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1229,24 +1205,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "PinkHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
                 "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#42",
         "description": "This is Lo-Fish num: 42",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/42.png",
         "edition": 43,
-        "image": "URL HERE/42.png",
         "index": 42,
-        "name": "#42"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1262,20 +1238,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#43",
         "description": "This is Lo-Fish num: 43",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/43.png",
         "edition": 44,
-        "image": "URL HERE/43.png",
         "index": 43,
-        "name": "#43"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1291,20 +1267,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#44",
         "description": "This is Lo-Fish num: 44",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/44.png",
         "edition": 45,
-        "image": "URL HERE/44.png",
         "index": 44,
-        "name": "#44"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1316,24 +1292,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "YellowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#45",
         "description": "This is Lo-Fish num: 45",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/45.png",
         "edition": 46,
-        "image": "URL HERE/45.png",
         "index": 45,
-        "name": "#45"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1349,20 +1325,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#46",
         "description": "This is Lo-Fish num: 46",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/46.png",
         "edition": 47,
-        "image": "URL HERE/46.png",
         "index": 46,
-        "name": "#46"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1378,20 +1354,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#47",
         "description": "This is Lo-Fish num: 47",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/47.png",
         "edition": 48,
-        "image": "URL HERE/47.png",
         "index": 47,
-        "name": "#47"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1399,28 +1375,57 @@
             },
             {
                 "trait_type": "Body",
-                "value": "RainbowB"
+                "value": "GreenB"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PurpleHL"
+                "value": "RainbowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#48",
         "description": "This is Lo-Fish num: 48",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/48.png",
         "edition": 49,
-        "image": "URL HERE/48.png",
         "index": 48,
-        "name": "#48"
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "DarkBG"
+            },
+            {
+                "trait_type": "Body",
+                "value": "RainbowB"
+            },
+            {
+                "trait_type": "Highlight",
+                "value": "PurpleHL"
+            },
+            {
+                "trait_type": "Outline",
+                "value": "RedOL"
+            },
+            {
+                "trait_type": "Light",
+                "value": "WhiteL"
+            }
+        ]
     },
     {
+        "name": "#49",
+        "description": "This is Lo-Fish num: 49",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/49.png",
+        "edition": 50,
+        "index": 49,
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1442,43 +1447,14 @@
                 "trait_type": "Light",
                 "value": "YellowL"
             }
-        ],
-        "description": "This is Lo-Fish num: 49",
-        "edition": 50,
-        "image": "URL HERE/49.png",
-        "index": 49,
-        "name": "#49"
+        ]
     },
     {
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "DarkBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "WhiteB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PurpleHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ],
+        "name": "#50",
         "description": "This is Lo-Fish num: 50",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/50.png",
         "edition": 51,
-        "image": "URL HERE/50.png",
         "index": 50,
-        "name": "#50"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1494,20 +1470,49 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#51",
         "description": "This is Lo-Fish num: 51",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/51.png",
         "edition": 52,
-        "image": "URL HERE/51.png",
         "index": 51,
-        "name": "#51"
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "DarkBG"
+            },
+            {
+                "trait_type": "Body",
+                "value": "WhiteB"
+            },
+            {
+                "trait_type": "Highlight",
+                "value": "PurpleHL"
+            },
+            {
+                "trait_type": "Outline",
+                "value": "GrayOL"
+            },
+            {
+                "trait_type": "Light",
+                "value": "WhiteL"
+            }
+        ]
     },
     {
+        "name": "#52",
+        "description": "This is Lo-Fish num: 52",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/52.png",
+        "edition": 53,
+        "index": 52,
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1529,43 +1534,14 @@
                 "trait_type": "Light",
                 "value": "GreenL"
             }
-        ],
-        "description": "This is Lo-Fish num: 52",
-        "edition": 53,
-        "image": "URL HERE/52.png",
-        "index": 52,
-        "name": "#52"
+        ]
     },
     {
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "MidBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "PinkB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ],
+        "name": "#53",
         "description": "This is Lo-Fish num: 53",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/53.png",
         "edition": 54,
-        "image": "URL HERE/53.png",
         "index": 53,
-        "name": "#53"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1581,20 +1557,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#54",
         "description": "This is Lo-Fish num: 54",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/54.png",
         "edition": 55,
-        "image": "URL HERE/54.png",
         "index": 54,
-        "name": "#54"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1610,20 +1586,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#55",
         "description": "This is Lo-Fish num: 55",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/55.png",
         "edition": 56,
-        "image": "URL HERE/55.png",
         "index": 55,
-        "name": "#55"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1635,24 +1611,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "WhiteHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#56",
         "description": "This is Lo-Fish num: 56",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/56.png",
         "edition": 57,
-        "image": "URL HERE/56.png",
         "index": 56,
-        "name": "#56"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1668,20 +1644,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#57",
         "description": "This is Lo-Fish num: 57",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/57.png",
         "edition": 58,
-        "image": "URL HERE/57.png",
         "index": 57,
-        "name": "#57"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1697,20 +1673,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#58",
         "description": "This is Lo-Fish num: 58",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/58.png",
         "edition": 59,
-        "image": "URL HERE/58.png",
         "index": 58,
-        "name": "#58"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1722,24 +1698,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "PinkHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
                 "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#59",
         "description": "This is Lo-Fish num: 59",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/59.png",
         "edition": 60,
-        "image": "URL HERE/59.png",
         "index": 59,
-        "name": "#59"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1755,20 +1731,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#60",
         "description": "This is Lo-Fish num: 60",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/60.png",
         "edition": 61,
-        "image": "URL HERE/60.png",
         "index": 60,
-        "name": "#60"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1784,20 +1760,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#61",
         "description": "This is Lo-Fish num: 61",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/61.png",
         "edition": 62,
-        "image": "URL HERE/61.png",
         "index": 61,
-        "name": "#61"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1809,24 +1785,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "YellowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#62",
         "description": "This is Lo-Fish num: 62",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/62.png",
         "edition": 63,
-        "image": "URL HERE/62.png",
         "index": 62,
-        "name": "#62"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1842,20 +1818,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#63",
         "description": "This is Lo-Fish num: 63",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/63.png",
         "edition": 64,
-        "image": "URL HERE/63.png",
         "index": 63,
-        "name": "#63"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1871,20 +1847,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#64",
         "description": "This is Lo-Fish num: 64",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/64.png",
         "edition": 65,
-        "image": "URL HERE/64.png",
         "index": 64,
-        "name": "#64"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1892,28 +1868,28 @@
             },
             {
                 "trait_type": "Body",
-                "value": "BlueB"
+                "value": "PinkB"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "RainbowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#65",
         "description": "This is Lo-Fish num: 65",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/65.png",
         "edition": 66,
-        "image": "URL HERE/65.png",
         "index": 65,
-        "name": "#65"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1929,20 +1905,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#66",
         "description": "This is Lo-Fish num: 66",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/66.png",
         "edition": 67,
-        "image": "URL HERE/66.png",
         "index": 66,
-        "name": "#66"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1958,20 +1934,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#67",
         "description": "This is Lo-Fish num: 67",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/67.png",
         "edition": 68,
-        "image": "URL HERE/67.png",
         "index": 67,
-        "name": "#67"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -1983,24 +1959,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "WhiteHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#68",
         "description": "This is Lo-Fish num: 68",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/68.png",
         "edition": 69,
-        "image": "URL HERE/68.png",
         "index": 68,
-        "name": "#68"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2016,20 +1992,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#69",
         "description": "This is Lo-Fish num: 69",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/69.png",
         "edition": 70,
-        "image": "URL HERE/69.png",
         "index": 69,
-        "name": "#69"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2045,20 +2021,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#70",
         "description": "This is Lo-Fish num: 70",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/70.png",
         "edition": 71,
-        "image": "URL HERE/70.png",
         "index": 70,
-        "name": "#70"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2070,24 +2046,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "PinkHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
                 "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#71",
         "description": "This is Lo-Fish num: 71",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/71.png",
         "edition": 72,
-        "image": "URL HERE/71.png",
         "index": 71,
-        "name": "#71"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2103,20 +2079,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#72",
         "description": "This is Lo-Fish num: 72",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/72.png",
         "edition": 73,
-        "image": "URL HERE/72.png",
         "index": 72,
-        "name": "#72"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2132,20 +2108,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#73",
         "description": "This is Lo-Fish num: 73",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/73.png",
         "edition": 74,
-        "image": "URL HERE/73.png",
         "index": 73,
-        "name": "#73"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2157,24 +2133,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "YellowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#74",
         "description": "This is Lo-Fish num: 74",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/74.png",
         "edition": 75,
-        "image": "URL HERE/74.png",
         "index": 74,
-        "name": "#74"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2190,20 +2166,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#75",
         "description": "This is Lo-Fish num: 75",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/75.png",
         "edition": 76,
-        "image": "URL HERE/75.png",
         "index": 75,
-        "name": "#75"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2219,20 +2195,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#76",
         "description": "This is Lo-Fish num: 76",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/76.png",
         "edition": 77,
-        "image": "URL HERE/76.png",
         "index": 76,
-        "name": "#76"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2240,28 +2216,28 @@
             },
             {
                 "trait_type": "Body",
-                "value": "LightBlueB"
+                "value": "BlueB"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "RainbowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#77",
         "description": "This is Lo-Fish num: 77",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/77.png",
         "edition": 78,
-        "image": "URL HERE/77.png",
         "index": 77,
-        "name": "#77"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2277,20 +2253,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#78",
         "description": "This is Lo-Fish num: 78",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/78.png",
         "edition": 79,
-        "image": "URL HERE/78.png",
         "index": 78,
-        "name": "#78"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2306,20 +2282,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#79",
         "description": "This is Lo-Fish num: 79",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/79.png",
         "edition": 80,
-        "image": "URL HERE/79.png",
         "index": 79,
-        "name": "#79"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2331,24 +2307,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "WhiteHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#80",
         "description": "This is Lo-Fish num: 80",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/80.png",
         "edition": 81,
-        "image": "URL HERE/80.png",
         "index": 80,
-        "name": "#80"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2364,20 +2340,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#81",
         "description": "This is Lo-Fish num: 81",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/81.png",
         "edition": 82,
-        "image": "URL HERE/81.png",
         "index": 81,
-        "name": "#81"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2393,20 +2369,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#82",
         "description": "This is Lo-Fish num: 82",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/82.png",
         "edition": 83,
-        "image": "URL HERE/82.png",
         "index": 82,
-        "name": "#82"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2418,24 +2394,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "PinkHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
                 "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#83",
         "description": "This is Lo-Fish num: 83",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/83.png",
         "edition": 84,
-        "image": "URL HERE/83.png",
         "index": 83,
-        "name": "#83"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2451,20 +2427,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#84",
         "description": "This is Lo-Fish num: 84",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/84.png",
         "edition": 85,
-        "image": "URL HERE/84.png",
         "index": 84,
-        "name": "#84"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2480,20 +2456,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#85",
         "description": "This is Lo-Fish num: 85",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/85.png",
         "edition": 86,
-        "image": "URL HERE/85.png",
         "index": 85,
-        "name": "#85"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2505,24 +2481,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "YellowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#86",
         "description": "This is Lo-Fish num: 86",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/86.png",
         "edition": 87,
-        "image": "URL HERE/86.png",
         "index": 86,
-        "name": "#86"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2538,20 +2514,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#87",
         "description": "This is Lo-Fish num: 87",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/87.png",
         "edition": 88,
-        "image": "URL HERE/87.png",
         "index": 87,
-        "name": "#87"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2567,20 +2543,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#88",
         "description": "This is Lo-Fish num: 88",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/88.png",
         "edition": 89,
-        "image": "URL HERE/88.png",
         "index": 88,
-        "name": "#88"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2588,28 +2564,28 @@
             },
             {
                 "trait_type": "Body",
-                "value": "GreenB"
+                "value": "LightBlueB"
             },
             {
                 "trait_type": "Highlight",
-                "value": "WhiteHL"
+                "value": "RainbowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
                 "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#89",
         "description": "This is Lo-Fish num: 89",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/89.png",
         "edition": 90,
-        "image": "URL HERE/89.png",
         "index": 89,
-        "name": "#89"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2625,20 +2601,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#90",
         "description": "This is Lo-Fish num: 90",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/90.png",
         "edition": 91,
-        "image": "URL HERE/90.png",
         "index": 90,
-        "name": "#90"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2654,20 +2630,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#91",
         "description": "This is Lo-Fish num: 91",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/91.png",
         "edition": 92,
-        "image": "URL HERE/91.png",
         "index": 91,
-        "name": "#91"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2679,24 +2655,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "WhiteHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#92",
         "description": "This is Lo-Fish num: 92",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/92.png",
         "edition": 93,
-        "image": "URL HERE/92.png",
         "index": 92,
-        "name": "#92"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2712,20 +2688,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#93",
         "description": "This is Lo-Fish num: 93",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/93.png",
         "edition": 94,
-        "image": "URL HERE/93.png",
         "index": 93,
-        "name": "#93"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2741,20 +2717,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#94",
         "description": "This is Lo-Fish num: 94",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/94.png",
         "edition": 95,
-        "image": "URL HERE/94.png",
         "index": 94,
-        "name": "#94"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2766,24 +2742,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "PinkHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
                 "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#95",
         "description": "This is Lo-Fish num: 95",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/95.png",
         "edition": 96,
-        "image": "URL HERE/95.png",
         "index": 95,
-        "name": "#95"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2799,20 +2775,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#96",
         "description": "This is Lo-Fish num: 96",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/96.png",
         "edition": 97,
-        "image": "URL HERE/96.png",
         "index": 96,
-        "name": "#96"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2828,20 +2804,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#97",
         "description": "This is Lo-Fish num: 97",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/97.png",
         "edition": 98,
-        "image": "URL HERE/97.png",
         "index": 97,
-        "name": "#97"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2853,24 +2829,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "YellowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#98",
         "description": "This is Lo-Fish num: 98",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/98.png",
         "edition": 99,
-        "image": "URL HERE/98.png",
         "index": 98,
-        "name": "#98"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2886,20 +2862,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#99",
         "description": "This is Lo-Fish num: 99",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/99.png",
         "edition": 100,
-        "image": "URL HERE/99.png",
         "index": 99,
-        "name": "#99"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2915,20 +2891,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#100",
         "description": "This is Lo-Fish num: 100",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/100.png",
         "edition": 101,
-        "image": "URL HERE/100.png",
         "index": 100,
-        "name": "#100"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2936,28 +2912,28 @@
             },
             {
                 "trait_type": "Body",
-                "value": "WhiteB"
+                "value": "GreenB"
             },
             {
                 "trait_type": "Highlight",
-                "value": "PurpleHL"
+                "value": "RainbowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#101",
         "description": "This is Lo-Fish num: 101",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/101.png",
         "edition": 102,
-        "image": "URL HERE/101.png",
         "index": 101,
-        "name": "#101"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -2973,20 +2949,49 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#102",
         "description": "This is Lo-Fish num: 102",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/102.png",
         "edition": 103,
-        "image": "URL HERE/102.png",
         "index": 102,
-        "name": "#102"
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "MidBG"
+            },
+            {
+                "trait_type": "Body",
+                "value": "WhiteB"
+            },
+            {
+                "trait_type": "Highlight",
+                "value": "PurpleHL"
+            },
+            {
+                "trait_type": "Outline",
+                "value": "GrayOL"
+            },
+            {
+                "trait_type": "Light",
+                "value": "YellowL"
+            }
+        ]
     },
     {
+        "name": "#103",
+        "description": "This is Lo-Fish num: 103",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/103.png",
+        "edition": 104,
+        "index": 103,
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3008,43 +3013,14 @@
                 "trait_type": "Light",
                 "value": "GreenL"
             }
-        ],
-        "description": "This is Lo-Fish num: 103",
-        "edition": 104,
-        "image": "URL HERE/103.png",
-        "index": 103,
-        "name": "#103"
+        ]
     },
     {
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "PinkB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ],
+        "name": "#104",
         "description": "This is Lo-Fish num: 104",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/104.png",
         "edition": 105,
-        "image": "URL HERE/104.png",
         "index": 104,
-        "name": "#104"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3060,20 +3036,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#105",
         "description": "This is Lo-Fish num: 105",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/105.png",
         "edition": 106,
-        "image": "URL HERE/105.png",
         "index": 105,
-        "name": "#105"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3089,20 +3065,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#106",
         "description": "This is Lo-Fish num: 106",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/106.png",
         "edition": 107,
-        "image": "URL HERE/106.png",
         "index": 106,
-        "name": "#106"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3114,24 +3090,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "WhiteHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#107",
         "description": "This is Lo-Fish num: 107",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/107.png",
         "edition": 108,
-        "image": "URL HERE/107.png",
         "index": 107,
-        "name": "#107"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3147,20 +3123,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#108",
         "description": "This is Lo-Fish num: 108",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/108.png",
         "edition": 109,
-        "image": "URL HERE/108.png",
         "index": 108,
-        "name": "#108"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3176,20 +3152,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#109",
         "description": "This is Lo-Fish num: 109",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/109.png",
         "edition": 110,
-        "image": "URL HERE/109.png",
         "index": 109,
-        "name": "#109"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3201,24 +3177,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "PinkHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
                 "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#110",
         "description": "This is Lo-Fish num: 110",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/110.png",
         "edition": 111,
-        "image": "URL HERE/110.png",
         "index": 110,
-        "name": "#110"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3234,20 +3210,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#111",
         "description": "This is Lo-Fish num: 111",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/111.png",
         "edition": 112,
-        "image": "URL HERE/111.png",
         "index": 111,
-        "name": "#111"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3263,20 +3239,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#112",
         "description": "This is Lo-Fish num: 112",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/112.png",
         "edition": 113,
-        "image": "URL HERE/112.png",
         "index": 112,
-        "name": "#112"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3288,24 +3264,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "YellowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#113",
         "description": "This is Lo-Fish num: 113",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/113.png",
         "edition": 114,
-        "image": "URL HERE/113.png",
         "index": 113,
-        "name": "#113"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3321,20 +3297,49 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#114",
         "description": "This is Lo-Fish num: 114",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/114.png",
         "edition": 115,
-        "image": "URL HERE/114.png",
         "index": 114,
-        "name": "#114"
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "LightBG"
+            },
+            {
+                "trait_type": "Body",
+                "value": "PinkB"
+            },
+            {
+                "trait_type": "Highlight",
+                "value": "RainbowHL"
+            },
+            {
+                "trait_type": "Outline",
+                "value": "GrayOL"
+            },
+            {
+                "trait_type": "Light",
+                "value": "WhiteL"
+            }
+        ]
     },
     {
+        "name": "#115",
+        "description": "This is Lo-Fish num: 115",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/115.png",
+        "edition": 116,
+        "index": 115,
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3356,43 +3361,14 @@
                 "trait_type": "Light",
                 "value": "GreenL"
             }
-        ],
-        "description": "This is Lo-Fish num: 115",
-        "edition": 116,
-        "image": "URL HERE/115.png",
-        "index": 115,
-        "name": "#115"
+        ]
     },
     {
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "BlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "GrayOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ],
+        "name": "#116",
         "description": "This is Lo-Fish num: 116",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/116.png",
         "edition": 117,
-        "image": "URL HERE/116.png",
         "index": 116,
-        "name": "#116"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3408,20 +3384,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#117",
         "description": "This is Lo-Fish num: 117",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/117.png",
         "edition": 118,
-        "image": "URL HERE/117.png",
         "index": 117,
-        "name": "#117"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3437,20 +3413,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#118",
         "description": "This is Lo-Fish num: 118",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/118.png",
         "edition": 119,
-        "image": "URL HERE/118.png",
         "index": 118,
-        "name": "#118"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3462,24 +3438,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "WhiteHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#119",
         "description": "This is Lo-Fish num: 119",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/119.png",
         "edition": 120,
-        "image": "URL HERE/119.png",
         "index": 119,
-        "name": "#119"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3495,20 +3471,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#120",
         "description": "This is Lo-Fish num: 120",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/120.png",
         "edition": 121,
-        "image": "URL HERE/120.png",
         "index": 120,
-        "name": "#120"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3524,20 +3500,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#121",
         "description": "This is Lo-Fish num: 121",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/121.png",
         "edition": 122,
-        "image": "URL HERE/121.png",
         "index": 121,
-        "name": "#121"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3549,24 +3525,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "PinkHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
                 "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#122",
         "description": "This is Lo-Fish num: 122",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/122.png",
         "edition": 123,
-        "image": "URL HERE/122.png",
         "index": 122,
-        "name": "#122"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3582,20 +3558,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#123",
         "description": "This is Lo-Fish num: 123",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/123.png",
         "edition": 124,
-        "image": "URL HERE/123.png",
         "index": 123,
-        "name": "#123"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3611,20 +3587,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#124",
         "description": "This is Lo-Fish num: 124",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/124.png",
         "edition": 125,
-        "image": "URL HERE/124.png",
         "index": 124,
-        "name": "#124"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3636,24 +3612,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "YellowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#125",
         "description": "This is Lo-Fish num: 125",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/125.png",
         "edition": 126,
-        "image": "URL HERE/125.png",
         "index": 125,
-        "name": "#125"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3669,20 +3645,49 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#126",
         "description": "This is Lo-Fish num: 126",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/126.png",
         "edition": 127,
-        "image": "URL HERE/126.png",
         "index": 126,
-        "name": "#126"
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "LightBG"
+            },
+            {
+                "trait_type": "Body",
+                "value": "BlueB"
+            },
+            {
+                "trait_type": "Highlight",
+                "value": "RainbowHL"
+            },
+            {
+                "trait_type": "Outline",
+                "value": "GrayOL"
+            },
+            {
+                "trait_type": "Light",
+                "value": "YellowL"
+            }
+        ]
     },
     {
+        "name": "#127",
+        "description": "This is Lo-Fish num: 127",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/127.png",
+        "edition": 128,
+        "index": 127,
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3704,43 +3709,14 @@
                 "trait_type": "Light",
                 "value": "GreenL"
             }
-        ],
-        "description": "This is Lo-Fish num: 127",
-        "edition": 128,
-        "image": "URL HERE/127.png",
-        "index": 127,
-        "name": "#127"
+        ]
     },
     {
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "LightBlueB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ],
+        "name": "#128",
         "description": "This is Lo-Fish num: 128",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/128.png",
         "edition": 129,
-        "image": "URL HERE/128.png",
         "index": 128,
-        "name": "#128"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3756,20 +3732,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#129",
         "description": "This is Lo-Fish num: 129",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/129.png",
         "edition": 130,
-        "image": "URL HERE/129.png",
         "index": 129,
-        "name": "#129"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3785,20 +3761,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#130",
         "description": "This is Lo-Fish num: 130",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/130.png",
         "edition": 131,
-        "image": "URL HERE/130.png",
         "index": 130,
-        "name": "#130"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3810,24 +3786,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "PinkHL"
+                "value": "WhiteHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#131",
         "description": "This is Lo-Fish num: 131",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/131.png",
         "edition": 132,
-        "image": "URL HERE/131.png",
         "index": 131,
-        "name": "#131"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3843,20 +3819,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#132",
         "description": "This is Lo-Fish num: 132",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/132.png",
         "edition": 133,
-        "image": "URL HERE/132.png",
         "index": 132,
-        "name": "#132"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3872,20 +3848,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#133",
         "description": "This is Lo-Fish num: 133",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/133.png",
         "edition": 134,
-        "image": "URL HERE/133.png",
         "index": 133,
-        "name": "#133"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3897,24 +3873,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "YellowHL"
+                "value": "PinkHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "RedOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
                 "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#134",
         "description": "This is Lo-Fish num: 134",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/134.png",
         "edition": 135,
-        "image": "URL HERE/134.png",
         "index": 134,
-        "name": "#134"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3930,20 +3906,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#135",
         "description": "This is Lo-Fish num: 135",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/135.png",
         "edition": 136,
-        "image": "URL HERE/135.png",
         "index": 135,
-        "name": "#135"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3959,20 +3935,20 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "WhiteOL"
+                "value": "BlueOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#136",
         "description": "This is Lo-Fish num: 136",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/136.png",
         "edition": 137,
-        "image": "URL HERE/136.png",
         "index": 136,
-        "name": "#136"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -3984,24 +3960,24 @@
             },
             {
                 "trait_type": "Highlight",
-                "value": "RainbowHL"
+                "value": "YellowHL"
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "WhiteOL"
             },
             {
                 "trait_type": "Light",
-                "value": "GreenL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#137",
         "description": "This is Lo-Fish num: 137",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/137.png",
         "edition": 138,
-        "image": "URL HERE/137.png",
         "index": 137,
-        "name": "#137"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -4017,20 +3993,49 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "BlueOL"
+                "value": "GrayOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "GreenL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#138",
         "description": "This is Lo-Fish num: 138",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/138.png",
         "edition": 139,
-        "image": "URL HERE/138.png",
         "index": 138,
-        "name": "#138"
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "LightBG"
+            },
+            {
+                "trait_type": "Body",
+                "value": "LightBlueB"
+            },
+            {
+                "trait_type": "Highlight",
+                "value": "RainbowHL"
+            },
+            {
+                "trait_type": "Outline",
+                "value": "BlueOL"
+            },
+            {
+                "trait_type": "Light",
+                "value": "YellowL"
+            }
+        ]
     },
     {
+        "name": "#139",
+        "description": "This is Lo-Fish num: 139",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/139.png",
+        "edition": 140,
+        "index": 139,
         "attributes": [
             {
                 "trait_type": "Background",
@@ -4052,43 +4057,14 @@
                 "trait_type": "Light",
                 "value": "WhiteL"
             }
-        ],
-        "description": "This is Lo-Fish num: 139",
-        "edition": 140,
-        "image": "URL HERE/139.png",
-        "index": 139,
-        "name": "#139"
+        ]
     },
     {
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "WhiteHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ],
+        "name": "#140",
         "description": "This is Lo-Fish num: 140",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/140.png",
         "edition": 141,
-        "image": "URL HERE/140.png",
         "index": 140,
-        "name": "#140"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -4104,20 +4080,49 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "WhiteL"
+                "value": "YellowL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#141",
         "description": "This is Lo-Fish num: 141",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/141.png",
         "edition": 142,
-        "image": "URL HERE/141.png",
         "index": 141,
-        "name": "#141"
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "LightBG"
+            },
+            {
+                "trait_type": "Body",
+                "value": "GreenB"
+            },
+            {
+                "trait_type": "Highlight",
+                "value": "WhiteHL"
+            },
+            {
+                "trait_type": "Outline",
+                "value": "GrayOL"
+            },
+            {
+                "trait_type": "Light",
+                "value": "WhiteL"
+            }
+        ]
     },
     {
+        "name": "#142",
+        "description": "This is Lo-Fish num: 142",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/142.png",
+        "edition": 143,
+        "index": 142,
         "attributes": [
             {
                 "trait_type": "Background",
@@ -4139,43 +4144,14 @@
                 "trait_type": "Light",
                 "value": "GreenL"
             }
-        ],
-        "description": "This is Lo-Fish num: 142",
-        "edition": 143,
-        "image": "URL HERE/142.png",
-        "index": 142,
-        "name": "#142"
+        ]
     },
     {
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "PinkHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "WhiteL"
-            }
-        ],
+        "name": "#143",
         "description": "This is Lo-Fish num: 143",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/143.png",
         "edition": 144,
-        "image": "URL HERE/143.png",
         "index": 143,
-        "name": "#143"
-    },
-    {
         "attributes": [
             {
                 "trait_type": "Background",
@@ -4191,20 +4167,49 @@
             },
             {
                 "trait_type": "Outline",
-                "value": "GrayOL"
+                "value": "RedOL"
             },
             {
                 "trait_type": "Light",
-                "value": "YellowL"
+                "value": "WhiteL"
             }
-        ],
+        ]
+    },
+    {
+        "name": "#144",
         "description": "This is Lo-Fish num: 144",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/144.png",
         "edition": 145,
-        "image": "URL HERE/144.png",
         "index": 144,
-        "name": "#144"
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "LightBG"
+            },
+            {
+                "trait_type": "Body",
+                "value": "GreenB"
+            },
+            {
+                "trait_type": "Highlight",
+                "value": "PinkHL"
+            },
+            {
+                "trait_type": "Outline",
+                "value": "GrayOL"
+            },
+            {
+                "trait_type": "Light",
+                "value": "YellowL"
+            }
+        ]
     },
     {
+        "name": "#145",
+        "description": "This is Lo-Fish num: 145",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/145.png",
+        "edition": 146,
+        "index": 145,
         "attributes": [
             {
                 "trait_type": "Background",
@@ -4226,14 +4231,14 @@
                 "trait_type": "Light",
                 "value": "GreenL"
             }
-        ],
-        "description": "This is Lo-Fish num: 145",
-        "edition": 146,
-        "image": "URL HERE/145.png",
-        "index": 145,
-        "name": "#145"
+        ]
     },
     {
+        "name": "#146",
+        "description": "This is Lo-Fish num: 146",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/146.png",
+        "edition": 147,
+        "index": 146,
         "attributes": [
             {
                 "trait_type": "Background",
@@ -4255,43 +4260,43 @@
                 "trait_type": "Light",
                 "value": "GreenL"
             }
-        ],
-        "description": "This is Lo-Fish num: 146",
-        "edition": 147,
-        "image": "URL HERE/146.png",
-        "index": 146,
-        "name": "#146"
+        ]
     },
     {
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "YellowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "BlueOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "YellowL"
-            }
-        ],
+        "name": "#147",
         "description": "This is Lo-Fish num: 147",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/147.png",
         "edition": 148,
-        "image": "URL HERE/147.png",
         "index": 147,
-        "name": "#147"
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "LightBG"
+            },
+            {
+                "trait_type": "Body",
+                "value": "GreenB"
+            },
+            {
+                "trait_type": "Highlight",
+                "value": "YellowHL"
+            },
+            {
+                "trait_type": "Outline",
+                "value": "BlueOL"
+            },
+            {
+                "trait_type": "Light",
+                "value": "YellowL"
+            }
+        ]
     },
     {
+        "name": "#148",
+        "description": "This is Lo-Fish num: 148",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/148.png",
+        "edition": 149,
+        "index": 148,
         "attributes": [
             {
                 "trait_type": "Background",
@@ -4313,43 +4318,43 @@
                 "trait_type": "Light",
                 "value": "WhiteL"
             }
-        ],
-        "description": "This is Lo-Fish num: 148",
-        "edition": 149,
-        "image": "URL HERE/148.png",
-        "index": 148,
-        "name": "#148"
+        ]
     },
     {
-        "attributes": [
-            {
-                "trait_type": "Background",
-                "value": "LightBG"
-            },
-            {
-                "trait_type": "Body",
-                "value": "GreenB"
-            },
-            {
-                "trait_type": "Highlight",
-                "value": "RainbowHL"
-            },
-            {
-                "trait_type": "Outline",
-                "value": "RedOL"
-            },
-            {
-                "trait_type": "Light",
-                "value": "GreenL"
-            }
-        ],
+        "name": "#149",
         "description": "This is Lo-Fish num: 149",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/149.png",
         "edition": 150,
-        "image": "URL HERE/149.png",
         "index": 149,
-        "name": "#149"
+        "attributes": [
+            {
+                "trait_type": "Background",
+                "value": "LightBG"
+            },
+            {
+                "trait_type": "Body",
+                "value": "GreenB"
+            },
+            {
+                "trait_type": "Highlight",
+                "value": "RainbowHL"
+            },
+            {
+                "trait_type": "Outline",
+                "value": "RedOL"
+            },
+            {
+                "trait_type": "Light",
+                "value": "GreenL"
+            }
+        ]
     },
     {
+        "name": "#150",
+        "description": "This is Lo-Fish num: 150",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/150.png",
+        "edition": 151,
+        "index": 150,
         "attributes": [
             {
                 "trait_type": "Background",
@@ -4371,14 +4376,14 @@
                 "trait_type": "Light",
                 "value": "WhiteL"
             }
-        ],
-        "description": "This is Lo-Fish num: 150",
-        "edition": 151,
-        "image": "URL HERE/150.png",
-        "index": 150,
-        "name": "#150"
+        ]
     },
     {
+        "name": "#151",
+        "description": "This is Lo-Fish num: 151",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/151.png",
+        "edition": 152,
+        "index": 151,
         "attributes": [
             {
                 "trait_type": "Background",
@@ -4400,14 +4405,14 @@
                 "trait_type": "Light",
                 "value": "YellowL"
             }
-        ],
-        "description": "This is Lo-Fish num: 151",
-        "edition": 152,
-        "image": "URL HERE/151.png",
-        "index": 151,
-        "name": "#151"
+        ]
     },
     {
+        "name": "#152",
+        "description": "This is Lo-Fish num: 152",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/152.png",
+        "edition": 153,
+        "index": 152,
         "attributes": [
             {
                 "trait_type": "Background",
@@ -4429,14 +4434,14 @@
                 "trait_type": "Light",
                 "value": "GreenL"
             }
-        ],
-        "description": "This is Lo-Fish num: 152",
-        "edition": 153,
-        "image": "URL HERE/152.png",
-        "index": 152,
-        "name": "#152"
+        ]
     },
     {
+        "name": "#153",
+        "description": "This is Lo-Fish num: 153",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/153.png",
+        "edition": 154,
+        "index": 153,
         "attributes": [
             {
                 "trait_type": "Background",
@@ -4458,14 +4463,14 @@
                 "trait_type": "Light",
                 "value": "WhiteL"
             }
-        ],
-        "description": "This is Lo-Fish num: 153",
-        "edition": 154,
-        "image": "URL HERE/153.png",
-        "index": 153,
-        "name": "#153"
+        ]
     },
     {
+        "name": "#154",
+        "description": "This is Lo-Fish num: 154",
+        "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/154.png",
+        "edition": 155,
+        "index": 154,
         "attributes": [
             {
                 "trait_type": "Background",
@@ -4487,11 +4492,6 @@
                 "trait_type": "Light",
                 "value": "YellowL"
             }
-        ],
-        "description": "This is Lo-Fish num: 154",
-        "edition": 155,
-        "image": "URL HERE/154.png",
-        "index": 154,
-        "name": "#154"
+        ]
     }
 ]

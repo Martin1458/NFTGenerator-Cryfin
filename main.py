@@ -1,24 +1,28 @@
-from PIL import Image 
-from IPython.display import display 
-import random
-import json
-import os
-import shutil
-from partsManager import *
-from itertools import combinations
 import collections
 import itertools
+import json
+import os
+import random
+import shutil
+from itertools import combinations
+
+from IPython.display import display
+from PIL import Image
+
+from partsManager import *
 
 # Path k castem
-pathToParts = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator10\Parts"
+pathToParts = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator11\Parts"
 
 # Path do slozky kam se vyrenderuji obrazky
-outputFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator10\Output"
+outputFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator11\Output"
 
 # Path k json souboru
-outputJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator10\NFTs.json"
+outputJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator11\NFTs.json"
 
-outputJsonFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator10\Jsons"
+outputJsonFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator11\Jsons\\"
+
+outputResizeFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator11\OutputResize"
 
 # Pocet obrazku k vytvoreni
 #totalImages = int(input("How many images should I create? "))
@@ -39,12 +43,15 @@ tempAllParts = []
 thisAttributes = []
 # Vsechny aktualni kombinace attributu (viz: cobinationsLength)
 thisAttributeCombinations = []
-# allAttributeCombinations + thisAttributeCombinations 
+# allAttributeCombinations + thisAttributeCombinations
 # pouziva se na zkontrolovani duplikatu predtim nez se kombinace zapisou do allAttributeCombinations
 tempAllAttributeCombinations = []
 # Pocet attributu co se smi opakovat
 cobinationsLength = 3
+# Read variable name (must be a tuple)
+imgSize = (350, 350)
 
+skipDecisions = True
 
 # Tato funkce najde duplikaty v dannem listu
 # Vraci bool (True = tento list obsahuje duplikaty) a list (kombinace ktera se duplikuje)
@@ -54,7 +61,7 @@ def findDuplicates(listOfElems):
         if elem in newElements:
             return True, elem
         else:
-            newElements.append(elem)  
+            newElements.append(elem)
 
     return False, None
 
@@ -65,19 +72,19 @@ def findElementXTimes(myList):
     duplicatesList = []
     for item in myList:
         duplicatesList.append(item)
-    
+
     newListD = []
 
     for item in duplicatesList:
         if item not in newListD:
             newListD.append(item)
-    
+
     tempAllDuplicates = {}
 
     for item in newListD:
         tempAllDuplicates[item]=myList.count(item)
         #print('{} is {} times in all images'.format(item, myList.count(item)))
-    
+
     fullList = nullParts
 
     for item in tempAllDuplicates:
@@ -88,17 +95,65 @@ def findElementXTimes(myList):
     return fullList
 
 
-# Test findDuplicates (pokud funguje napise "john")  
+# Test findDuplicates (pokud funguje napise "john")
 # myList = ["john", "marry", "john", "james"]
 # myBool, myDuplicate = findDuplicates(myList)
 # print(myDuplicate)
+def getDestination(xxxx):
+
+    lastDest = ''
+    someInt = -1
+    if "\\" in xxxx:
+        while lastDest=='':
+            lastDest = xxxx.split('\\')[someInt]
+            someInt -= 1
+    elif "/" in xxxx:
+        while lastDest=='':
+            lastDest = xxxx.split('/')[someInt]
+            someInt -= 1
+    else:
+        print("Path {} invalid".format(xxxx))
+        exit()
+
+    # print("-{}-".format(xxxx))
+    # print("-{}-".format(lastDest))
+    # print("-{}-".format(xxxx.split('\\')[-2]))
+    # print("-{}-".format(xxxx.split('\\')[-1]))
+    return lastDest
+
+
+def checkFolder(xxx):
+    if skipDecisions == False:
+
+        if not os.path.isdir(xxx):
+            os.mkdir(xxx)
+
+        outDirFiles = os.listdir(xxx)
+        decisionOutFolder = False
+        while(not decisionOutFolder):
+            if len(outDirFiles) != 0:
+                notEmptyDir = input("Warning! {} directory is not empty. Delete contents of {} folder? [Y/N]: ".format(getDestination(xxx), getDestination(xxx)))
+                if notEmptyDir.lower() == 'y':
+                    decisionOutFolder = True
+                    shutil.rmtree(xxx)
+                    print("{} folder was deleted\n".format(getDestination(xxx)))
+                elif notEmptyDir.lower() == 'n':
+                    decisionOutFolder = True
+                    print("{} folder was not deleted\n".format(getDestination(xxx)))
+                else:
+                    print("Invalid option")
+            else:
+                decisionOutFolder = True
+
+        if not os.path.isdir(xxx):
+            os.mkdir(xxx)
 
 # Tato funkce vygeneruje originalni obrazek
 def createNewImage(chosenTraits):
     # global = promenne ktere ma tato funkce pravo menit
     global allImages, allAttributeCombinations, newAttributes, newAttributesCollection, tempAllAttributeCombinations, allParts, tempAllParts
 
-    print("Img num:     "+str(len(allImages)))
+    # print("Img num:     "+str(len(allImages)))
     # vytvor/vynuluj list pro vytvoreni noveho ojbrazku
     newImage = {}
 
@@ -134,7 +189,7 @@ def createNewImage(chosenTraits):
     for item in combinations(thisAttributes, cobinationsLength):
         thisAttributeCombinations.append(item)
         tempAllAttributeCombinations.append(item)
-    
+
     # zapise vsechny minule i aktualni traity do tempAllParts, na zkontrolovani pro maximalni pocet jednotlivych traitu
     for item in allParts:
         tempAllParts.append(item)
@@ -164,22 +219,23 @@ def createNewImage(chosenTraits):
     if thisDuplicate:
         # prida 1 k poctu pokusu k vytvoreni tohoto obrazku
         return 'duplicate'
-    
+
     # Ted kdyz uz  jsme se zbavili duplikatu, zapiseme aktualni kombinace do allAttributeCombinations
     # (Aby jsme mohli zkontrolovat dalsi obrazky)
     for item in combinations(thisAttributes, cobinationsLength):
         allAttributeCombinations.append(item)
 
-    # Zapise nove 
+    # Zapise nove
     for item in newImage:
         allParts.append(newImage[item])
-    
+
     # Zkontroluje zda obrazek jiz neexistuje
     if newImage in allImages:
         print(newImage)
         print("A whole image is repeating. How? IDK")
         return 'duplicate'
     else:
+        print("Img num: "+str(len(allImages))+"; chosenTraits: "+str(chosenTraits))
         # Ted uz by nemeli existovat zadne duplikaty, vratime tedy vybrane attributy
         return newImage
 
@@ -199,8 +255,8 @@ def createAllImages():
     print(str(len(someList)))
 
 
-    for chosenTraits in someList: 
-        print("chosenTraits: "+str(chosenTraits))
+    for chosenTraits in someList:
+        # print("chosenTraits: "+str(chosenTraits))
         newTraitImage = createNewImage(chosenTraits)
         #newTraitImage = 'duplicate'
         # pokud createNewImage nevrati error, zapise obrazek do allImages, jinak ukonci script.
@@ -233,7 +289,6 @@ for i in allAttributeCombinations:
         newline.append(allFiles[e])
     newAllAttributeCombinations.append(newline)
 #print("newAllAttributeCombinations: "+str(newAllAttributeCombinations))
-print("\n\n\n")
 # convert to 2d array pro checking
 # allAttributes = []
 # for nft in allImages:
@@ -249,75 +304,61 @@ for item in allImages:
     i = i + 1
 
 # Generovani json souboru
-# zapise vsechny parametry do listu allJsonImagesList
-if not os.path.isdir(outputJsonFolder):
-    os.mkdir(outputJsonFolder)
 
-outDirJsonFiles = os.listdir(outputJsonFolder)
-decisionOutJsonFolder = False
-while(not decisionOutJsonFolder):
-    if len(outDirJsonFiles) != 0:
-        notEmptyDir = input("Warning! Json directory is not empty. Delete contents of output folder? [Y/N]: ")
-        if notEmptyDir == "Y" or notEmptyDir == "y":
-            decisionOutJsonFolder = True
-            shutil.rmtree(outputJsonFolder)
-            print("Json folder was deleted")
-        elif notEmptyDir == "N" or notEmptyDir == "n":
-            decisionOutJsonFolder = True
-            print("Json folder was not deleted")
-        else:
-            print("Invalid option")
-    else:
-        decisionOutJsonFolder = True
+if skipDecisions == False:
+    jsonItTxt = input("Should I create jsons? [Y/N]: ")
+    jsonIt = [False, True][jsonItTxt.lower() == 'y']
+else:
+    jsonIt = True
 
-if not os.path.isdir(outputJsonFolder):
-    os.mkdir(outputJsonFolder)
+if jsonIt:
 
-allJsonImagesList = []
-for image in allImages:
-    attributes = []
-    for item in image:
-        if item != 'tokenId':
-            attribute = {
-                "trait_type": item,
-                "value": image[item]
+    checkFolder(outputJsonFolder)
+
+    allJsonImagesList = []
+    for image in allImages:
+        attributes = []
+        for item in image:
+            if item != 'tokenId':
+                attribute = {
+                    "trait_type": item,
+                    "value": image[item]
+                }
+                attributes.append(attribute)
+
+        oneImage = {
+            "name": "#{}".format(image['tokenId']),
+            "description": "This is Lo-Fish num: {}".format(image['tokenId']),
+            "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/"+str(image['tokenId'])+".png",
+            "edition": image['tokenId']+1,
+            "index": image['tokenId'],
+            "attributes": attributes
             }
-            attributes.append(attribute)
+        #print(oneImage)
+        allJsonImagesList.append(oneImage)
 
-    oneImage = {
-        "name": "#{}".format(image['tokenId']),
-        "description": "This is Lo-Fish num: {}".format(image['tokenId']),
-        "image": "URL HERE/"+str(image['tokenId'])+".png",
-        "edition": image['tokenId']+1,
-        "index": image['tokenId'],
-        "attributes": attributes,
-        }
-    #print(oneImage)
-    allJsonImagesList.append(oneImage)
+        oneImageDump = json.dumps(oneImage, indent=4, sort_keys=False)
 
-    oneImageDump = json.dumps(oneImage, indent=4, sort_keys=True)
+        with open(outputJsonFolder+str(allImages.index(image))+".json", "w") as outfile:
+        # zapise allJsonImages do outputJson
+            outfile.write(oneImageDump)
 
-    with open(outputJsonFolder+"\\"+str(allImages.index(image))+".json", "w") as outfile:
-    # zapise allJsonImages do outputJson
-        outfile.write(oneImageDump)
+    # konvertuje allJsonImagesList do json formatu a ulozi do allJsonImages
+    allJsonImages = json.dumps(allJsonImagesList, indent=4, sort_keys=False)
 
-# konvertuje allJsonImagesList do json formatu a ulozi do allJsonImages
-allJsonImages = json.dumps(allJsonImagesList, indent=4, sort_keys=True)
+    # vytvori/vymaze content outputJson
+    open(outputJson, "w").close()
 
-# vytvori/vymaze content outputJson
-open(outputJson, "w").close()
-
-# otevre outputJson
-with open(outputJson, "w") as outfile:
-    # zapise allJsonImages do outputJson
-    outfile.write(allJsonImages)
-
+    # otevre outputJson
+    with open(outputJson, "w") as outfile:
+        # zapise allJsonImages do outputJson
+        outfile.write(allJsonImages)
 
 # Kolik je jakych casti
 backgroundCount = {}
 for item in backgroundNames:
     backgroundCount[item] = 0
-    
+
 bodyCount = {}
 for item in bodyNames:
     bodyCount[item] = 0
@@ -325,11 +366,11 @@ for item in bodyNames:
 highlightCount = {}
 for item in highlightNames:
     highlightCount[item] = 0
-    
+
 outlineCount = {}
 for item in outlineNames:
     outlineCount[item] = 0
-    
+
 lightCount = {}
 for item in lightNames:
     lightCount[item] = 0
@@ -342,47 +383,29 @@ for image in allImages:
     lightCount[image["Light"]] += 1
 
 # Napise pocet vyskytu kazde casti
-print("Background count:"+str(backgroundCount))
-print("Body count:"+str(bodyCount))
-print("Highlight count:"+str(highlightCount))
-print("Outline count:"+str(outlineCount))
-print("Light count:"+str(lightCount))
-print("Num of images:"+str(len(allImages)))
+print("Background count :"+str(backgroundCount))
+print("Body count       :"+str(bodyCount))
+print("Highlight count  :"+str(highlightCount))
+print("Outline count    :"+str(outlineCount))
+print("Light count      :"+str(lightCount)+"\n")
+print("Num of images    :"+str(len(allImages)))
 #
 #print(allParts)
 #print(len(allParts))
 
-# Script se zepta pokud ma vypocitane obrazky vyrenderovat 
-renderEmTxt = input("Should I render those Images? [Y/N]: ")
-renderEm = [False, True][renderEmTxt == 'y' or renderEmTxt == 'Y']
+if skipDecisions == False:
+    # Script se zepta pokud ma vypocitane obrazky vyrenderovat
+    renderEmTxt = input("Should I render those Images? [Y/N]: ")
+    renderEm = [False, True][renderEmTxt.lower() == 'y']
+else:
+    renderEm = True
 
 # Pokud ma script obrazky vyrendrovat, ucini tak
 if renderEm:
 
-    # Vytvori outputFolder na jeho lokaci pokud jiz neexistuje
-    if not os.path.isdir(outputFolder):
-        os.mkdir(outputFolder)
+    checkFolder(outputFolder)
 
-    outDirFiles = os.listdir(outputFolder)
-    decisionOutFolder = False
-    while(not decisionOutFolder):
-        if len(outDirFiles) != 0:
-            notEmptyDir = input("Warning! Output directory is not empty. Delete contents of output folder? [Y/N]: ")
-            if notEmptyDir == "Y" or notEmptyDir == "y":
-                decisionOutFolder = True
-                shutil.rmtree(outputFolder)
-                print("Output folder was deleted")
-            elif notEmptyDir == "N" or notEmptyDir == "n":
-                decisionOutFolder = True
-                print("Output folder was not deleted")
-            else:
-                print("Invalid option")
-        else:
-            decisionOutFolder = True
-
-    # Script vytvori outputFolder pokud jste se rozhodli ho v prdchozimkroku vymazat
-    if not os.path.isdir(outputFolder):
-        os.mkdir(outputFolder)
+    checkFolder(outputResizeFolder)
 
     # vyrenderuje vsechny obrazky
     for item in allImages:
@@ -400,7 +423,6 @@ if renderEm:
         com3 = Image.alpha_composite(com2, im4)
         com4 = Image.alpha_composite(com3, im5)
 
-        # Premeni RGBA vrstvy do RGB
         rgbIm = com4.convert('RGB')
 
         # Pojmenuje obrazek tokenID.png
@@ -408,4 +430,11 @@ if renderEm:
 
         # Ulozi obrazek do outputFolder
         rgbIm.save(os.path.join(outputFolder, fileName))
+
+        ss = com4.resize(imgSize)
+        rgbIm = ss.convert('RGB')
+
+        rgbIm.save(os.path.join(outputResizeFolder, fileName))
+
         print("Image {} created with parameters: {}".format(fileName, item))
+        # exit()

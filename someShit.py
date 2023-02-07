@@ -4,7 +4,7 @@ from partsManager import *
 import random
 import itertools
 import threading
-import time 
+import time
 
 def T1():
     myList = {"joehn", "marry", "john", "james"}
@@ -20,7 +20,7 @@ def T2():
         if elem in newElements:
             return True
         else:
-            newElements.append(elem)  
+            newElements.append(elem)
 
     return False
 
@@ -42,7 +42,7 @@ def T4():
         if myList.count(item) > numBer:
             duplicat = True
             duplicatesList.append(item)
-    
+
     if duplicat:
         print("myList contains a duplicat")
         print(duplicatesList)
@@ -54,14 +54,14 @@ def T4():
     for item in duplicatesList:
         if item not in newListD:
             newListD.append(item)
-    
+
     tempAllDuplicates = {}
 
     for item in newListD:
         #tempAllDuplicates.append({item:myList.count(item)})
         tempAllDuplicates[item]=myList.count(item)
         print('{} is {} times in myList'.format(item, myList.count(item)))
-    
+
     print(tempAllDuplicates)
 
 def findElementXTimes(myList, numBer):
@@ -73,7 +73,7 @@ def findElementXTimes(myList, numBer):
         if myList.count(item) > numBer:
             duplicat = True
             duplicatesList.append(item)
-    
+
     if duplicat:
         print("Parts contains a duplicat")
         print(duplicatesList)
@@ -85,7 +85,7 @@ def findElementXTimes(myList, numBer):
     for item in duplicatesList:
         if item not in newListD:
             newListD.append(item)
-    
+
     tempAllDuplicates = {}
 
     for item in newListD:
@@ -131,7 +131,7 @@ def T8():
                     pass
 
     for r in range(20):
-        print(myList) 
+        print(myList)
         addOneToList()
 
     #[0, 0, 0, 0, 0]
@@ -162,7 +162,7 @@ def T10():
             if elem in newElements:
                 return True
             else:
-                newElements.append(elem)  
+                newElements.append(elem)
 
         return False
 
@@ -181,7 +181,7 @@ def T12():
     listComb = []
     for item in combinations(myList, 3):
         listComb.append(item)
-    
+
     for item in listComb:
         print("{},{},{}".format(item[0], item[1], item[2]))
     print("\n\n\n")
@@ -217,7 +217,7 @@ def T15():
         number = 0
         for i in range(xxx):
             time.sleep(0.5)
-            number += 1 
+            number += 1
         print(number)
     countTo(2)
     countTo(3)
@@ -235,5 +235,29 @@ def T16():
     for i in range(1):
         print("ss")
 
-T9()
+def T17():
+    myVariable = (300, 300)
+    print(type(myVariable))
+
+def T18():
+    p = r"/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator10/Jsons/"
+    p = r"c:\Windows\System32"
+    s = 'dd'
+    if "\\" in s:
+        if s.split('\\')[-1] == '':
+            last_word = s.split('\\')[-2]
+        else:
+            last_word = s.split('\\')[-1]
+    elif "/" in s:
+        if s.split('/')[-1] == '':
+            last_word = s.split('/')[-2]
+        else:
+            last_word = s.split('/')[-1]
+    else:
+        print("path {} invalid".format(s))
+        exit()
+
+    print(last_word)
+
+T18()
 #print(name)
