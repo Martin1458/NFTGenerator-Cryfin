@@ -10,19 +10,21 @@ from IPython.display import display
 from PIL import Image
 
 from partsManager import *
+# Path k rootu
+root_file = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator17\\"
 
 # Path k castem
-pathToParts = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\Parts"
+pathToParts = root_file + "Parts"
 
 # Path do slozky kam se vyrenderuji obrazky
-outputFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\Output"
+outputFolder =  root_file + "Output"
 
 # Path k json souboru
-outputJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\NFTs.json"
+outputJson = root_file + "NFTs.json"
 
-outputJsonFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\Jsons\\"
+outputJsonFolder = root_file + "Jsons/"
 
-outputResizeFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\OutputResize"
+outputResizeFolder = root_file + "OutputResize"
 
 # Pocet obrazku k vytvoreni
 #totalImages = int(input("How many images should I create? "))
@@ -48,6 +50,7 @@ thisAttributeCombinations = []
 tempAllAttributeCombinations = []
 # Pocet attributu co se smi opakovat
 cobinationsLength = 3
+
 # Read variable name (must be a tuple)
 imgSize = (350, 350)
 
@@ -157,10 +160,10 @@ def createNewImage(chosenTraits):
     # vytvor/vynuluj list pro vytvoreni noveho ojbrazku
     newImage = {}
 
-    # vyber "Background", "Body", "Highlight", "Outline" a "Light" podle tabulek z partsManager.py
+    # vyber "Background", "Body", "Highlight"=>"Fin", "Outline" a "Light" podle tabulek z partsManager.py
     newImage ["Background"] = backgroundNames[chosenTraits[0]-1]
     newImage ["Body"] = bodyNames[chosenTraits[1]-1]
-    newImage ["Highlight"] = highlightNames[chosenTraits[2]-1]
+    newImage ["Fin"] = highlightNames[chosenTraits[2]-1]
     newImage ["Outline"] = outlineNames[chosenTraits[3]-1]
     newImage ["Light"] = lightNames[chosenTraits[4]-1]
 
@@ -205,15 +208,17 @@ def createNewImage(chosenTraits):
 
     # Pomoci funkce findElementXTimes vygeneruje allPartsCount, kam se ulozi pocty jednotlivych traits
     allPartsCount = findElementXTimes(tempAllParts)
+    #print(allPartsCount)
 
     # Zkontroluje pro kazdou trait zda se jiz nevyskytuje vicekrat nez by mela
     for item in maxParts:
         if maxParts[item] != 0:
             if allPartsCount[item] > maxParts[item]:
                 thisDuplicate = True
+                #print(thisDuplicate)
 
     # ukaze duplikat pokud existuje, jinak napise None
-    #print(thisDuplicateItem)
+    # print(thisDuplicateItem)
 
     # pokud se jiz duplikat nasel, funkce createNewImage se restartuje
     if thisDuplicate:
@@ -253,6 +258,8 @@ def createAllImages():
         someList.append(list(v))
 
     print(str(len(someList)))
+    # Randomize list
+    random.shuffle(someList)
 
 
     for chosenTraits in someList:
@@ -329,7 +336,7 @@ if jsonIt:
         oneImage = {
             "name": "#{}".format(image['tokenId']),
             "description": "This is Lo-Fish num: {}".format(image['tokenId']),
-            "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/"+str(image['tokenId'])+".png",
+          #  "image": "https://bitterfly.io/home/wp-content/uploads/2022/09/"+str(image['tokenId'])+".png",
             "edition": image['tokenId']+1,
             "index": image['tokenId'],
             "attributes": attributes
@@ -378,19 +385,52 @@ for item in lightNames:
 for image in allImages:
     backgroundCount[image["Background"]] += 1
     bodyCount[image["Body"]] += 1
-    highlightCount[image["Highlight"]] += 1
+    highlightCount[image["Fin"]] += 1
     outlineCount[image["Outline"]] += 1
     lightCount[image["Light"]] += 1
 
 # Napise pocet vyskytu kazde casti
 print("Background count :"+str(backgroundCount))
 print("Body count       :"+str(bodyCount))
-print("Highlight count  :"+str(highlightCount))
+print("Fin count        :"+str(highlightCount))
 print("Outline count    :"+str(outlineCount))
 print("Light count      :"+str(lightCount)+"\n")
 print("Num of images    :"+str(len(allImages)))
 #
 #print(allParts)
+print("")
+print("All exceptions from maxParts:")
+
+for key, value in maxParts.items():
+    if value != 0:
+        print("    "+str(key)+": "+str(value))
+print("")
+
+allPartsCount = {}
+for item in allParts:
+    if item in allPartsCount:
+        allPartsCount[item] += 1
+    else:
+        allPartsCount[item] = 1
+
+#allPartsCount['RainbowB'] += 1
+#print(allPartsCount)
+maxPartsExceptions = {k: v for k, v in maxParts.items() if v != 0}
+#print(maxPartsExceptions)
+
+maxPatrsError = False
+for key, value in allPartsCount.items():
+    if key in maxPartsExceptions:
+        if value > maxPartsExceptions[key]:
+            print(f"{key} has exceeded the maximum count {maxPartsExceptions[key]} its current count is {allPartsCount[key]}")
+            maxPatrsError = True
+
+if maxPatrsError:            
+    if input("Should I continue? [Y/N]: ").lower() == 'n':
+        exit()
+else:
+    print("No part has exceeded the maxPatrs count.")
+
 #print(len(allParts))
 
 if skipDecisions == False:
@@ -413,7 +453,7 @@ if renderEm:
         # vygeneruje kazdou vrstvu oddelene
         im1 = Image.open(os.path.join(pathToParts, backgroundFiles[item["Background"]])).convert('RGBA')
         im2 = Image.open(os.path.join(pathToParts, bodyFiles[item["Body"]])).convert('RGBA')
-        im3 = Image.open(os.path.join(pathToParts, highlightFiles[item["Highlight"]])).convert('RGBA')
+        im3 = Image.open(os.path.join(pathToParts, highlightFiles[item["Fin"]])).convert('RGBA')
         im4 = Image.open(os.path.join(pathToParts, outlineFiles[item["Outline"]])).convert('RGBA')
         im5 = Image.open(os.path.join(pathToParts, lightFiles[item["Light"]])).convert('RGBA')
 

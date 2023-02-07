@@ -1,0 +1,7 @@
+1) Použít IDE: Visual Studio Code
+2) Zprovoznit v tom python
+3) Nastavit tuto složku ve VS Code
+4) V partsManager.py definovat maximální počet určitých traits
+5) Upravit proměnou v main.py na řádku 14 (root_file) na root k tomuto NFTImgGenerator
+6) Pustit a v Terminal psát Y,Y,Y (odpověď na otázky zda vygenerovat to a tamto)
+

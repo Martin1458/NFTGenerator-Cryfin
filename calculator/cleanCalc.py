@@ -250,13 +250,13 @@ for i in range(1):
         #print(findDuplicates(allAttributeCombinations))
 
         if False:
-            f = open(r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\calculator\allImages.csv", "w", newline='')
+            f = open(r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\calculator\allImages.csv", "w", newline='')
             writer = csv.writer(f)
             for item in allImages:
                 writer.writerow(item.values())
             f.close()
 
-            f = open(r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\calculator\allAttributeCombinations.csv", "w", newline='')
+            f = open(r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\calculator\allAttributeCombinations.csv", "w", newline='')
             writer = csv.writer(f)
             for item in allAttributeCombinations:
                 writer.writerow(item)
@@ -268,7 +268,7 @@ for i in range(1):
     print("This operation took %s seconds" % (time.time() - start_time))
 
     nameOfFile = str(len(someAllLayersMax))+"AttributesSomething.csv"
-    with open(r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\calculator\\"+nameOfFile, "w", newline='') as f:
+    with open(r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\calculator\\"+nameOfFile, "w", newline='') as f:
         writer = csv.writer(f)
         writer.writerow(header)
         for item in allLines:

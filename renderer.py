@@ -13,14 +13,14 @@ import numpy as np
 from partsManager import *
 
 # Input
-pathToParts = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\Parts"
-outputJsonFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\Jsons\\"
-csvCreated = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\sortedCreated.csv"
+pathToParts = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\Parts"
+outputJsonFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\Jsons\\"
+csvCreated = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\sortedCreated.csv"
 # Output
-countJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\count.json"
-outputJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\NFTs.json"
-outputResizeFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\OutputResize"
-outputFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator16\Output"
+countJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\count.json"
+outputJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\NFTs.json"
+outputResizeFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\OutputResize"
+outputFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator14\Output"
 
 allImages = []
 allParts = []
