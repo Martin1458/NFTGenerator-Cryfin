@@ -13,20 +13,21 @@ import numpy as np
 from partsManager import *
 
 
-pathToParts = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator11\Parts"
+pathToParts = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\Parts"
 
 
-outputFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator11\Output"
+outputFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\Output"
 
 
-outputJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator11\NFTs.json"
+outputJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\NFTs.json"
 
-outputJsonFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator11\Jsons\\"
+outputJsonFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\Jsons\\"
 
-outputResizeFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator11\OutputResize"
+outputResizeFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\OutputResize"
 
-csvPath = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator11\created.csv"
+csvCreated = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\created.csv"
 
+countJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\count.json"
 
 allImages = []
 
@@ -103,14 +104,14 @@ def createOneImage(xx):
 
     return newImage
 
-# df = pd.read_csv(csvPath)
+# df = pd.read_csv(csvCreated)
 # allTraits = df.values
 
-# CSVData = open(csvPath)
+# CSVData = open(csvCreated)
 # allTraits = np.genfromtxt(CSVData, delimiter=",")
 
 allTraits = []
-with open(csvPath) as csvfile:
+with open(csvCreated) as csvfile:
     reader = csv.reader(csvfile) # change contents to floats
     for row in reader: # each row is a list
         allTraits.append(row)
@@ -122,7 +123,6 @@ i = 0
 for item in allImages:
     item['tokenId'] = i
     i = i + 1
-
 
 
 if skipDecisions == False:
@@ -174,41 +174,59 @@ if jsonIt:
 
         outfile.write(allJsonImages)
 
+    backgroundCount = {}
+    for item in backgroundNames:
+        backgroundCount[item] = 0
 
-backgroundCount = {}
-for item in backgroundNames:
-    backgroundCount[item] = 0
+    bodyCount = {}
+    for item in bodyNames:
+        bodyCount[item] = 0
 
-bodyCount = {}
-for item in bodyNames:
-    bodyCount[item] = 0
+    highlightCount = {}
+    for item in highlightNames:
+        highlightCount[item] = 0
 
-highlightCount = {}
-for item in highlightNames:
-    highlightCount[item] = 0
+    outlineCount = {}
+    for item in outlineNames:
+        outlineCount[item] = 0
 
-outlineCount = {}
-for item in outlineNames:
-    outlineCount[item] = 0
+    lightCount = {}
+    for item in lightNames:
+        lightCount[item] = 0
 
-lightCount = {}
-for item in lightNames:
-    lightCount[item] = 0
-
-for image in allImages:
-    backgroundCount[image["Background"]] += 1
-    bodyCount[image["Body"]] += 1
-    highlightCount[image["Highlight"]] += 1
-    outlineCount[image["Outline"]] += 1
-    lightCount[image["Light"]] += 1
+    for image in allImages:
+        backgroundCount[image["Background"]] += 1
+        bodyCount[image["Body"]] += 1
+        highlightCount[image["Highlight"]] += 1
+        outlineCount[image["Outline"]] += 1
+        lightCount[image["Light"]] += 1
 
 
-print("Background count :"+str(backgroundCount))
-print("Body count       :"+str(bodyCount))
-print("Highlight count  :"+str(highlightCount))
-print("Outline count    :"+str(outlineCount))
-print("Light count      :"+str(lightCount)+"\n")
-print("Num of images    :"+str(len(allImages)))
+    print("Background count :"+str(backgroundCount))
+    print("Body count       :"+str(bodyCount))
+    print("Highlight count  :"+str(highlightCount))
+    print("Outline count    :"+str(outlineCount))
+    print("Light count      :"+str(lightCount)+"\n")
+    print("Num of images    :"+str(len(allImages)))
+
+    countData = {
+        "backgroundCount": backgroundCount,
+        "bodyCount": bodyCount,
+        "highlightCount": highlightCount,
+        "outlineCount": outlineCount,
+        "lightCount": lightCount
+    }
+
+
+    countDataJson = json.dumps(countData, indent=4, sort_keys=False)
+
+
+    open(countJson, "w").close()
+
+
+    with open(countJson, "w") as outfile:
+
+        outfile.write(countDataJson)
 
 
 if skipDecisions == False:
