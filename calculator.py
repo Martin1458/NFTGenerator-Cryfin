@@ -7,19 +7,10 @@ import shutil
 from partsManager import *
 from itertools import combinations
 import collections
+import csv
+import copy
+import time
 
-
-# Path k castem
-pathToParts = f"/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator4/Parts/"
-
-# Path do slozky kam se vyrenderuji obrazky
-outputFolder = f"/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator4/Output/"
-
-# Path k json souboru
-outputJson = f"/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator4/NFTs.json"
-
-# Pocet obrazku k vytvoreni
-totalImages = int(input("How many images should I create? "))
 # List vsech obrazku (jejich attributu)
 allImages = []
 # List vsech kombinaci (viz: cobinationsLength)
@@ -43,9 +34,26 @@ tempAllAttributeCombinations = []
 numOfAttempts = 0
 # Maximalni pocet pokusu o novy obrazek bez duplikatu (Python Failsafe to zastavi u 1000)
 maxAttempts = 3000
-# Pocet attributu co se nesmi opakovat
-cobinationsLength = 3
+numOfImages = 0
+numOfDuplicates = 0
+allCombinations = []
 
+def resetVariables():
+    global allImages, allAttributeCombinations, allParts, allPartsCount, tempAllParts, thisAttributes, thisAttributeCombinations, tempAllAttributeCombinations, numOfAttempts, maxAttempts, numOfImages, numOfDuplicates, allCombinations
+
+    allImages = []
+    allAttributeCombinations = []
+    allParts = []
+    allPartsCount = {}
+    tempAllParts = []
+    thisAttributes = []
+    thisAttributeCombinations = []
+    tempAllAttributeCombinations = []
+    numOfAttempts = 0
+    maxAttempts = 3000
+    numOfImages = 0
+    numOfDuplicates = 0
+    allCombinations = []
 
 # Tato funkce najde duplikaty v dannem listu
 # Vraci bool (True = tento list obsahuje duplikaty) a list (kombinace ktera se duplikuje)
@@ -76,7 +84,7 @@ def findElementXTimes(myList):
 
     for item in newListD:
         tempAllDuplicates[item]=myList.count(item)
-        print('{} is {} times in all images'.format(item, myList.count(item)))
+        #print('{} is {} times in all images'.format(item, myList.count(item)))
     
     fullList = nullParts
 
@@ -84,7 +92,7 @@ def findElementXTimes(myList):
         fullList[item] = tempAllDuplicates[item]
 
 
-    print(tempAllDuplicates)
+    #print(tempAllDuplicates)
     return fullList
 
 
@@ -98,8 +106,6 @@ def createNewImage(chosenTraits):
     # global = promenne ktere ma tato funkce pravo menit
     global allImages, allAttributeCombinations, newAttributes, numOfAttempts, newAttributesCollection, tempAllAttributeCombinations, allParts, tempAllParts
 
-    print("Attempt num: "+str(numOfAttempts))
-    print("Img num:     "+str(len(allImages)))
     # vytvor/vynuluj list pro vytvoreni noveho ojbrazku
     newImage = {}
 
@@ -132,7 +138,7 @@ def createNewImage(chosenTraits):
     # 'combinations(x, y)' vytvori list vsech moznych kombinaci 'y' itemu z listu 'x'
     # priklad: [1, 2, 3, 4, 5] ==> [(1, 2, 3), (1, 2, 4), (1, 2, 5), (1, 3, 4), (1, 3, 5), (1, 4, 5), (2, 3, 4), (2, 3, 5), (2, 4, 5), (3, 4, 5)]
     # prida kombinace do thisAttributeCombinations a tempAllAttributeCombinations
-    for item in combinations(thisAttributes, cobinationsLength):
+    for item in combinations(thisAttributes, combinationsLength):
         thisAttributeCombinations.append(item)
         tempAllAttributeCombinations.append(item)
     
@@ -159,7 +165,7 @@ def createNewImage(chosenTraits):
                 thisDuplicate = True
 
     # ukaze duplikat pokud existuje, jinak napise None
-    print(thisDuplicateItem)
+    #print(thisDuplicateItem)
 
     # Zkontroluje pokud se neprekrocil maximalni pocet pokusu pro vytvoreni noveho obrazku bez duplikatu
     # (Nahrazeni defaultinho failsafu)
@@ -175,7 +181,7 @@ def createNewImage(chosenTraits):
     
     # Ted kdyz uz  jsme se zbavili duplikatu, zapiseme aktualni kombinace do allAttributeCombinations
     # (Aby jsme mohli zkontrolovat dalsi obrazky)
-    for item in combinations(thisAttributes, cobinationsLength):
+    for item in combinations(thisAttributes, combinationsLength):
         allAttributeCombinations.append(item)
 
     # Zapise nove 
@@ -184,8 +190,8 @@ def createNewImage(chosenTraits):
     
     # Zkontroluje zda obrazek jiz neexistuje
     if newImage in allImages:
-        print(newImage)
-        print("A whole image is repeating. How? IDK")
+        #print(newImage)
+        #print("A whole image is repeating. How? IDK")
         numOfAttempts += 1
         return 'duplicate'
     else:
@@ -193,20 +199,50 @@ def createNewImage(chosenTraits):
         # Ted uz by nemeli existovat zadne duplikaty, vratime tedy vybrane attributy
         return newImage
 
+
 # Tato funkce pomoci createNewImage vytvori danny pocet obrzku a projistotu je znovu zkontroluje pro duplikaty
 def createAllImages():
-    global allImages, allAttributeCombinations, newAttributes, numOfAttempts, newAttributesCollection
+    global allImages, allAttributeCombinations, newAttributes, numOfAttempts, newAttributesCollection, numOfImages, combinationsLength, numOfDuplicates, allCombinations
 
     chosenTraits = [0, 0, 0, 0, 0]
-    while totalImages != len(allImages): 
+    newTraitImage = None
+    while newTraitImage != 'errror': 
 
         newTraitImage = createNewImage(chosenTraits)
         #newTraitImage = 'duplicate'
         # pokud createNewImage nevrati error, zapise obrazek do allImages, jinak ukonci script.
         if newTraitImage != 'error' and newTraitImage != 'duplicate':
             allImages.append(newTraitImage)
+            numOfImages += 1
+            allCombinations.append(chosenTraits.copy())
+            #print(chosenTraits)
+            #print(allCombinations)
+
+
+            if chosenTraits[0] < len(backgroundNames):
+                chosenTraits[0] += 1
+            else:
+                chosenTraits[0] = 0
+                if chosenTraits[1] < len(bodyNames):
+                    chosenTraits[1] += 1
+                else:
+                    chosenTraits[1] = 0
+                    if chosenTraits[2] < len(highlightNames):
+                        chosenTraits[2] += 1
+                    else:
+                        chosenTraits[2] = 0
+                        if chosenTraits[3] < len(outlineNames):
+                            chosenTraits[3] += 1
+                        else:
+                            chosenTraits[3] = 0
+                            if chosenTraits[4] < len(lightNames):
+                                chosenTraits[4] += 1
+                            else:
+                                chosenTraits[4] = 0
+
         elif newTraitImage == 'duplicate':
-            
+            numOfDuplicates += 1
+
             if chosenTraits[0] < len(backgroundNames):
                 chosenTraits[0] += 1
             else:
@@ -228,172 +264,76 @@ def createAllImages():
                             else:
                                 chosenTraits[4] = 0
                         
-            print(chosenTraits)
+            #print(chosenTraits)
             if chosenTraits == [len(backgroundNames), len(bodyNames), len(highlightNames), len(outlineNames), len(lightNames)]:
-                newTraitImage = 'error'
+                newTraitImage = 'errror'
                 print("All combinations tried")
 
         if newTraitImage == 'error':
             print("An error has occured")
             exit()
+    #print("\n")
+    #print(allCombinations)
+    #print("\n")
 
 
-    # Tato funkce zkontroluje allImages pro duplikaty
-    def allImagesUnique(listToCheck):
-        # 'mezivypocetny' list seen
-        seen = list()
-        return not any(i in seen or seen.append(i) for i in listToCheck)
+for i in range(4):
 
-    # True pokud nejsou duplikaty
-    print("Are all images unique?", allImagesUnique(allImages))
+    start_time = time.time()
 
-# Volani hlavni funkce pro vytvoreni obrazku
-createAllImages()
+    # Pocet attributu co se nesmi opakovat
+    combinationsLength = i+2
 
-print(allImages)
+    # Volani hlavni funkce pro vytvoreni obrazku
+    createAllImages()
 
-# convert to 2d array pro checking
-# allAttributes = []
-# for nft in allImages:
-#     allAttributes.append([])
-#     for attribute in nft:
-#         allAttributes[allImages.index(nft)].append(nft[attribute])
-# print(allAttributes)
+    #print(allCombinations)
+    #format allCombinations
+    newStrCombinations = []
+    for oneCombination in allCombinations:
+        # combination = [1, 0, 1, 1, 2]
+        newCombination = []
+        numOfTrait = 1
+        for trait in oneCombination:
+            # numOfTrait+1 protoze python vidi 0 jako prvni trait
+            newTrait = "L" + str(numOfTrait) + "T" + str(trait+1)
+            newCombination.append(newTrait)
+            numOfTrait += 1
+        
+        #newCombination = [str(x) + "L" for x in oneCombination]
+        newStrCombinations.append(newCombination)
 
-# Prida ID ke kazdemu obrazku
-i = 0
-for item in allImages:
-    item['tokenId'] = i
-    i = i + 1
+    #print(newStrCombinations)
+    header = ["Var1", "Var2", "Var3", "Var4", "Var5"]
 
-# Generovani json souboru
-# zapise vsechny parametry do listu allJsonImagesList
-allJsonImagesList = []
-for image in allImages:
-    attributes = []
-    for item in image:
-        if item != 'tokenId':
-            attribute = {"traitName": image[item], "pathToPart": allFiles[image[item]], "fullPathToPart": pathToParts+str(allFiles[image[item]])}
-            attributes.append(attribute)
+    if combinationsLength == 2:
+        nameOfCsv = "twoComabinations.csv"
+    elif combinationsLength == 3:
+        nameOfCsv = "threeComabinations.csv"
+    elif combinationsLength == 4:
+        nameOfCsv = "fourComabinations.csv"
+    elif combinationsLength == 5:
+        nameOfCsv = "fiveComabinations.csv"
+    elif combinationsLength == 6:
+        nameOfCsv = "sixComabinations.csv"
+    elif combinationsLength == 7:
+        nameOfCsv = "sevenComabinations.csv"
+    elif combinationsLength == 8:
+        nameOfCsv = "eightComabinations.csv"
+    elif combinationsLength == 9:
+        nameOfCsv = "nineComabinations.csv"
+    elif combinationsLength == 10:
+        nameOfCsv = "tenComabinations.csv"
 
-    oneImage = {
-        "name": "Number #{}".format(image['tokenId']),
-        "description": "NFT collection Cephalopods. This is a unique Cephalopods #{}".format(image["tokenId"]),
-        "image": str(image['tokenId'])+".png",
-        "attributes": attributes,
-        "properties": {
-            "creators": [{"name": "Martin"}],
-            "file": [{"image": str(image['tokenId'])+".png", "type": "image/png"}, {"fullImagePath": outputFolder+str(image['tokenId'])+".png"}]
-        },
-        "collection": {"name": "Cephalopods"}
-    }
-    print(oneImage)
-    allJsonImagesList.append(oneImage)
+    f = open(r'C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator4\\'+nameOfCsv, 'w')
+    writer = csv.writer(f)
+    writer.writerow(header)
 
-# konvertuje allJsonImagesList do json formatu a ulozi do allJsonImages
-allJsonImages = json.dumps(allJsonImagesList, indent=4, sort_keys=True)
+    for item in newStrCombinations:
+        writer.writerow(item)
 
-# vytvori/vymaze content outputJson
-open(outputJson, "w").close()
+    f.close()
+    print("combinationsLength: {} numOfImages: {} numOfDuplicates: {} numOfImages+numOfDuplicates: {}".format(combinationsLength, numOfImages, numOfDuplicates, numOfImages+numOfDuplicates))
+    print("This operation took %s seconds" % (time.time() - start_time))
+    resetVariables()
 
-# otevre outputJson
-with open(outputJson, "w") as outfile:
-    # zapise allJsonImages do outputJson
-    outfile.write(allJsonImages)
-
-
-# Kolik je jakych casti
-backgroundCount = {}
-for item in backgroundNames:
-    backgroundCount[item] = 0
-    
-bodyCount = {}
-for item in bodyNames:
-    bodyCount[item] = 0
-
-highlightCount = {}
-for item in highlightNames:
-    highlightCount[item] = 0
-    
-outlineCount = {}
-for item in outlineNames:
-    outlineCount[item] = 0
-    
-lightCount = {}
-for item in lightNames:
-    lightCount[item] = 0
-
-for image in allImages:
-    backgroundCount[image["Background"]] += 1
-    bodyCount[image["Body"]] += 1
-    highlightCount[image["Highlight"]] += 1
-    outlineCount[image["Outline"]] += 1
-    lightCount[image["Light"]] += 1
-
-# Napise pocet vyskytu kazde casti
-print("Background count:"+str(backgroundCount))
-print("Body count:"+str(bodyCount))
-print("Highlight count:"+str(highlightCount))
-print("Outline count:"+str(outlineCount))
-print("Light count:"+str(lightCount))
-
-print(allParts)
-print(len(allParts))
-
-# Script se zepta pokud ma vypocitane obrazky vyrenderovat 
-renderEmTxt = input("Should I render those Images? [Y/N]: ")
-renderEm = [False, True][renderEmTxt == 'y' or renderEmTxt == 'Y']
-
-# Pokud ma script obrazky vyrendrovat, ucini tak
-if renderEm:
-
-    # Vytvori outputFolder na jeho lokaci pokud jiz neexistuje
-    if not os.path.isdir(outputFolder):
-        os.mkdir(outputFolder)
-
-    outDirFiles = os.listdir(outputFolder)
-    decisionOutFolder = False
-    while(not decisionOutFolder):
-        if len(outDirFiles) != 0:
-            notEmptyDir = input("Warning! Output directory is not empty. Delete contents of output folder? [Y/N]: ")
-            if notEmptyDir == "Y" or notEmptyDir == "y":
-                decisionOutFolder = True
-                shutil.rmtree(outputFolder)
-                print("Output folder was deleted")
-            elif notEmptyDir == "N" or notEmptyDir == "n":
-                decisionOutFolder = True
-                print("Output folder was not deleted")
-            else:
-                print("Invalid option")
-        else:
-            decisionOutFolder = True
-
-    # Script vytvori outputFolder pokud jste se rozhodli ho v prdchozimkroku vymazat
-    if not os.path.isdir(outputFolder):
-        os.mkdir(outputFolder)
-
-    # vyrenderuje vsechny obrazky
-    for item in allImages:
-
-        # vygeneruje kazdou vrstvu oddelene
-        im1 = Image.open(os.path.join(pathToParts, backgroundFiles[item["Background"]])).convert('RGBA')
-        im2 = Image.open(os.path.join(pathToParts, bodyFiles[item["Body"]])).convert('RGBA')
-        im3 = Image.open(os.path.join(pathToParts, highlightFiles[item["Highlight"]])).convert('RGBA')
-        im4 = Image.open(os.path.join(pathToParts, outlineFiles[item["Outline"]])).convert('RGBA')
-        im5 = Image.open(os.path.join(pathToParts, lightFiles[item["Light"]])).convert('RGBA')
-
-        # Spoji vsechny vygenerovane vrstvy
-        com1 = Image.alpha_composite(im1, im2)
-        com2 = Image.alpha_composite(com1, im3)
-        com3 = Image.alpha_composite(com2, im4)
-        com4 = Image.alpha_composite(com3, im5)
-
-        # Premeni RGBA vrstvy do RGB
-        rgbIm = com4.convert('RGB')
-
-        # Pojmenuje obrazek tokenID.png
-        fileName = str(item["tokenId"]) + ".png"
-
-        # Ulozi obrazek do outputFolder
-        rgbIm.save(os.path.join(outputFolder, fileName))
-        print("Image {} created with parameters: {}".format(fileName, item))

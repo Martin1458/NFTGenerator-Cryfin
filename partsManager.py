@@ -78,7 +78,7 @@ maxParts = {
     "LightBlueB": 0,
     "GreenB": 0,
     "RainbowB": 0,
-    "WhiteB": 500,
+    "WhiteB": 0,
     "WhiteHL": 0,
     "PinkHL": 0,
     "YellowHL": 0,
@@ -115,4 +115,29 @@ nullParts = {
     "WhiteL": 0, 
     "YellowL": 0,
     "GreenL": 0
+}
+
+allFiles = {
+    "DarkBG": "background1.png", 
+    "MidBG": "background2.png", 
+    "LightBG": "background3.png",
+    "PinkB": "body1.png",
+    "BlueB": "body2.png",
+    "LightBlueB": "body3.png",
+    "GreenB": "body4.png",
+    "RainbowB": "body5.png",
+    "WhiteB": "body6.png",
+    "WhiteHL": "highlight1.png",
+    "PinkHL": "highlight2.png",
+    "YellowHL": "highlight3.png",
+    "RainbowHL": "highlight4.png",
+    "PurpleHL": "highlight5.png",
+    "RedOL": "outline1.png",
+    "GrayOL": "outline2.png",
+    "BlueOL": "outline3.png",
+    "WhiteOL": "outline4.png",
+    "WhiteL": "light1.png", 
+    "YellowL": "light2.png",
+    "GreenL": "light3.png"
+
 }

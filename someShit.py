@@ -1,5 +1,7 @@
 import collections
 from itertools import combinations
+from partsManager import *
+import random
 
 def T1():
     myList = {"joehn", "marry", "john", "james"}
@@ -94,4 +96,14 @@ def findElementXTimes(myList, numBer):
 def T5():
     myList = ['DarkBG', 'PinkB', 'PurpleHL', 'GrayOL', 'YellowL', 'LightBG', 'PinkB', 'PinkHL', 'GrayOL', 'WhiteL', 'DarkBG', 'PinkB', 'YellowHL', 'RedOL', 'YellowL', 'DarkBG', 'PinkB', 'WhiteHL', 'RedOL', 'GreenL', 'LightBG', 'PinkB', 'YellowHL', 'RedOL', 'WhiteL', 'DarkBG', 'BlueB', 'PurpleHL', 'RedOL', 'WhiteL', 'DarkBG', 'GreenB', 'RainbowHL', 'RedOL', 'WhiteL', 'DarkBG', 'GreenB', 'PinkHL', 'RedOL', 'YellowL', 'DarkBG', 'PinkB', 'PinkHL', 'RedOL', 'WhiteL', 'LightBG', 'LightBlueB', 'PurpleHL', 'RedOL', 'GreenL', 'MidBG', 'PinkB', 'WhiteHL', 'RedOL', 'WhiteL', 'DarkBG', 'GreenB', 'WhiteHL', 'GrayOL', 'WhiteL', 'MidBG', 'PinkB', 'RainbowHL', 'RedOL', 'YellowL', 'LightBG', 'PinkB', 'WhiteHL', 'GrayOL', 'YellowL', 'LightBG', 'LightBlueB', 'YellowHL', 'GrayOL', 'YellowL', 'DarkBG', 'PinkB', 'RainbowHL', 'WhiteOL', 'WhiteL', 'DarkBG', 'GreenB', 'YellowHL', 'BlueOL', 'YellowL', 'DarkBG', 'WhiteB', 'PurpleHL', 'WhiteOL', 'WhiteL', 'DarkBG', 'RainbowB', 'PurpleHL', 'BlueOL', 'GreenL', 'MidBG', 'GreenB', 'PurpleHL', 'RedOL', 'WhiteL']
     print(findElementXTimes(myList, 2))
-T5()
+
+def T6():
+    print(len(backgroundNames))
+
+def T7():
+    numberOfSomething = 3
+    for i in range(numberOfSomething):
+        print(i)
+        numberOfSomething+=1
+
+T7()
