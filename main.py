@@ -51,7 +51,7 @@ cobinationsLength = 3
 # Read variable name (must be a tuple)
 imgSize = (350, 350)
 
-skipDecisions = True
+skipDecisions = False
 
 # Tato funkce najde duplikaty v dannem listu
 # Vraci bool (True = tento list obsahuje duplikaty) a list (kombinace ktera se duplikuje)
