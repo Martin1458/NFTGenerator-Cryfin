@@ -10,7 +10,6 @@ import collections
 import csv
 import copy
 import time
-from calculatorManager import *
 import itertools
 from tkinter import *
 
@@ -41,10 +40,25 @@ maxAttempts = 3000
 numOfImages = 0
 numOfDuplicates = 0
 allCombinations = []
+layerOne = []
+layerTwo = []
+layerThree = []
+layerFour = []
+layerFive = []
+layerSix = []
+layerSeven = []
+layerEight = []
+layerNine = []
+layerTen = []
+
+allLayers = [layerOne, layerTwo, layerThree, layerFour, layerFive, layerSix, layerSeven, layerEight, layerNine, layerTen]
+allLayerNames = ["layerOne", "layerTwo", "layerThree", "layerFour", "layerFive", "layerSix", "layerSeven", "layerEight", "layerNine", "layerTen"]
+
 
 def resetVariables():
     global allImages, allAttributeCombinations, allParts, allPartsCount, tempAllParts, thisAttributes, thisAttributeCombinations, tempAllAttributeCombinations, numOfAttempts, maxAttempts, numOfImages, numOfDuplicates, allCombinations
-
+    global layerOne, layerTwo, layerThree, layerFour, layerFive, layerSix, layerSeven, layerEight, layerNine, layerTen, allLayers, allLayerNames
+    
     allImages = []
     allAttributeCombinations = []
     allParts = []
@@ -58,6 +72,20 @@ def resetVariables():
     numOfImages = 0
     numOfDuplicates = 0
     allCombinations = []
+    layerOne = []
+    layerTwo = []
+    layerThree = []
+    layerFour = []
+    layerFive = []
+    layerSix = []
+    layerSeven = []
+    layerEight = []
+    layerNine = []
+    layerTen = []
+
+    allLayers = [layerOne, layerTwo, layerThree, layerFour, layerFive, layerSix, layerSeven, layerEight, layerNine, layerTen]
+    allLayerNames = ["layerOne", "layerTwo", "layerThree", "layerFour", "layerFive", "layerSix", "layerSeven", "layerEight", "layerNine", "layerTen"]
+
 
 # Tato funkce najde duplikaty v dannem listu
 # Vraci bool (True = tento list obsahuje duplikaty) a list (kombinace ktera se duplikuje)
@@ -72,32 +100,32 @@ def findDuplicates(listOfElems):
     return False, None
 
 # Tato funkce vrati pocet kazdeho elementu, kolikrat se opakuje v myList
-def findElementXTimes(myList):
-
-    duplicatesList = []
-    for item in myList:
-        duplicatesList.append(item)
-    
-    newListD = []
-
-    for item in duplicatesList:
-        if item not in newListD:
-            newListD.append(item)
-    
-    tempAllDuplicates = {}
-
-    for item in newListD:
-        tempAllDuplicates[item]=myList.count(item)
-        #print('{} is {} times in all images'.format(item, myList.count(item)))
-    
-    fullList = nullParts
-
-    for item in tempAllDuplicates:
-        fullList[item] = tempAllDuplicates[item]
-
-
-    #print(tempAllDuplicates)
-    return fullList
+#def findElementXTimes(myList):
+#
+#    duplicatesList = []
+#    for item in myList:
+#        duplicatesList.append(item)
+#    
+#    newListD = []
+#
+#    for item in duplicatesList:
+#        if item not in newListD:
+#            newListD.append(item)
+#    
+#    tempAllDuplicates = {}
+#
+#    for item in newListD:
+#        tempAllDuplicates[item]=myList.count(item)
+#        #print('{} is {} times in all images'.format(item, myList.count(item)))
+#    
+#    fullList = nullParts
+#
+#    for item in tempAllDuplicates:
+#        fullList[item] = tempAllDuplicates[item]
+#
+#
+#    #print(tempAllDuplicates)
+#    return fullList
 
 
 # Test findDuplicates (pokud funguje napise "john")  
@@ -165,7 +193,7 @@ def createNewImage(chosenTraits):
     thisDuplicate, thisDuplicateItem = findDuplicates(tempAllAttributeCombinations)
 
     # Pomoci funkce findElementXTimes vygeneruje allPartsCount, kam se ulozi pocty jednotlivych traits
-    allPartsCount = findElementXTimes(tempAllParts)
+    #allPartsCount = findElementXTimes(tempAllParts)
 
     # Zkontroluje pro kazdou trait zda se jiz nevyskytuje vicekrat nez by mela
     #for item in maxParts:
