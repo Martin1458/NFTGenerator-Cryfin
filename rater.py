@@ -2,45 +2,32 @@ import json
 import csv
 from partsManager import *
 
-countJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\count.json"
-NFTsJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\NFTs.json"
-createdCsv = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\created.csv"
-attributeRatingJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\output.json"
-ratingJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\rating.json"
-
-def createOneImage(xxx):
-    newImage = {}
-
-    newImage ["Background"] = backgroundNames[int(xxx[0])-1]
-    newImage ["Body"] = bodyNames[int(xxx[1])-1]
-    newImage ["Highlight"] = highlightNames[int(xxx[2])-1]
-    newImage ["Outline"] = outlineNames[int(xxx[3])-1]
-    newImage ["Light"] = lightNames[int(xxx[4])-1]
-
-    return newImage
+# Input
+countJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\count.json"
+NFTsJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\NFTs.json"
+attributeRatingJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\output.json"
+# Output
 
 
 f = open(countJson)
 attributeRatingJsonData = json.load(f)
 f.close()
 
+f = open(NFTsJson)
+NFTsJsonData = json.load(f)
+f.close()
 
 print("Verifying json file...")
 
-y = 0
+
+totalNumCount = 0
 for i in attributeRatingJsonData:
-    x = 0
-    for item in attributeRatingJsonData[i]:
-        x += attributeRatingJsonData[i][item]
-        #print(attributeRatingJsonData[i][item])
-    y += x
+    totalNumCount += attributeRatingJsonData[i]
 
-print(attributeRatingJsonData)
-
-if float(y)/float(x) == len(attributeRatingJsonData):
+if float(totalNumCount)/float(len(NFTsJsonData)) == len(NFTsJsonData[0]["attributes"]):
     print("All good")
 else:
-    print("Ay yo, who fucked up?")
+    print("Some numbers dont add up.")
     if input("Continue? [Y/N]: ").lower() == "y":
         pass
     else:
@@ -49,61 +36,59 @@ else:
 
 
 for i in attributeRatingJsonData:
-    for item in attributeRatingJsonData[i]:
-        attributeRatingJsonData[i][item] = attributeRatingJsonData[i][item]/x
+    attributeRatingJsonData[i] = attributeRatingJsonData[i]/len(NFTsJsonData)
 
-print(attributeRatingJsonData)
+# Pocet kazde jednotlive attributy: DarkBG, MidBG...  / celkovy pocet obrazku.
+print("attributeRatingJsonData: "+str(attributeRatingJsonData))
 
-
-for i in attributeRatingJsonData:
-    xx = 0
-    for item in attributeRatingJsonData[i]:
-        xx  += attributeRatingJsonData[i][item]
-    print(xx)
-attributeRatingJsonData = json.dumps(attributeRatingJsonData, indent=4, sort_keys=False)
-
-print(attributeRatingJsonData)
-
+formatAttributeRatingJsonData = json.dumps(attributeRatingJsonData, indent=4, sort_keys=False)
 
 open(attributeRatingJson, "w").close()
-
 with open(attributeRatingJson, "w") as outfile:
-    outfile.write(attributeRatingJsonData)
+    outfile.write(formatAttributeRatingJsonData)
+
 
 allImages = []
-allTraits = []
-with open(createdCsv) as csvfile:
-    reader = csv.reader(csvfile) # change contents to floats
-    for row in reader: # each row is a list
-        allTraits.append(row)
+for image in NFTsJsonData:
+    oneImage = []
+    for attribute in image["attributes"]:
+        oneImage.append(attribute["value"])
+    allImages.append(oneImage)
 
-for traits in allTraits:
-    allImages.append(createOneImage(traits))
+# List vsech attibut pro kazdy obrazek: ['DarkBG', 'PinkB', 'WhiteHL', 'RedOL', 'WhiteL'], ['DarkBG',...
+print("allImages: "+str(allImages))
 
-#i = 0
-#for item in allImages:
-#    item['tokenId'] = i
-#    i = i + 1
-
-print(allImages)
-exit()
-allImagesRatings = []
+allImagesRatingData = []
 for image in allImages:
-    xxxx = 0
+    oneImage = float(0)
     for attribute in image:
-        xxxx += attributeRatingJsonData
-    allImagesRatings.append(xxxx)
+        oneImage += float(attributeRatingJsonData[attribute])
+    allImagesRatingData.append(oneImage)
 
-exit()
+# Pro kazdy obrazek z allImages, soucet zpravnych cisel z attributeRatingJsonData
+print("allImagesRatingData: "+str(allImagesRatingData))
 
-f = open(NFTsJson)
-NFTsJsonData = json.load(f)
-f.close()
+hundredPercent = allImagesRatingData[0]
+for number in allImagesRatingData:
+    if number > hundredPercent:
+        hundredPercent = number
 
-ratingJsonData = {}
-names = []
-for i in NFTsJsonData:
-    names.append({"name":i["name"]})
+zeroPercent = allImagesRatingData[0]
+for number in allImagesRatingData:
+    if number < zeroPercent:
+        zeroPercent = number
 
 
-print(names)
+allImagesRatingPercentage = []
+for i in allImagesRatingData:
+    allImagesRatingPercentage.append((float(i)/float(hundredPercent)) * 100)
+
+# Procenta z allImagesRatingData, max z allImagesRatingData = 100%; 0 = 0%
+print("allImagesRatingPercentage: "+str(allImagesRatingPercentage))
+
+allImagesRatingPercentageZeroToHundred = []
+for i in allImagesRatingData:
+    allImagesRatingPercentageZeroToHundred.append(((float(i) - float(zeroPercent)) * 100) / (float(hundredPercent) - float(zeroPercent)))
+
+# Procenta z allImagesRatingData, max z allImagesRatingData = 100%; min z allImagesRatingData = 0%
+print("allImagesRatingPercentageZeroToHundred: "+str(allImagesRatingPercentageZeroToHundred))

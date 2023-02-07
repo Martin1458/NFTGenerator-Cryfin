@@ -1,6 +1,6 @@
 from turtle import end_fill
-from PIL import Image 
-from IPython.display import display 
+from PIL import Image
+from IPython.display import display
 import random
 import json
 import os
@@ -30,7 +30,7 @@ tempAllParts = []
 thisAttributes = []
 # Vsechny aktualni kombinace attributu (viz: cobinationsLength)
 thisAttributeCombinations = []
-# allAttributeCombinations + thisAttributeCombinations 
+# allAttributeCombinations + thisAttributeCombinations
 # pouziva se na zkontrolovani duplikatu predtim nez se kombinace zapisou do allAttributeCombinations
 tempAllAttributeCombinations = []
 # Pocet aktualnich pokusu
@@ -58,7 +58,7 @@ allLayerNames = ["layerOne", "layerTwo", "layerThree", "layerFour", "layerFive",
 def resetVariables():
     global allImages, allAttributeCombinations, allParts, allPartsCount, tempAllParts, thisAttributes, thisAttributeCombinations, tempAllAttributeCombinations, numOfAttempts, maxAttempts, numOfImages, numOfDuplicates, allCombinations
     global layerOne, layerTwo, layerThree, layerFour, layerFive, layerSix, layerSeven, layerEight, layerNine, layerTen, allLayers, allLayerNames
-    
+
     allImages = []
     allAttributeCombinations = []
     allParts = []
@@ -95,7 +95,7 @@ def findDuplicates(listOfElems):
         if elem in newElements:
             return True, elem
         else:
-            newElements.append(elem)  
+            newElements.append(elem)
 
     return False, None
 
@@ -105,19 +105,19 @@ def findDuplicates(listOfElems):
 #    duplicatesList = []
 #    for item in myList:
 #        duplicatesList.append(item)
-#    
+#
 #    newListD = []
 #
 #    for item in duplicatesList:
 #        if item not in newListD:
 #            newListD.append(item)
-#    
+#
 #    tempAllDuplicates = {}
 #
 #    for item in newListD:
 #        tempAllDuplicates[item]=myList.count(item)
 #        #print('{} is {} times in all images'.format(item, myList.count(item)))
-#    
+#
 #    fullList = nullParts
 #
 #    for item in tempAllDuplicates:
@@ -128,7 +128,7 @@ def findDuplicates(listOfElems):
 #    return fullList
 
 
-# Test findDuplicates (pokud funguje napise "john")  
+# Test findDuplicates (pokud funguje napise "john")
 # myList = ["john", "marry", "john", "james"]
 # myBool, myDuplicate = findDuplicates(myList)
 # print(myDuplicate)
@@ -178,7 +178,7 @@ def createNewImage(chosenTraits):
     for item in combinations(thisAttributes, combinationsLength):
         thisAttributeCombinations.append(item)
         tempAllAttributeCombinations.append(item)
-    
+
     # zapise vsechny minule i aktualni traity do tempAllParts, na zkontrolovani pro maximalni pocet jednotlivych traitu
     for item in allParts:
         tempAllParts.append(item)
@@ -215,16 +215,16 @@ def createNewImage(chosenTraits):
         # prida 1 k poctu pokusu k vytvoreni tohoto obrazku
         numOfAttempts += 1
         return 'duplicate'
-    
+
     # Ted kdyz uz  jsme se zbavili duplikatu, zapiseme aktualni kombinace do allAttributeCombinations
     # (Aby jsme mohli zkontrolovat dalsi obrazky)
     for item in combinations(thisAttributes, combinationsLength):
         allAttributeCombinations.append(item)
 
-    # Zapise nove 
+    # Zapise nove
     for item in newImage:
         allParts.append(newImage[item])
-    
+
     # Zkontroluje zda obrazek jiz neexistuje
     if newImage in allImages:
         #print(newImage)
@@ -251,14 +251,14 @@ def createAllImages():
     for v in itertools.product(*allRanges):
         listOfAllPossibilities.append(list(v[::-1]))
         #print(type(v[::-1]))
-        
+
 
     #print(listOfAllPossibilities)
     #exit()
 
     newTraitImage = None
     possibility = 0
-    while newTraitImage != 'errror': 
+    while newTraitImage != 'errror':
 
         newTraitImage = createNewImage(listOfAllPossibilities[possibility])
         #newTraitImage = 'duplicate'
@@ -269,7 +269,7 @@ def createAllImages():
             allCombinations.append(listOfAllPossibilities[possibility].copy())
             #print(listOfAllPossibilities[possibility])
             #print(allCombinations)
-            
+
 
             #Add one
             possibility += 1
@@ -279,7 +279,7 @@ def createAllImages():
 
             #Add one
             possibility += 1
-                        
+
             #print(listOfAllPossibilities[possibility])
 
 
@@ -335,7 +335,7 @@ def calculateLayer(combinationsLength):
             newTrait = "L" + str(numOfTrait) + "T" + str(trait+1)
             newCombination.append(newTrait)
             numOfTrait += 1
-        
+
         #newCombination = [str(x) + "L" for x in oneCombination]
         newStrCombinations.append(newCombination)
 
@@ -369,7 +369,7 @@ def calculateLayer(combinationsLength):
         writer.writerow(item)
 
     f.close()
-    f = open("/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator7/allImages.csv", "w")
+    f = open("/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator13/allImages.csv", "w")
     writer = csv.writer(f)
     for item in allImages:
         writer.writerow(item.values())
@@ -388,7 +388,7 @@ def calculateIt(combinationsLengthX, numOfLayersX, allLayersMaxX):
 
     numOfLayers = numOfLayersX
     allLayersMax = allLayersMaxX
-    
+
     if numOfLayers != len(allLayersMax):
         print("U stupid?")
         #exit()

@@ -12,17 +12,17 @@ from PIL import Image
 from partsManager import *
 
 # Path k castem
-pathToParts = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator11\Parts"
+pathToParts = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\Parts"
 
 # Path do slozky kam se vyrenderuji obrazky
-outputFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator11\Output"
+outputFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\Output"
 
 # Path k json souboru
-outputJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator11\NFTs.json"
+outputJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\NFTs.json"
 
-outputJsonFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator11\Jsons\\"
+outputJsonFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\Jsons\\"
 
-outputResizeFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator11\OutputResize"
+outputResizeFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\OutputResize"
 
 # Pocet obrazku k vytvoreni
 #totalImages = int(input("How many images should I create? "))

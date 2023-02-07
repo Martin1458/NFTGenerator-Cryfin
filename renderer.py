@@ -12,40 +12,24 @@ from PIL import Image
 import numpy as np
 from partsManager import *
 
-
-pathToParts = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\Parts"
-
-
-outputFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\Output"
-
-
-outputJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\NFTs.json"
-
-outputJsonFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\Jsons\\"
-
-outputResizeFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\OutputResize"
-
-csvCreated = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\created.csv"
-
-countJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator12\count.json"
+# Input
+pathToParts = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\Parts"
+outputFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\Output"
+outputJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\NFTs.json"
+outputJsonFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\Jsons\\"
+csvCreated = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\created.csv"
+outputResizeFolder = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\OutputResize"
+# Output
+countJson = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator13\count.json"
 
 allImages = []
-
-
 allParts = []
-
 allPartsCount = {}
-
 tempAllParts = []
-
 thisAttributes = []
-
 thisAttributeCombinations = []
-
 imgSize = (350, 350)
-
 skipDecisions = False
-
 
 def getDestination(xxxx):
 
@@ -112,8 +96,8 @@ def createOneImage(xx):
 
 allTraits = []
 with open(csvCreated) as csvfile:
-    reader = csv.reader(csvfile) # change contents to floats
-    for row in reader: # each row is a list
+    reader = csv.reader(csvfile)
+    for row in reader:
         allTraits.append(row)
 
 for traits in allTraits:
@@ -209,13 +193,15 @@ if jsonIt:
     print("Light count      :"+str(lightCount)+"\n")
     print("Num of images    :"+str(len(allImages)))
 
-    countData = {
-        "backgroundCount": backgroundCount,
-        "bodyCount": bodyCount,
-        "highlightCount": highlightCount,
-        "outlineCount": outlineCount,
-        "lightCount": lightCount
-    }
+    #countData = {
+    #    "backgroundCount": backgroundCount,
+    #    "bodyCount": bodyCount,
+    #    "highlightCount": highlightCount,
+    #    "outlineCount": outlineCount,
+    #    "lightCount": lightCount
+    #}
+
+    countData = backgroundCount | bodyCount | highlightCount | outlineCount | lightCount
 
 
     countDataJson = json.dumps(countData, indent=4, sort_keys=False)

@@ -240,7 +240,7 @@ def T17():
     print(type(myVariable))
 
 def T18():
-    p = r"/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator10/Jsons/"
+    p = r"/home/martin/Desktop/pythonShit/AxieInfinity/NFTImgGenerator13/Jsons/"
     p = r"c:\Windows\System32"
     s = 'dd'
     if "\\" in s:
