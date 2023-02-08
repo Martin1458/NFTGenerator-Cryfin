@@ -10,22 +10,21 @@ from IPython.display import display
 from PIL import Image
 
 from partsManager import *
-# Path k rootu
-root_file = r"C:\Users\marti\Desktop\PythonProjects\AxieInfinity\NFTImgGenerator18\\"
+# Path k root FOLDERU
+root_file = r"C:\Users\marti\Desktop\PythonProjects\NFTGenerator-Cryfin"
 
 # Path k castem
-pathToParts = root_file + "Parts"
+pathToParts = os.path.join(root_file + r"\Parts")
 
 # Path do slozky kam se vyrenderuji obrazky
-outputFolder =  root_file + "Output"
+outputFolder = os.path.join(root_file + r"\Output")
 
 # Path k json souboru
 outputJson = root_file + "NFTs.json"
 
-outputJsonFolder = root_file + "Jsons/"
+outputJsonFolder = os.path.join(root_file + r"\Jsons")
 
-outputResizeFolder = root_file + "OutputResize"
-
+outputResizeFolder = os.path.join(root_file + r"\OutputResize")
 # Pocet obrazku k vytvoreni
 #totalImages = int(input("How many images should I create? "))
 #totalImages = 20
@@ -52,6 +51,7 @@ tempAllAttributeCombinations = []
 cobinationsLength = 3
 
 # Read variable name (must be a tuple)
+# Resized img
 imgSize = (350, 350)
 
 skipDecisions = False
@@ -257,10 +257,10 @@ def createAllImages():
     for v in itertools.product(*ranges):
         someList.append(list(v))
 
-    print(str(len(someList)))
+    #print(str(len(someList)))
     # Randomize list
     random.shuffle(someList)
-    someList = [[1, 5, 3, 2, 3]]
+    someList = someList[:5]
 
     for chosenTraits in someList:
         # print("chosenTraits: "+str(chosenTraits))

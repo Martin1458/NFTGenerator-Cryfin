@@ -1,0 +1,28 @@
+{
+    "name": "#2",
+    "description": "This is Lo-Fish num: 2",
+    "edition": 3,
+    "index": 2,
+    "attributes": [
+        {
+            "trait_type": "Background",
+            "value": "Slate Grey Night Sky"
+        },
+        {
+            "trait_type": "Body",
+            "value": "Rainbow Body"
+        },
+        {
+            "trait_type": "Fin",
+            "value": "Pink Fin"
+        },
+        {
+            "trait_type": "Outline",
+            "value": "Dark Bordeaux Outline"
+        },
+        {
+            "trait_type": "Light",
+            "value": "Yellow Light"
+        }
+    ]
+}

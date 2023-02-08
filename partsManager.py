@@ -7,15 +7,6 @@ backgroundFiles = {
     "Ochre Night Sky": "background3.png"
     }
 
-
-backgroundNames = ["Dark Night Sky", "Slate Grey Night Sky",    "Ochre Night Sky"]
-backgroundFiles = {
-    "Dark Night Sky": "background1.png",
-    "Slate Grey Night Sky": "background2.png",
-    "Ochre Night Sky": "background3.png"
-}
-
-
 #Pojmenovani pro kazdou moznost pro jednodussi manipulovani
 bodyNames = ["Bordeaux Body", "Violet Body", "Slate Grey Body", "Ochre Body", "Pink Body", "Rainbow Body"]
 #Prekladac z pojmenovani do jmena souboru
